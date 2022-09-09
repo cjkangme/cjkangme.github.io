@@ -26,7 +26,7 @@ baseurl: # the subpath of your site, e.g. "/blog"
 repository: "cjkangme/cjkangme.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser: # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo: # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
-masthead_title: " " # overrides the website title displayed in the masthead, use " " for no title
+masthead_title: "KangCJ 개발 공부 블로그" # overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs: true # true, false (default)
 words_per_minute: 200
 date_format: "%Y-%m-%d"
@@ -97,10 +97,10 @@ social:
 
 # Analytics
 analytics:
-  provider: false # false (default), "google", "google-universal", "google-gtag", "custom"
+  provider: "google-gtag" # false (default), "google", "google-universal", "google-gtag", "custom"
   google:
-    tracking_id:
-    anonymize_ip: # true, false (default)
+    tracking_id: "G-3JEE7MF1RM"
+    anonymize_ip: false
 
 # Site Author
 author:
