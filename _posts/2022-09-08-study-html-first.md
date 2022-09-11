@@ -1,8 +1,8 @@
 ---
 layout: single
 title: "HTML/CSS 기초 1일차"
-categories: 공부
-tags: [HTML, CSS]
+categories: study
+tags: HTML
 ---
 
 ### 참고자료 : 유튜브(짐코딩의 CODING GYM) - HTML/CSS 강의
@@ -29,7 +29,7 @@ tags: [HTML, CSS]
 - Status Bar : 최하단의 파란색 바
   - Visual Studio Code의 상태를 나타내는 영역
 
-![001](../images/2022-09-08-second/001.png)
+![001](/images/2022-09-08-second/001.png)
 
 ## 2. Visual Studio Code 확장 기능 설치
 

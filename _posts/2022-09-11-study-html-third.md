@@ -1,8 +1,8 @@
 ---
 layout: single
 title: "HTML/CSS 기초 3일차"
-categories: 공부
-tags: [HTML, CSS]
+categories: study
+tags: HTML
 toc: true
 ---
 

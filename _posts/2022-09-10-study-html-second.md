@@ -1,9 +1,15 @@
 ---
 layout: single
 title: "HTML/CSS 기초 2일차"
-categories: 공부
-tags: [HTML, CSS]
+categories: study
+tags: HTML
 ---
+
+### 참고자료 : 유튜브(짐코딩의 CODING GYM) - HTML/CSS 강의
+
+### <br>**주소 : [유튜브 링크](https://youtube.com/playlist?list=PLlaP-jSd-nK-ponbKDjrSn3BQG9MgHSKv)**
+
+<br><br>
 
 # EP 03. Emmet
 

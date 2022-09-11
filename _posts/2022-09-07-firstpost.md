@@ -17,4 +17,4 @@ title: "첫 포스팅(다짐)"
 우선 목표는 당당히 개발자로서 취업하기 입니다.  
 열심히 하겠습니다.
 
-![test image](../images/bright_future.jpg)
+![test image](/images/bright_future.jpg)

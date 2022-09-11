@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "Github 블로그 만들기 3일차"
-categories: 공부
+categories: study
 tags: GitHub
 toc: true
 ---
@@ -27,7 +27,7 @@ toc: true
 
 아이콘의 경우 Font Awesome icon (**[링크](https://fontawesome.com/v5/search)**)에서 원하는 아이콘을 설정할 수 있다.
 
-> ![예시 이미지](../images/2022-09-10-second/001.png)
+> ![예시 이미지](/images/2022-09-10-second/001.png)
 > fab fa-fw <이미지 이름(fa-instagram)>을 입력하면 된다.
 
 <br><br>
@@ -39,7 +39,7 @@ toc: true
 - 기본값은 markdown: kramdown, highlighter: rogue로 설정
 
 > 사용예시
-> ![002](../images/2022-09-10-second/002.png)
+> ![002](/images/2022-09-10-second/002.png)
 >
 > ```python
 > a = int(input("Enter a: "))

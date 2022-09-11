@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "Markdown 작성법"
-categories: 공부
+categories: study
 tags: GitHub
 ---
 
@@ -126,9 +126,11 @@ none_italic_text
 ---
 
 - blockquote 안에서 다른 요소를 사용할 수 있다.
-  '''  
-   > ## This is Heading level 2 > > - List 1 > - **List 2(Bold)**
   '''
+  > ## This is Heading level 2 > > - List 1 > - **List 2(Bold)**
+  >
+  > '''
+  >
   > ## This is Heading level 2
   >
   > - List 1
@@ -142,18 +144,19 @@ none_italic_text
 #### 정렬된 목록
 
 - 숫자를 어떻게 입력하던지 상관 없이 번호순으로 정렬된다.
-  '''  
-   1. list1
-        2. list2
-
-        3. list3
-
-        4. list1
-
-        5. list2
-
-        6. list3
   '''
+
+  1.  list1 2. list2
+
+            3. list3
+
+            4. list1
+
+            5. list2
+
+            6. list3
+
+      '''
 
 1. list1
 

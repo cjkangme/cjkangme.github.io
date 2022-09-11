@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "Github 블로그 만들기 1일차"
-categories: 공부
+categories: study
 tags: GitHub
 ---
 
@@ -30,19 +30,19 @@ tags: GitHub
 <br>
 
 1. GitHub Desktop에서 'Open in Visual Studio Code' 단추 클릭
-   ![001](../images/2022-09-08-first/001.png)
+   ![001](/images/2022-09-08-first/001.png)
    <br><br>
 1. 개발환경 설치 당시 Clone을 만든 경로에 이미지를 저장할 별도의 폴더를 생성하여 이미지 삽입
 1. VS Code의 EXPLORER에서 이미지가 확인이 되면 원하는 라인에 Shift+드래그
-   ![002](../images/2022-09-08-first/002.png) - Visual Studio Code가 제공하는 미리보기 열기(Ctrl+Shift+V) 기능을 통해 이미지가 어떻게 삽입되었는지 확인 가능
+   ![002](/images/2022-09-08-first/002.png) - Visual Studio Code가 제공하는 미리보기 열기(Ctrl+Shift+V) 기능을 통해 이미지가 어떻게 삽입되었는지 확인 가능
    <br><br>
 1. 코드 저장(Ctrl+S)
 1. GitHub Desktop에서 파일이 변경된 것을 확인
 1. Summary에 코드 변경 관련 내용을 간단히 요약하여 적고, Commit to master 단추 클릭
-   ![003](../images/2022-09-08-first/003.png)
+   ![003](/images/2022-09-08-first/003.png)
    <br><br>
 1. GitHub Desktop에서 ‘Push origin’을 클릭하여 변경 내용 반영
-   ![004](../images/2022-09-08-first/004.png)
+   ![004](/images/2022-09-08-first/004.png)
    <br><br>
 
 # EP03. 업데이트 내역을 실시간 확인하기 (로컬 개발환경 설정방법)
@@ -75,7 +75,7 @@ tags: GitHub
 
 설정 방법대로 무난히 진행이 안되었다.
 <br>원인을 파악해보니 계정명이 한글로 되어있어 cmd를 통한 install 시 경로를 찾지 못해 오류가 발생한 듯 하다.
-![005](../images/2022-09-08-first/005.png)
+![005](/images/2022-09-08-first/005.png)
 <br><br>
 windows 계정명을 변경하면 쉽겠지만, 내 계정명이 학교 이메일에 묶여있다보니 변경할 수 없었다.
 <br> 대학교 졸업하고 한참 뒤에도 여전히 Edu 윈도우를 사용하고 있는 것에 대한 벌을 받은 것 같다.
