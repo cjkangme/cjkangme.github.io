@@ -47,7 +47,7 @@ tags: GitHub
 3. 사이트 등록 입력란에 google 때와 동일하게 블로그 URL 입력
 4. html 메타 태그값을 복사하여 `_config.yml` 파일의 `naver_site_verification`에 입력
 
-![naver meta tags](../assets/images/github/naver-meta-tags.png)
+![naver meta tags](/assets/images/github/naver-meta-tags.png)
 
 <br>
 
