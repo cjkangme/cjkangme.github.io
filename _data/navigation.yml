@@ -14,7 +14,6 @@ docs:
       - title: "코딩 공부"
         url: /study/
 
-docs:
   - title: "태그"
     children:
       - title: "Tag"
