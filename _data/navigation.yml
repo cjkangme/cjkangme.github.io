@@ -2,8 +2,27 @@
 main:
   - title: "Category"
     url: /categories/
+
   - title: "Tag"
     url: /tags/
+
+docs:
+  - title: "카테고리"
+    children:
+      - title: "Category"
+        url: /categories/
+      - title: "코딩 공부"
+        url: /study/
+
+docs:
+  - title: "태그"
+    children:
+      - title: "Tag"
+        url: /tags/
+      - title: "GitHub"
+        url: /tags/#github
+      - title: "HTML"
+        url: /tags/#html
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
