@@ -79,6 +79,7 @@ images/image.jpg - 하위 디렉토리
 
 <br>
 예시
+
 ```HTML
 <audio muted>
     <source src="../assets/audio/audio.mp3" type="mp3" />
@@ -104,6 +105,7 @@ images/image.jpg - 하위 디렉토리
 
 <br>
 예시
+
 ```HTML
 <video>
     width="720"
