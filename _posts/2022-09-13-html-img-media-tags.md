@@ -80,11 +80,11 @@ HTML 문서에 소리 콘텐츠를 넣는 역할의 태그
 <br>
 예시
 
-```HTML
+```html
 <audio muted>
-    <source src="../assets/audio/audio.mp3" type="mp3" />
-    <source src="../assets/audio/audio.wav" type="wav" />
-    지원하지 않는 브라우저입니다.
+  <source src="../assets/audio/audio.mp3" type="mp3" />
+  <source src="../assets/audio/audio.wav" type="wav" />
+  지원하지 않는 브라우저입니다.
 </audio>
 ```
 
@@ -106,14 +106,10 @@ HTML 문서에 영상 콘텐츠를 넣는 역할의 태그
 <br>
 예시
 
-```HTML
+```html
 <video>
-    width="720"
-    controls
-    loop
-    poster="../assets/images/swan.jpg"
-    src="../assets/videos/video.mp4"
-    type="video/mp4"
+  width="720" controls loop poster="../assets/images/swan.jpg"
+  src="../assets/videos/video.mp4" type="video/mp4"
 </video>
 ```
 
@@ -142,8 +138,9 @@ HTML 문서에 영상 콘텐츠를 넣는 역할의 태그
 
 ### 외부페이지 이동
 
-```HTML
-<a rel="noreferrer" target="_blank" href="https://www.naver.com">네이버</a>와 <a href="https://www.google.com">구글</a>은 포털 사이트 이다.
+```html
+<a rel="noreferrer" target="_blank" href="https://www.naver.com">네이버</a>와
+<a href="https://www.google.com">구글</a>은 포털 사이트 이다.
 ```
 
 > <a rel="noreferrer" target="_blank" href="https://www.naver.com">네이버</a>와 <a href="https://www.google.com">구글</a>은 포털 사이트 이다.
@@ -152,7 +149,7 @@ HTML 문서에 영상 콘텐츠를 넣는 역할의 태그
 
 ### 내부페이지 이동
 
-```HTML
+```html
 <a href="#target">target으로 이동</a>
 ```
 
@@ -164,7 +161,7 @@ HTML 문서에 영상 콘텐츠를 넣는 역할의 태그
 
 ### 이메일 전송
 
-```HTML
+```html
 <a href="mailto: nureongi0214@gmail.com">이메일 보내기</a>
 ```
 
