@@ -51,7 +51,7 @@ defaults:
 
 <br>
 
-![sidebar navigation](../assets/images/github/sidebar-navigation.png)
+![sidebar navigation](/assets/images/github/sidebar-navigation.png)
 
 <br>
 

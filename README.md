@@ -22,3 +22,4 @@ blog : https://cjkangme.github.io/
 - **[HTML/CSS 기초 1일차](https://cjkangme.github.io/study/study-html-first/)**
 - **[HTML/CSS 기초 2일차](https://cjkangme.github.io/study/study-html-second/)**
 - **[HTML/CSS 기초 3일차](https://cjkangme.github.io/study/study-html-third/)**
+- **[[HTML] 이미지 & 멀티미디어 태그](https://cjkangme.github.io/study/html-img-media-tags/)**
