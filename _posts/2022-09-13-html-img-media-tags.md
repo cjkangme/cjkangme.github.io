@@ -5,15 +5,15 @@ categories: study
 tags: HTML
 ---
 
-> ### 참고자료 : 유튜브(짐코딩의 CODING GYM) - HTML/CSS 강의
+> 참고자료 : 유튜브(짐코딩의 CODING GYM) - HTML/CSS 강의
 >
-> ### **주소 : [유튜브 링크](https://youtube.com/playlist?list=PLlaP-jSd-nK-ponbKDjrSn3BQG9MgHSKv)**
+> **주소 : [유튜브 링크](https://youtube.com/playlist?list=PLlaP-jSd-nK-ponbKDjrSn3BQG9MgHSKv)**
 
 <br>
 
 # 이미지 태그
 
-### 이름 그대로 페이지에 이미지를 삽입하는 역할의 태그
+이름 그대로 페이지에 이미지를 삽입하는 역할의 태그
 
 <br>
 
@@ -60,7 +60,7 @@ images/image.jpg - 하위 디렉토리
 
 # 오디오 태그
 
-### HTML 문서에 소리 콘텐츠를 넣는 역할의 태그
+HTML 문서에 소리 콘텐츠를 넣는 역할의 태그
 
 <br>
 
@@ -92,7 +92,7 @@ images/image.jpg - 하위 디렉토리
 
 # 비디오 태그
 
-### HTML 문서에 영상 콘텐츠를 넣는 역할의 태그
+HTML 문서에 영상 콘텐츠를 넣는 역할의 태그
 
 <br>
 
@@ -121,7 +121,7 @@ images/image.jpg - 하위 디렉토리
 
 # 하이퍼링크 태그(앵커 태그)
 
-### 다른 페이지로의 이동, 같은 페이지의 특정 위치 이동, 파일 다운로드 링크 연결, 이메일보내기 등 다른 URL로 연결할 수 있는 태그
+다른 페이지로의 이동, 같은 페이지의 특정 위치 이동, 파일 다운로드 링크 연결, 이메일보내기 등 다른 URL로 연결할 수 있는 태그
 
 <br>
 
