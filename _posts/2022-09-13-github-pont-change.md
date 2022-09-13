@@ -32,22 +32,22 @@ tags: GitHub
 
 <br>
 
-> -> /\_sass/minimal-mistakes.scss에 추가
->
-> ```scss
-> /* Goggle Fonts */
-> @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap");
-> ```
+```scss
+   # /_sass/minimal-mistakes.scss에 추가
+
+/* Goggle Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap");
+```
 
 <br>
 
-> - /\_sass/minimal-mistakes/\_variable.scss 수정 ("Noto Sans KR" 추가)
->
-> ```scss
-> /* system typefaces */
-> $serif: Georgia, Times, serif !default;
-> $sans-serif: -apple-system, BlinkMacSystemFont, "Noto Sans KR", "Roboto",
->   "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif !default;
-> ```
+```scss
+   # /_sass/minimal-mistakes/\_variable.scss 수정 ("Noto Sans KR" 추가)
+
+/* system typefaces */
+$serif: Georgia, Times, serif !default;
+$sans-serif: -apple-system, BlinkMacSystemFont, "Noto Sans KR", "Roboto",
+  "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif !default;
+```
 
 ---
