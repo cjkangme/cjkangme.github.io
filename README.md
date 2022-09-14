@@ -27,4 +27,5 @@ blog : https://cjkangme.github.io/
 - **[[HTML] 폼 태그](https://cjkangme.github.io/study/html-form-tags/)**
 - **[[HTML] head 태그](https://cjkangme.github.io/study/html-head-tags/)**
 - **[[CSS] 스타일 적용 방법 및 우선순위](https://cjkangme.github.io/study/css-priority/)**
-- **[[CSS] 선택자](https://cjkangme.github.io/study/css-selector/)**
+- **[[CSS] CSS속성 - 선택자](https://cjkangme.github.io/study/css-selector/)**
+- **[[CSS] CSS속성 - 폰트(Fonts)](https://cjkangme.github.io/study/css-fonts/)**
