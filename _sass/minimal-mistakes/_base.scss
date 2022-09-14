@@ -126,6 +126,11 @@ blockquote {
 /* links */
 
 a {
+  /* 하이퍼링크 밑줄 수정 */
+  text-decoration: underline #9166fc;
+  /* code bold 삭제 */
+  font-weight: 400;
+
   &:focus {
     @extend %tab-focus;
   }
@@ -154,6 +159,8 @@ kbd,
 samp,
 pre {
   font-family: $monospace;
+  /* code 폰트색상 변경 */
+  color: $lighter-purple;
 }
 
 pre {
@@ -166,7 +173,8 @@ hr {
   display: block;
   margin: 1em 0;
   border: 0;
-  border-top: 1px solid $border-color;
+  /* 구분선 간격 변경 */
+  border-top: 2px solid $border-color;
 }
 
 /* lists */
