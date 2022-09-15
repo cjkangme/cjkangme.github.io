@@ -29,3 +29,5 @@ blog : https://cjkangme.github.io/
 - **[[CSS] 스타일 적용 방법 및 우선순위](https://cjkangme.github.io/study/css-priority/)**
 - **[[CSS] CSS속성 - 선택자](https://cjkangme.github.io/study/css-selector/)**
 - **[[CSS] CSS속성 - 폰트(Fonts)](https://cjkangme.github.io/study/css-fonts/)**
+- **[[CSS] CSS - Box Model](https://cjkangme.github.io/study/css-box-model/)**
+- **[[CSS] CSS - float](https://cjkangme.github.io/study/css-float/)**
