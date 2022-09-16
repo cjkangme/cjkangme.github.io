@@ -5,7 +5,7 @@ categories: study
 tags: CSS
 ---
 
-<div style="font-size: 20px">
+<div style="font-size: 25px">
 참고자료 : 유튜브(짐코딩의 CODING GYM) - HTML/CSS 강의<br>
 <a href="(https://youtube.com/playlist?list=PLlaP-jSd-nK-ponbKDjrSn3BQG9MgHSKv)">[유튜브 링크]</a>
 </div>

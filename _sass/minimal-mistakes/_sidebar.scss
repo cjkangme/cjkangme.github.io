@@ -57,7 +57,8 @@
   p,
   li {
     font-family: $sans-serif;
-    font-size: $type-size-6;
+    /* 사이드바 폰트 사이즈 변경 */
+    font-size: $type-size-5;
     line-height: 1.5;
   }
 
@@ -216,7 +217,7 @@
 
     &:before {
       @supports (pointer-events: none) {
-        content: '';
+        content: "";
         position: fixed;
         top: 0;
         left: 0;
@@ -350,4 +351,3 @@
     margin-right: initial;
   }
 }
-
