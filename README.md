@@ -15,6 +15,7 @@ blog : https://cjkangme.github.io/
 - **[GitHub 블로그에 검색엔진 등록하기](https://cjkangme.github.io/study/github-search-engine/)**
 - **[GitHub 블로그 사이드바 추가 및 수정하기](https://cjkangme.github.io/study/github-sidebar-navigation/)**
 - **[[GitHub 블로그] 폰트 변경하기](https://cjkangme.github.io/study/github-pont-change/)**
+- **[[Github 블로그] 개발블로그 개선하기](https://cjkangme.github.io/study/github-blog-change/)**
 
 ## <br>
 
