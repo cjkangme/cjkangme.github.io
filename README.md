@@ -32,3 +32,7 @@ blog : https://cjkangme.github.io/
 - **[[CSS] CSS속성 - 폰트(Fonts)](https://cjkangme.github.io/study/css-fonts/)**
 - **[[CSS] CSS - Box Model](https://cjkangme.github.io/study/css-box-model/)**
 - **[[CSS] CSS - float](https://cjkangme.github.io/study/css-float/)**
+
+## etc
+
+- **[비전공자가 반드시 읽어봐야 할 개발 학습법들 1](https://cjkangme.github.io/study/developer-study-guide-1/)**
