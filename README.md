@@ -36,3 +36,4 @@ blog : https://cjkangme.github.io/
 ## etc
 
 - **[비전공자가 반드시 읽어봐야 할 개발 학습법들 1](https://cjkangme.github.io/study/developer-study-guide-1/)**
+- **[비전공자가 반드시 읽어봐야 할 개발 학습법들 2](https://cjkangme.github.io/study/developer-study-guide-2/)**

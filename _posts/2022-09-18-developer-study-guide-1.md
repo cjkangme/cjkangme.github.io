@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "비전공자가 반드시 읽어봐야 할 개발 학습법들"
+title: "비전공자가 반드시 읽어봐야 할 개발 학습법들 1"
 categories: study
 tags: etc
 ---
