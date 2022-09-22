@@ -32,6 +32,7 @@ blog : https://cjkangme.github.io/
 - **[[CSS] CSS속성 - 폰트(Fonts)](https://cjkangme.github.io/study/css-fonts/)**
 - **[[CSS] CSS - Box Model](https://cjkangme.github.io/study/css-box-model/)**
 - **[[CSS] CSS - float](https://cjkangme.github.io/study/css-float/)**
+- **[[CSS] CSS - 그리드(Grid) 기초 내용](https://cjkangme.github.io/study/css-grid-basic/)**
 
 ## etc
 
