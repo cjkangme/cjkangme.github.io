@@ -1,11 +1,9 @@
 ---
 layout: single
-title: "[CSS] CSS - 그리드(Grid) 기초 내용"
+title: "[CSS] 그리드(Grid) 기초 내용"
 categories: study
 tags: CSS
 ---
-
-# 서론
 
 CSS의 Grid는 Flex와 함께 웹페이지의 레이아웃을 구성하기 위해 사용한다.<br>
 Flex와 차이점이 있다면, Flex는 가로 또는 세로 중 한 방향으로만의 레이아웃 정렬에 사용되지만,<br>

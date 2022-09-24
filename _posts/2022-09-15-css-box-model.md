@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "[CSS] CSS - Box Model"
+title: "[CSS] Box Model"
 categories: study
 tags: CSS
 ---

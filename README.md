@@ -2,8 +2,6 @@
 
 blog : https://cjkangme.github.io/
 
-목표 : HTML/CSS 이용하여 페이지 이쁘게 꾸미기
-
 <br>
 
 ## GitHub Blog
@@ -17,7 +15,7 @@ blog : https://cjkangme.github.io/
 - **[[GitHub 블로그] 폰트 변경하기](https://cjkangme.github.io/study/github-pont-change/)**
 - **[[Github 블로그] 개발블로그 개선하기](https://cjkangme.github.io/study/github-blog-change/)**
 
-## <br>
+<br>
 
 ## HTML/CSS
 
@@ -30,9 +28,12 @@ blog : https://cjkangme.github.io/
 - **[[CSS] 스타일 적용 방법 및 우선순위](https://cjkangme.github.io/study/css-priority/)**
 - **[[CSS] CSS속성 - 선택자](https://cjkangme.github.io/study/css-selector/)**
 - **[[CSS] CSS속성 - 폰트(Fonts)](https://cjkangme.github.io/study/css-fonts/)**
-- **[[CSS] CSS - Box Model](https://cjkangme.github.io/study/css-box-model/)**
-- **[[CSS] CSS - float](https://cjkangme.github.io/study/css-float/)**
-- **[[CSS] CSS - 그리드(Grid) 기초 내용](https://cjkangme.github.io/study/css-grid-basic/)**
+- **[[CSS] Box Model](https://cjkangme.github.io/study/css-box-model/)**
+- **[[CSS] float](https://cjkangme.github.io/study/css-float/)**
+- **[[CSS] 그리드(Grid) 기초 내용](https://cjkangme.github.io/study/css-grid-basic/)**
+- **[[CSS] 명세(속성값 구문) 읽는 법](https://cjkangme.github.io/study/css-property-syntax.md/)**
+
+<br>
 
 ## etc
 
