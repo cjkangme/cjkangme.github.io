@@ -37,7 +37,9 @@ div {
 
 ```html
 <!-- HTML -->
-<div>A</div><div>B</div><div>C</div>
+<div>A</div>
+<div>B</div>
+<div>C</div>
 ```
 
 ![inline-block-여백없음](/assets/images/2022-09/inline-block-2.png){: .text-center}
@@ -110,5 +112,5 @@ div {
 
 ![inline-block-font-size](/assets/images/2022-09/inline-block-4.png)
 
-HTML과 CSS가 가장 쉬운 컴퓨터 언어중 하나라지만... 아직 내게는 너무 심오한 세계인 것 같다.<br>
-화이팅...
+다소 뒤늦게 안 사실인데, 사실 inline-block은 반응형 디자인을 전혀 지원하지 않기 때문에 레이아웃을 디자인하는데는 별로 좋지 않다고 한다. (구닥다리 방식이라고...)<br>
+아직 flexbox 속성을 배우질 않았는데, 관련 강의를 찾아보고 활용해봐야겠다.
