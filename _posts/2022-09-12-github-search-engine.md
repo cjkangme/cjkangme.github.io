@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "GitHub 블로그에 검색엔진 등록하기"
-categories: study
+categories: lecture
 tags: GitHub
 ---
 

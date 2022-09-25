@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "[CSS] CSS 속성 - 선택자"
-categories: study
+categories: lecture
 tags: CSS
 ---
 

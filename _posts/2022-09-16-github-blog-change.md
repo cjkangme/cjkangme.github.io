@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "[Github 블로그] 개발블로그 개선하기"
-categories: study
+categories: etc
 tags: GitHub
 ---
 

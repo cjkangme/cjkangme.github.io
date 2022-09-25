@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "[CSS] 명세(속성값 구문) 읽는 법"
-categories: study
+categories: til
 tags: CSS
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "GitHub 블로그 사이드바 추가 및 수정하기"
-categories: study
+categories: etc
 tags: GitHub
 ---
 

@@ -12,8 +12,12 @@ docs:
     children:
       - title: "Category"
         url: /categories/
-      - title: "코딩 공부"
-        url: /study/
+      - title: "강의 정리"
+        url: /lecture/
+      - title: "TIL"
+        url: /til/
+      -title: "etc"
+        url: /etc/
 
   - title: "태그"
     children:
@@ -23,6 +27,8 @@ docs:
         url: /tags/#github
       - title: "HTML"
         url: /tags/#html
+      - title: "CSS"
+        url: /tags/#css
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"

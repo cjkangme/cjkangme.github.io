@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "Github 블로그 만들기 1일차"
-categories: study
+categories: lecture
 tags: GitHub
 ---
 

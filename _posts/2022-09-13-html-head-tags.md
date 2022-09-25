@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "[HTML] head 태그"
-categories: study
+categories: lecture
 tags: HTML
 ---
 

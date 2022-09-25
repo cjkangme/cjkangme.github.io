@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "[Github 블로그] 폰트 변경하기"
-categories: study
+categories: lecture
 tags: GitHub
 ---
 

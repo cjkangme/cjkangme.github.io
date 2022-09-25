@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "HTML/CSS 기초 1일차"
-categories: study
+categories: lecture
 tags: HTML
 ---
 

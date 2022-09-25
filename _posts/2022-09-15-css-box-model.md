@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "[CSS] Box Model"
-categories: study
+categories: lecture
 tags: CSS
 ---
 

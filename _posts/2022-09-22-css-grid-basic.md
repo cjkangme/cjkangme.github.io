@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "[CSS] 그리드(Grid) 기초 내용"
-categories: study
+categories: til
 tags: CSS
 ---
 

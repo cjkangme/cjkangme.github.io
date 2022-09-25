@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "[HTML] 폼 태그"
-categories: study
+categories: lecture
 tags: HTML
 ---
 

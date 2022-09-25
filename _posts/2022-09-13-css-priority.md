@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "[CSS] 스타일 적용 방법 및 우선순위"
-categories: study
+categories: lecture
 tags: CSS, HTML
 ---
 

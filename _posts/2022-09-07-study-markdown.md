@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "Markdown 작성법"
-categories: study
+categories: til
 tags: GitHub
 ---
 
