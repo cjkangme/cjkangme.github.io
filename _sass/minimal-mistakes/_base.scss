@@ -161,9 +161,10 @@ kbd,
 samp,
 pre {
   font-family: $monospace;
-  /* code 폰트색상 변경 */
+  /* code 폰트색상 변경 볼드처리 */
   color: $lighter-purple;
   font-weight: bold;
+  background-color: #f5f5dc;
 }
 
 pre {
