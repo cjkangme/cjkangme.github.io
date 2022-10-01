@@ -1,4 +1,5 @@
 ---
+published: true
 layout: single
 title: "[CSS] inline-block의 여백 제거"
 categories: til

@@ -1,4 +1,5 @@
 ---
+published: true
 layout: single
 title: "[CSS] Pseudo-classes와 Pseudo-elements"
 categories: til
