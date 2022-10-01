@@ -8,7 +8,7 @@ main:
     url: /search/
 
 docs:
-  - title: "카테고리"
+  - title: "Category"
     children:
       - title: "Category"
         url: /categories/
@@ -18,7 +18,7 @@ docs:
         url: /til/
       -title: "etc"
         url: /etc/
-  - title: "태그"
+  - title: "Tag"
     children:
       - title: "Tag"
         url: /tags/
