@@ -34,6 +34,7 @@ blog : https://cjkangme.github.io/
 - **[[CSS] 명세(속성값 구문) 읽는 법](https://cjkangme.github.io/til/css-property-syntax/)**
 - **[[CSS] inline-block의 여백 제거](https://cjkangme.github.io/til/css-inline-block-empty-space/)**
 - **[[CSS] Pseudo-classes와 Pseudo-elements](https://cjkangme.github.io/til/css-pseudo-classes-elements/)**
+- **[[CSS] 애니메이션(animation)](https://cjkangme.github.io/til/css-animation/)**
 
 <br>
 
