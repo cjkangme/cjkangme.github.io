@@ -7,7 +7,6 @@ main:
   - title: "Search"
     url: /search/
 
----
 docs:
   - title: "Category"
     children:
@@ -17,7 +16,7 @@ docs:
         url: /lecture/
       - title: "TIL"
         url: /til/
-      -title: "etc"
+      - title: "etc"
         url: /etc/
   - title: "Tag"
     children:
