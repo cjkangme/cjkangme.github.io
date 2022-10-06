@@ -3,7 +3,7 @@ title: 'HTML/CSS'
 layout: category
 permalink: /categories/html-css/
 author_profile: true
-taxonomy: html-css
+taxonomy: Categories1
 sidebar:
   nav: 'categories'
 ---
