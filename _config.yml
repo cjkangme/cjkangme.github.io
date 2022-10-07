@@ -282,3 +282,10 @@ defaults:
       related: true
       sidebar:
         nav: 'categories'
+
+# Comments
+comments:
+  provider: "utterances"
+  utterances:
+    theme: "github-light" #'github-dark'
+    issue_term: "pathname"
