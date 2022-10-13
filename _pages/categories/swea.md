@@ -1,9 +1,9 @@
 ---
-title: "Categories3"
+title: 'SW Expert Academy'
 layout: category
-permalink: /categories/categories3/
+permalink: /categories/swea/
 author_profile: true
 taxonomy: Categories3
 sidebar:
-  nav: "categories"
+  nav: 'categories'
 ---
