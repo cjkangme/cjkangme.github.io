@@ -24,9 +24,10 @@ categories:
         url: /categories/html-css/
       - title: 'Javascript'
         url: /categories/javascript/
+
   - title: '알고리즘'
     children:
-      - title: 'SW Expert Academy'
+      - title: 'SWEA'
         url: /categories/swea/
       - title: 'Categories4'
         url: /categories/categories4/

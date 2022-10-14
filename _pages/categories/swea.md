@@ -1,5 +1,5 @@
 ---
-title: 'SW Expert Academy'
+title: 'SWEA'
 layout: category
 permalink: /categories/swea/
 author_profile: true
