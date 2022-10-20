@@ -24,13 +24,13 @@ categories:
         url: /categories/html-css/
       - title: 'Javascript'
         url: /categories/javascript/
+      - title: 'Python'
+        url: /categories/python/
 
   - title: '알고리즘'
     children:
       - title: 'SWEA'
         url: /categories/swea/
-      - title: 'Categories4'
-        url: /categories/categories4/
 
   # - title: 'Title2'
   #   children:
