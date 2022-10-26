@@ -3,7 +3,7 @@ title: '[Python] 문자열 거꾸로 정렬하기'
 excerpt: '파이썬에서 문자열을 거꾸로 정렬하는 방법'
 
 categories:
-  - python
+  - TIL
 tags:
   - [python, algorithm]
 

@@ -19,18 +19,13 @@ main:
 # 2022.02.15 sidebar update : simple ver.
 categories:
   - title: 'TIL'
-    children:
-      - title: 'HTML/CSS'
-        url: /categories/html-css/
-      - title: 'Javascript'
-        url: /categories/javascript/
-      - title: 'Python'
-        url: /categories/python/
-
-  - title: '알고리즘'
-    children:
-      - title: 'SWEA'
-        url: /categories/swea/
+    url: /categories/til/
+  # - title: 'Categories2'
+  #   url: /categories/categories2/
+  # - title: 'Categories3'
+  #   url: /categories/categories3/
+  # - title: 'Categories4'
+  #   url: /categories/categories4/
 
   # - title: 'Title2'
   #   children:

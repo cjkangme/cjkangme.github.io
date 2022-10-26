@@ -3,7 +3,7 @@ title: '[Python] 원하는 크기의 list 생성하기'
 excerpt: '본문의 주요 내용을 여기에 입력하세요'
 
 categories:
-  - python
+  - TIL
 tags:
   - [python]
 

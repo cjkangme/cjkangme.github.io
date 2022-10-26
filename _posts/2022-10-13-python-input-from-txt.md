@@ -3,7 +3,7 @@ title: '[Python] .txt 파일에서 input 받기'
 excerpt: '알고리즘 문제에서 test case를 받기위한 방법 정리'
 
 categories:
-  - python
+  - TIL
 tags:
   - [python, algorithm]
 
