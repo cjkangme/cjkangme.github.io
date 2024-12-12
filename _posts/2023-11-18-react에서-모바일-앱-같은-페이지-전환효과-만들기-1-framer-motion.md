@@ -12,7 +12,7 @@ image: /assets/posts/2023-11-18-react에서-모바일-앱-같은-페이지-전�
 
 # 페이지 전환 효과
 
-<img src="https://www.yasinilhan.com/page_transition/transition.gif"  width="240"/>
+<img alt="img" src="https://www.yasinilhan.com/page_transition/transition.gif"  width="240"/>
 
 <small>출처 : [플러터 Page Transition 라이브러리](https://pub.dev/packages/page_transition)</small>
 

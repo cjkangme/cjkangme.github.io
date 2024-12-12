@@ -47,7 +47,7 @@ three.js는`BufferGeometry`를 확장한 다양한 형상의 지오메트리를 
 const geometry = new THREE.BoxGeometry(1, 1, 1, 2, 2, 2);
 ```
 
-<img src="https://velog.velcdn.com/images/cjkangme/post/0bca3f51-afa3-4f74-8271-9f55741158ba/image.png" width="320px" />
+<img alt="img" src="https://velog.velcdn.com/images/cjkangme/post/0bca3f51-afa3-4f74-8271-9f55741158ba/image.png" width="320px" />
 
 각 방향으로 모두 2등분한 육면체가 생성된다.
 
@@ -68,7 +68,7 @@ const geometry = new THREE.BoxGeometry(1, 1, 1, 2, 2, 2);
 const geometry = new THREE.CircleGeometry(1, 8, Math.PI, Math.PI / 2);
 ```
 
-<img src="https://velog.velcdn.com/images/cjkangme/post/3fff5e8d-690d-4947-ba85-18c79823c557/image.png" width="320px" />
+<img alt="img" src="https://velog.velcdn.com/images/cjkangme/post/3fff5e8d-690d-4947-ba85-18c79823c557/image.png" width="320px" />
 
 180도 방향에서 시작해 1/4만큼의 원을 8개의 도형으로 그린 원이 생성된다.
 
@@ -134,7 +134,7 @@ const geometry = new THREE.CircleGeometry(1, 8, Math.PI, Math.PI / 2);
 const geometry = new THREE.RingGeometry(0.5, 1, 8, 3);
 ```
 
-<img src="https://velog.velcdn.com/images/cjkangme/post/b0cf87bb-d743-4c02-bf00-90a20fab4d57/image.png" width="320px" />
+<img alt="img" src="https://velog.velcdn.com/images/cjkangme/post/b0cf87bb-d743-4c02-bf00-90a20fab4d57/image.png" width="320px" />
 
 8개의 thetaSegments를 통해 팔각형의 링이 형성되고, 둘레 방향으로 3분할 되었다.
 
@@ -167,7 +167,7 @@ const geometry = new THREE.RingGeometry(0.5, 1, 8, 3);
 ```javascript
 const geometry = new THREE.TorusGeometry(1, 0.4, 12, 8);
 ```
-<img src="https://velog.velcdn.com/images/cjkangme/post/4cbe7547-774c-4d5b-b85c-9610fac72b1f/image.png" width="320px" />
+<img alt="img" src="https://velog.velcdn.com/images/cjkangme/post/4cbe7547-774c-4d5b-b85c-9610fac72b1f/image.png" width="320px" />
 
 radialSegments = 12이므로 tube가 12분할 되었다, tubularSegments = 8이므로 원 형상은 팔각형이 되었다.
 
@@ -186,7 +186,7 @@ const shape = new THREE.Shape();
     shape.closePath(); // 도형 닫기
 ```
 
-<img src="https://velog.velcdn.com/images/cjkangme/post/b89aefee-c94f-450d-bf95-0dd18257a1f9/image.png" width="320px" />
+<img alt="img" src="https://velog.velcdn.com/images/cjkangme/post/b89aefee-c94f-450d-bf95-0dd18257a1f9/image.png" width="320px" />
 
 정사각형이 그려졌다.
 

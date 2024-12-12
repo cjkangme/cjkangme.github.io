@@ -14,7 +14,7 @@ image: /assets/posts/2023-10-30-threejs-scene-graph/thumbnail.png
 
 ## Scene Graph(씬 그래프)란
 
-<img src="https://velog.velcdn.com/images/cjkangme/post/26f2079a-5df7-4255-84e3-d31919976691/image.png" width = "480px"/>
+<img alt="img" src="https://velog.velcdn.com/images/cjkangme/post/26f2079a-5df7-4255-84e3-d31919976691/image.png" width = "480px"/>
 <small>출처 : Example scene graph structure in glTF (https://github.khronos.org/)</small>
 
 Scene Graph는 복잡한 3차원 객체(scene)를 그려내기 위해 계층 구조로 Object 3D(Mesh, Line, Points 등)를 쌓아 구성하는 방법이다.
