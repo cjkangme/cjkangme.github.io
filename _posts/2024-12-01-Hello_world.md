@@ -10,7 +10,7 @@ comments: false
 그 동안에는 velog에 기술 블로그 포스팅을 하였는데요.
 이번에 깃허브 블로그를 개설하게 되었습니다.
 
-![스팸 문자들](/assets/img/posts/2024-12-01-Hello_world/img.png)
+![스팸 문자들](/assets/posts/2024-12-01-Hello_world/img.png)
 
 보시다시피 최근 velog에 스팸이 엄청 늘어났습니다. <br/>
 또 최근에는 많이 고쳐졌지만 매번 자잘한 버그로 인해 이용에 불편함을 겪기도 했구요.
