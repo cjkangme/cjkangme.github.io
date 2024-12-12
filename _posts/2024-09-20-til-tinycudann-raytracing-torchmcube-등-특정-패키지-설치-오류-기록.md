@@ -6,11 +6,11 @@ date: 2024-09-20 05:44:59.149 +0000
 categories: [TIL]
 tags: []
 description: 패키지 설치부터 어려워..
-image: /assets/img/posts/2024-09-20-til-tinycudann-raytracing-torchmcube-등-특정-패키지-설치-오류-기록/thumbnail.png
+image: /assets/posts/2024-09-20-til-tinycudann-raytracing-torchmcube-등-특정-패키지-설치-오류-기록/thumbnail.png
 
 ---
 
-![](/assets/img/posts/2024-09-20-til-tinycudann-raytracing-torchmcube-등-특정-패키지-설치-오류-기록/img0.png)
+![](/assets/posts/2024-09-20-til-tinycudann-raytracing-torchmcube-등-특정-패키지-설치-오류-기록/img0.png)
 
 오픈소스 코드를 쓰려고 하다보면 이렇게 clone을 해서 패키지를 설치해야 하는 경우가 많은데
 생각없이 클론 후 `pip install`을 하면 바로 빌드 과정에서 오류가 나는 경우가 많다.
@@ -57,7 +57,7 @@ ERROR: Could not build wheels for raytracing, which is required to install pypro
 
 이렇게 오류 메세지에서 키워드를 찾아서 issue에 검색해보고, 없다면 그 다음으로 구글에 검색해보는 것이 좋다.
 
-![](/assets/img/posts/2024-09-20-til-tinycudann-raytracing-torchmcube-등-특정-패키지-설치-오류-기록/img1.png)
+![](/assets/posts/2024-09-20-til-tinycudann-raytracing-torchmcube-등-특정-패키지-설치-오류-기록/img1.png)
 
 이번 경우에는 비슷한 문제를 겪는 사람들이 많았고, issue에서 해결책을 찾을 수 있었다.
 

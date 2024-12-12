@@ -18,7 +18,7 @@ controlnet고 ip_adapter 로드 역시 이러한 경우에 속하기 때문에 �
 
 # ControlNet
 
-![](/assets/img/posts/2024-11-11-til-diffusers-sdxl-파이프라인에-ip_adapter-controlnet-로드하기/img0.png)
+![](/assets/posts/2024-11-11-til-diffusers-sdxl-파이프라인에-ip_adapter-controlnet-로드하기/img0.png)
 
 일반적으로 SDXL controlnet은 이렇게 safetensors 단일 파일만 존재하는 경우가 많습니다.
 AUTOMATIC1111 또는 ComfyUI에서는 단일 파일로 곧바로 사용할 수 있지만, diffusers에서 사용하려면 모델의 구조에 대한 정보를 담고 있는 `config.json`이 필요합니다.
@@ -35,7 +35,7 @@ model_name
 이런 형식으로 파일을 구성하면 된다.
 
 ### config.json 구성
-![](/assets/img/posts/2024-11-11-til-diffusers-sdxl-파이프라인에-ip_adapter-controlnet-로드하기/img1.png)
+![](/assets/posts/2024-11-11-til-diffusers-sdxl-파이프라인에-ip_adapter-controlnet-로드하기/img1.png)
 
 ControlNet은 original unet의 인코더 블록을 복제하여 사용하는데, 블록의 일부만 복제하여 효율성을 높인 버전도 있습니다.
 

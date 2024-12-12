@@ -6,7 +6,7 @@ date: 2024-04-11 07:57:53.487 +0000
 categories: [cs231a]
 tags: ['cv', 'cs231a']
 description: 스탠포드 3D CV 강의 CS231A 내용을 이해하는 것을 목표로 정리해보는 글
-image: /assets/img/posts/2024-04-11-cs231a-강의-노트-4-stereo-systems/thumbnail.png
+image: /assets/posts/2024-04-11-cs231a-강의-노트-4-stereo-systems/thumbnail.png
 math: true
 ---
 
@@ -16,7 +16,7 @@ math: true
 이번 강의 노트에서는 이를 이용해 여러 장의 2D 이미지로부터 3D 정보를 복원하는 방법에 대해 다루고 있다.
 
 # 2. Triangulation (삼각측량)
-![](/assets/img/posts/2024-04-11-cs231a-강의-노트-4-stereo-systems/img0.png)
+![](/assets/posts/2024-04-11-cs231a-강의-노트-4-stereo-systems/img0.png)
 
 multiple view geometry에서 가장 기본적인 문제는 바로 triangulation(삼각측량)이다.
 삼각측량은 말 그대로 동일한 3D point($$ P $$)가 투영된 2장 이상의 이미지로부터 실제 $$ P $$의 위치를 복원하는 것이다.
@@ -40,13 +40,13 @@ $$ p' = M'P' = (x', y' 1) $$
 
 $$ p \times (MP) = [y(M_3P) - M_2P, M_1P - x(M_3P), x(M_2P) - y(M_1P)] = 0 $$
 
-![](/assets/img/posts/2024-04-11-cs231a-강의-노트-4-stereo-systems/img1.png)
+![](/assets/posts/2024-04-11-cs231a-강의-노트-4-stereo-systems/img1.png)
 
 > 참고 - [Cross_product#Computing](https://en.wikipedia.org/wiki/Cross_product#Computing)
 
 위 제약식을 이용하여 $$ AP = 0 $$으로 만드는 어떠한 변환 행렬 $$ A $$를 다음과 같이 정의할 수 있다.
 
-![](/assets/img/posts/2024-04-11-cs231a-강의-노트-4-stereo-systems/img2.png)
+![](/assets/posts/2024-04-11-cs231a-강의-노트-4-stereo-systems/img2.png)
 
 식 2.2는 두 카메라의 변환 행렬($$ M, M' $$)과 투영된 점의 위치($$ p, p' $$)만으로 A를 구할 수 있음을 나타내며,
 이후로는 SVD를 통해 $$ AP=0 $$이 되도록하는 최적의 $$ P $$를 찾는 linear estimate 문제를 통해 $$ P $$ 정보를 복원할 수 있다.
@@ -63,7 +63,7 @@ SVD에서는 $$ \|P\| = 1 $$이 되어야 하는데, P의 scale이 투영 변환
 
 ## 2.2 A nonlinear method for triangulation
 
-![](/assets/img/posts/2024-04-11-cs231a-강의-노트-4-stereo-systems/img3.png)![](/assets/img/posts/2024-04-11-cs231a-강의-노트-4-stereo-systems/img4.png)
+![](/assets/posts/2024-04-11-cs231a-강의-노트-4-stereo-systems/img3.png)![](/assets/posts/2024-04-11-cs231a-강의-노트-4-stereo-systems/img4.png)
 
 
 최적의 $$ \hat{P} $$를 찾는 문제를 다시 정의해보면, $$ \hat{P} $$를 이미지 평면에 재투영했을 때 $$ p, p' $$와의 거리(**reprojection error**)를 최소화하는 문제로 볼 수 있다. (식 2.3)
@@ -74,7 +74,7 @@ SVD에서는 $$ \|P\| = 1 $$이 되어야 하는데, P의 scale이 투영 변환
 
 일반적인 $$ x \in \mathbb{R}^n $$에 대한 nonlinear least squares problem은 다음과 같이 나타낼 수 있다.
 
-![](/assets/img/posts/2024-04-11-cs231a-강의-노트-4-stereo-systems/img5.png)
+![](/assets/posts/2024-04-11-cs231a-강의-노트-4-stereo-systems/img5.png)
 
 $$ r $$은 $$ r(x) = f(x) - y $$ input $$ x $$를 사용한 function $$ f $$와, 관측값 $$ y $$와의 잔차를 계산하는 residual function이다.
 
@@ -84,7 +84,7 @@ $$ r $$은 $$ r(x) = f(x) - y $$ input $$ x $$를 사용한 function $$ f $$와,
 
 이러한 문제를 해결하기 위해 2 x 1 크기의 벡터 $$ e_i = M\hat{P}_i - p_i = (\hat{x}-x, \hat{y} - y)^T $$ 를 적용하여 최적화 문제를 다음과 같이 변경하여 나타낼 수 있다.
 
-![](/assets/img/posts/2024-04-11-cs231a-강의-노트-4-stereo-systems/img6.png)
+![](/assets/posts/2024-04-11-cs231a-강의-노트-4-stereo-systems/img6.png)
 
 위 식 2.6이 최적의 3d point $$ \hat{P} $$를 찾기 위한 least squares problem을 완벽히 나타낸 표현이다.
 
@@ -96,7 +96,7 @@ Gauss-Newton 알고리즘은 현재의 예측값($$ \hat{P} $$)의 에러를 최
 
 이 문제의 경우 오차를 미분하여 오차의 변화율을 구하는 것을 통해 오차를 선형적으로 근사하는 단계를 적용할 수 있다.
 
-![](/assets/img/posts/2024-04-11-cs231a-강의-노트-4-stereo-systems/img7.png)
+![](/assets/posts/2024-04-11-cs231a-강의-노트-4-stereo-systems/img7.png)
 
 위 식을 통해 업데이트가 된 예측치의 오차를, 기존 예측치의 오차와 오차의 변화율 $$ \times $$ 변화량의 합으로 근사하였다.
 
@@ -104,13 +104,13 @@ Gauss-Newton 알고리즘은 현재의 예측값($$ \hat{P} $$)의 에러를 최
 
 $$ \underset{\delta_P}{min} \| e(\hat{P} + \delta_P) \| $$ 
 
-↓![](/assets/img/posts/2024-04-11-cs231a-강의-노트-4-stereo-systems/img8.png)
+↓![](/assets/posts/2024-04-11-cs231a-강의-노트-4-stereo-systems/img8.png)
 
 이렇게 잔차를 정의하는 것을 통해 standard linear least squeares problem으로 문제를 표현할 수 있다.
 
 N개의 이미지에 대해, linear least squares solution은 다음과 같다.
 
-![](/assets/img/posts/2024-04-11-cs231a-강의-노트-4-stereo-systems/img9.png)
+![](/assets/posts/2024-04-11-cs231a-강의-노트-4-stereo-systems/img9.png)
 
 > 사실 이부분을 전혀 이해하지 못했다..
 > Gauss-Newton Method에 대한 내용이라 이 부분은 별도로 공부하도록 하자.

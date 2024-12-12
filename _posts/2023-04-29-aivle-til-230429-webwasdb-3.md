@@ -6,13 +6,13 @@ date: 2023-04-29 14:45:48.306 +0000
 categories: [에이블스쿨]
 tags: ['aivle']
 description: Flask 다루어보기
-image: /assets/img/posts/2023-04-29-aivle-til-230429-webwasdb-3/thumbnail.png
+image: /assets/posts/2023-04-29-aivle-til-230429-webwasdb-3/thumbnail.png
 
 ---
 
 # 웹 호스팅
 
-![](/assets/img/posts/2023-04-29-aivle-til-230429-webwasdb-3/img0.png)
+![](/assets/posts/2023-04-29-aivle-til-230429-webwasdb-3/img0.png)
 
 이번 과정을 통해 진행한 웹 호스팅의 모든 단계를 요약하자면 다음과 같다.
 

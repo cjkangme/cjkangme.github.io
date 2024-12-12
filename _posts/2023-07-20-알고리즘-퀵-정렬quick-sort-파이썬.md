@@ -6,7 +6,7 @@ date: 2023-07-20 12:28:12.850 +0000
 categories: [Algorithm]
 tags: ['백준', '알고리즘', '정렬']
 description: 백준 안테나 문제풀이와 함께 알아보는 퀵 정렬
-image: /assets/img/posts/2023-07-20-알고리즘-퀵-정렬quick-sort-파이썬/thumbnail.png
+image: /assets/posts/2023-07-20-알고리즘-퀵-정렬quick-sort-파이썬/thumbnail.png
 
 ---
 
@@ -32,14 +32,14 @@ image: /assets/img/posts/2023-07-20-알고리즘-퀵-정렬quick-sort-파이썬/
 
 #### 1. pivot 선정
 
-![](/assets/img/posts/2023-07-20-알고리즘-퀵-정렬quick-sort-파이썬/img0.png)
+![](/assets/posts/2023-07-20-알고리즘-퀵-정렬quick-sort-파이썬/img0.png)
 
 배열에서 pivot이 될 값을 선정한다.
 아무 값이나 선정해도 상관 없지만, 보통 `(left + right) // 2`나 제일 왼쪽값, 오른쪽 값을 선정한다.
 
 #### 2. 교환할 값 찾기
 
-![](/assets/img/posts/2023-07-20-알고리즘-퀵-정렬quick-sort-파이썬/img1.png)
+![](/assets/posts/2023-07-20-알고리즘-퀵-정렬quick-sort-파이썬/img1.png)
 
 이제 pivot을 중심으로 교환할 값을 찾아야 한다.
 
@@ -50,19 +50,19 @@ image: /assets/img/posts/2023-07-20-알고리즘-퀵-정렬quick-sort-파이썬/
 
 #### 3. 교환하기
 
-![](/assets/img/posts/2023-07-20-알고리즘-퀵-정렬quick-sort-파이썬/img2.png)
+![](/assets/posts/2023-07-20-알고리즘-퀵-정렬quick-sort-파이썬/img2.png)
 
 - left는 2, 5, 6 순으로 탐색하다가 pivot과 같은 값을 만나서 정지했다.
 - right의 4가 이미 pivot보다 작은 값이기 때문에 더 이상의 탐색 없이 정지했다.
 
-![](/assets/img/posts/2023-07-20-알고리즘-퀵-정렬quick-sort-파이썬/img3.png)
+![](/assets/posts/2023-07-20-알고리즘-퀵-정렬quick-sort-파이썬/img3.png)
 
 이제 left와 right를 교환하면 된다.
 두 값을 교환했으므로 left, right를 각각 전진시킨다.
 
 #### 4. left, right가 역전될 때까지 반복
 
-![](/assets/img/posts/2023-07-20-알고리즘-퀵-정렬quick-sort-파이썬/img4.png)
+![](/assets/posts/2023-07-20-알고리즘-퀵-정렬quick-sort-파이썬/img4.png)
 
 `left > right`가 될 때까지 1 ~ 3의 과정을 반복한다.
 
@@ -70,7 +70,7 @@ image: /assets/img/posts/2023-07-20-알고리즘-퀵-정렬quick-sort-파이썬/
 
 #### 5. pivot을 기준으로 재귀적 탐색
 
-![](/assets/img/posts/2023-07-20-알고리즘-퀵-정렬quick-sort-파이썬/img5.png)
+![](/assets/posts/2023-07-20-알고리즘-퀵-정렬quick-sort-파이썬/img5.png)
 
 보라색 테두리가 다음에 탐색할 범위이다.
 
@@ -91,7 +91,7 @@ if left < R:
 
 #### 6. 반복
 
-![](/assets/img/posts/2023-07-20-알고리즘-퀵-정렬quick-sort-파이썬/img6.png)
+![](/assets/posts/2023-07-20-알고리즘-퀵-정렬quick-sort-파이썬/img6.png)
 
 같은 과정을 반복했을 때 탐색범위(보라색)과 pivot(빨간색)은 위와 같다.
 
@@ -101,7 +101,7 @@ if left < R:
 
 전형적인 정렬문제인 18310. 안테나를 준비하였다.
 
-![](/assets/img/posts/2023-07-20-알고리즘-퀵-정렬quick-sort-파이썬/img7.png)
+![](/assets/posts/2023-07-20-알고리즘-퀵-정렬quick-sort-파이썬/img7.png)
 
 문제를 쉽게 설명하면 N개 집의 위치를 정렬했을 때 `(N-1)//2` 번째 집의 위치가 곧 정답이 되는 문제이다.
 

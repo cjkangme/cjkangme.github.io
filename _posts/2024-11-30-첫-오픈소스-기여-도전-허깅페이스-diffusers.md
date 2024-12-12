@@ -6,7 +6,7 @@
         categories: [etc]
         tags: []
         description: 2년째 해보고 싶다고 생각만 한 오픈소스 기여를 진짜로 해보자
-        image: /assets/img/posts/2024-11-30-첫-오픈소스-기여-도전-허깅페이스-diffusers/thumbnail.png
+        image: /assets/posts/2024-11-30-첫-오픈소스-기여-도전-허깅페이스-diffusers/thumbnail.png
         
         ---
 
@@ -83,7 +83,7 @@ n_prompts = negative_prompt if isinstance(prompt, list) else [negative_prompt]
 결국 해당 부분을 수정해도 문제가 없다는 판단이 되어 수정하였습니다.
 
 ### 3. 일부 기능 미구현
-![](/assets/img/posts/2024-11-30-첫-오픈소스-기여-도전-허깅페이스-diffusers/img0.png)
+![](/assets/posts/2024-11-30-첫-오픈소스-기여-도전-허깅페이스-diffusers/img0.png)
 
 원본 regional prompter에서는 Base prompt라는 기능이 있는데요 커뮤니티 파이프라인에서는 해당 기능의 구현이 생략되어 있었습니다.
 
@@ -97,12 +97,12 @@ n_prompts = negative_prompt if isinstance(prompt, list) else [negative_prompt]
 
 하지만 제가 수정한 부분이 너무 미미한 것이 아닌가 걱정이 되어 기존의 기여 내역을 살펴 보았습니다.
 
-![](/assets/img/posts/2024-11-30-첫-오픈소스-기여-도전-허깅페이스-diffusers/img1.png)
+![](/assets/posts/2024-11-30-첫-오픈소스-기여-도전-허깅페이스-diffusers/img1.png)
 
 무려 regional prompter를 처음 개발하신 분이 기여를 해주셨네요!
 변경 내역은 별로 많지 않습니다. 어떤 것을 수정하신 걸까요?
 
-![](/assets/img/posts/2024-11-30-첫-오픈소스-기여-도전-허깅페이스-diffusers/img2.png)
+![](/assets/posts/2024-11-30-첫-오픈소스-기여-도전-허깅페이스-diffusers/img2.png)
 
 확인해보니 코드 가독성을 위해 일부 변수 이름을 변경하고, 코드를 조금 더 직관적으로 변경한 내용이었습니다.
 
@@ -112,7 +112,7 @@ n_prompts = negative_prompt if isinstance(prompt, list) else [negative_prompt]
 ### PR 작성하기
 이런 오픈소스 라이브러리에 PR을 작성하는 것은 처음이라 긴장이 많이 되었는데요. 최대한 기존의 커뮤니티 파이프라인 PR을 많이 참조해서 작성했습니다.
 
-![](/assets/img/posts/2024-11-30-첫-오픈소스-기여-도전-허깅페이스-diffusers/img3.png)
+![](/assets/posts/2024-11-30-첫-오픈소스-기여-도전-허깅페이스-diffusers/img3.png)
 
 - 간단한 인사 & PR 취지 소개
 - 변경점 요약
@@ -120,13 +120,13 @@ n_prompts = negative_prompt if isinstance(prompt, list) else [negative_prompt]
 
 영어는 젬병이라.. DeepL 번역기와 Claude의 도움을 많이 받았습니다. 한글로 작성한 것을 DeepL로 한번 번역하고 적당히 수정한 다음, Claude에게 자연스러운 문장인지 검토를 요청하는 식으로요.
 
-![](/assets/img/posts/2024-11-30-첫-오픈소스-기여-도전-허깅페이스-diffusers/img4.png)![](/assets/img/posts/2024-11-30-첫-오픈소스-기여-도전-허깅페이스-diffusers/img5.png)
+![](/assets/posts/2024-11-30-첫-오픈소스-기여-도전-허깅페이스-diffusers/img4.png)![](/assets/posts/2024-11-30-첫-오픈소스-기여-도전-허깅페이스-diffusers/img5.png)
 
 저는 제가 코드를 엉망으로 짰을까에 대한 걱정을 더 많이 했는데요, 리뷰어 분께서 주로 요청&지적한 부분은 바로 문서화였습니다.
 
 이건 제가 놓쳤던 부분인데, diffusers를 비롯한 많은 오픈소스 라이브러리가 문서화를 중요하게 생각하고 있다는 것을 알 수 있었습니다. 라이브러리를 처음 접하는 신규 사용자가 사용법을 알기 위해 가장 먼저 확인하는 것이 공식 문서와 examples이기 때문에 기능이 추가되면 반드시 문서화를 해야한다고 하네요.
 ### 문서화 (README 작성)
-![](/assets/img/posts/2024-11-30-첫-오픈소스-기여-도전-허깅페이스-diffusers/img6.png)![](/assets/img/posts/2024-11-30-첫-오픈소스-기여-도전-허깅페이스-diffusers/img7.png)
+![](/assets/posts/2024-11-30-첫-오픈소스-기여-도전-허깅페이스-diffusers/img6.png)![](/assets/posts/2024-11-30-첫-오픈소스-기여-도전-허깅페이스-diffusers/img7.png)
 
 PR을 작성할 때와 마찬가지로 번역기와 AI의 도움을 받아서 작성했습니다.
 다행히 이미 Regional Prompting 파이프라인과 관련되어 문서화가 되어있었기 때문에 추가된 기능에 대해서만 추가하였습니다. 이런게 문서화의 중요성인가 봅니다.
@@ -136,7 +136,7 @@ PR을 작성할 때와 마찬가지로 번역기와 AI의 도움을 받아서 �
 마지막으로 받은 요청 사항이 `make style` 명령어를 이용해서 코드 스타일 포맷팅을 수행한 뒤 다시 push하라는 것이었는데요.
 처음엔 사용법을 몰라서 당황했는데 `make`를 설치한 후, 라이브러리의 루트 디렉토리에서 설정값을 가져와 포맷팅을 수행할 파일 디렉토리를 지정하면 되는거였습니다.
 # PR merge
-![](/assets/img/posts/2024-11-30-첫-오픈소스-기여-도전-허깅페이스-diffusers/img8.png)
+![](/assets/posts/2024-11-30-첫-오픈소스-기여-도전-허깅페이스-diffusers/img8.png)
 
 얼마전 드디어 머지가 이루어졌고, 깃허브에서 오픈소스 기여 뱃지도 받을 수 있었습니다.
 

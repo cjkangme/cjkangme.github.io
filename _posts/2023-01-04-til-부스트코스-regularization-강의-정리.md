@@ -6,7 +6,7 @@ date: 2023-01-04 09:39:01.937 +0000
 categories: [부스트코스]
 tags: ['프리코스']
 description: 강의 주소 : https&#x3A;//www.boostcourse.org/ai111/lecture/1162943학습을 방해하는 패널티를 부여하는 것을 통해, 모델이 test data에 대해서도 잘 동작하게 하는 방법론이다.Generalization Performance
-image: /assets/img/posts/2023-01-04-til-부스트코스-regularization-강의-정리/thumbnail.png
+image: /assets/posts/2023-01-04-til-부스트코스-regularization-강의-정리/thumbnail.png
 
 ---
 
@@ -52,7 +52,7 @@ image: /assets/img/posts/2023-01-04-til-부스트코스-regularization-강의-�
 
 - 이미지 데이터를 cutmix하는 방법의 예는 다음과같다.
 
-![](/assets/img/posts/2023-01-04-til-부스트코스-regularization-강의-정리/img0.png)
+![](/assets/posts/2023-01-04-til-부스트코스-regularization-강의-정리/img0.png)
 
 > [CutMix: Regularization Strategy to Train Strong Classifiers with Localizable Features - ICCV 2019  ·  Sangdoo Yun, Dongyoon Han, Seong Joon Oh, Sanghyuk Chun, Junsuk Choe, Youngjoon Yoo](https://paperswithcode.com/paper/cutmix-regularization-strategy-to-train)
 

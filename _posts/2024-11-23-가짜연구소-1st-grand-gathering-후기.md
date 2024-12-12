@@ -6,7 +6,7 @@ date: 2024-11-23 11:11:29.033 +0000
 categories: [conference]
 tags: ['ai', '가짜연구소', '컨퍼런스']
 description: 고봉밥 후기
-image: /assets/img/posts/2024-11-23-가짜연구소-1st-grand-gathering-후기/thumbnail.png
+image: /assets/posts/2024-11-23-가짜연구소-1st-grand-gathering-후기/thumbnail.png
 
 ---
 
@@ -14,7 +14,7 @@ image: /assets/img/posts/2024-11-23-가짜연구소-1st-grand-gathering-후기/t
 
 올해 3월 AI에 대해 아직 아무것도 잘 모를때 가짜연구소 8기 러너로 시작하여 현재는 9기 러너로 참여하고 있습니다. 8기 때 Pseudo-con에 참석하여 많은 인사이트를 얻기도 하였고, 최근 여러모로 동기부여를 받을 기회를 접하고 싶어서 참여 신청 링크가 열리자마자 신청하게 되었습니다.
 
-![](/assets/img/posts/2024-11-23-가짜연구소-1st-grand-gathering-후기/img0.png)
+![](/assets/posts/2024-11-23-가짜연구소-1st-grand-gathering-후기/img0.png)
 
 # 토크 세션
 오후 1시부터 약 1시간 반동안 진행된 오프닝 토크 세션입니다. 주로 AI에 대한 인사이트와 성장에 대한 모티베이션을 주제로 진행되었습니다.
@@ -56,7 +56,7 @@ image: /assets/img/posts/2024-11-23-가짜연구소-1st-grand-gathering-후기/t
 
 # Demo Booth
 
-![](/assets/img/posts/2024-11-23-가짜연구소-1st-grand-gathering-후기/img1.png)
+![](/assets/posts/2024-11-23-가짜연구소-1st-grand-gathering-후기/img1.png)
 
 
 가짜연구소에서 올해 하반기에 진행한 연구, 스터디, 프로젝트를 공유하고 교류하는 자리였습니다. 아무래도 자유롭게 돌아다니다 보니 온라인에서만 뵈었던 분들을 많이 만나서 교류할 수 있었고, 컴퓨터 비전 외에 다양한 분야의 AI 연구를 접할 수 있는 좋은 기회였습니다.
@@ -70,7 +70,7 @@ image: /assets/img/posts/2024-11-23-가짜연구소-1st-grand-gathering-후기/t
 
 # 마무리
 
-![](/assets/img/posts/2024-11-23-가짜연구소-1st-grand-gathering-후기/img2.png)
+![](/assets/posts/2024-11-23-가짜연구소-1st-grand-gathering-후기/img2.png)
 
 원래 최대한 짧게 정리하려했는데 적다보니 굉장히 길게 적게된 것 같습니다.
 그만큼 짧은 시간동안 많은 인사이트와 동기부여를 얻어갈 수 있었네요. 

@@ -6,7 +6,7 @@ date: 2023-10-29 12:21:06.007 +0000
 categories: [three-js]
 tags: ['three.js']
 description: three.js가 제공하는 다양한 geometry에 대해 알아보자
-image: /assets/img/posts/2023-10-29-threejs-geometry-종류/thumbnail.png
+image: /assets/posts/2023-10-29-threejs-geometry-종류/thumbnail.png
 
 ---
 

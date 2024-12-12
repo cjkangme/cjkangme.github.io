@@ -6,7 +6,7 @@ date: 2024-03-16 06:54:57.975 +0000
 categories: [cs231a]
 tags: ['cv', 'cs231a']
 description: 사실 반도 이해 못한거 같은데..
-image: /assets/img/posts/2024-03-16-cs231a-강의-노트-3-epipolar-geometry-1/thumbnail.png
+image: /assets/posts/2024-03-16-cs231a-강의-노트-3-epipolar-geometry-1/thumbnail.png
 math: true
 ---
 
@@ -14,14 +14,14 @@ math: true
 이전 강의 노트에서는 하나의 Scene에 대한 하나 이상의 이미지들로부터 Scene에 대한 특징 정보를 유도할 수 있었다.
 하지만 3D Scene에서 2D Image로 맵핑하는 과정에서 특징 정보가 손실될수밖에 없다.
 
-![](/assets/img/posts/2024-03-16-cs231a-강의-노트-3-epipolar-geometry-1/img0.png)
+![](/assets/posts/2024-03-16-cs231a-강의-노트-3-epipolar-geometry-1/img0.png)
 
 대표적으로 위 사진에서 우리는 직관적으로 피사의 사탑이 사람보다 훨씬 뒤에 있다(depth가 깊다)라는 것을 알 수 있지만, 사전 지식이 없다고 할 때, 여기서 피사의 사탑과 인물의 depth 차이와 같은 geometry 정보를 복원할 수 없다.
 
 이러한 geometry 정보를 얻기 위해 **Epipolar geometry**를 알아보자
 
 # 2. Epipolar Geometry
-![](/assets/img/posts/2024-03-16-cs231a-강의-노트-3-epipolar-geometry-1/img1.png)
+![](/assets/posts/2024-03-16-cs231a-강의-노트-3-epipolar-geometry-1/img1.png)
 
 Epipolar Geometry는 하나의 대상를 서로 다른 두 위치의 카메라에서 투영한 이미지 평면에 대한 geometry이다.
 
@@ -45,13 +45,13 @@ Epipolar Geometry는 하나의 대상를 서로 다른 두 위치의 카메라�
 
 이 때 두 카메라의 정보를 담은 projection matrix($$ M, M' $$)는 다음과 같이 정의할 수 있다.
 
-![](/assets/img/posts/2024-03-16-cs231a-강의-노트-3-epipolar-geometry-1/img2.png)
+![](/assets/posts/2024-03-16-cs231a-강의-노트-3-epipolar-geometry-1/img2.png)
 
 문제를 단순하게 하기 위해서 두 카메라가 canonical camera라고 가정하자.
 canonical camera란 카메라의 intrinsic matrix가 표준화된, 즉 항등 행렬인 카메라를 말한다.
 그러면 $$ K = K' = I $$가 되어 식을 다음과 같이 단순화 할 수 있다.
 
-![](/assets/img/posts/2024-03-16-cs231a-강의-노트-3-epipolar-geometry-1/img3.png)
+![](/assets/posts/2024-03-16-cs231a-강의-노트-3-epipolar-geometry-1/img3.png)
 
 이 경우 $$ p = Rp' + T $$가 된다.
 또한 $$ T $$역시 카메라 변환 벡터이므로 두 점 $$ Rp' + T, T $$는 모두 epipolar line위에 존재한다.
@@ -62,15 +62,15 @@ canonical camera란 카메라의 intrinsic matrix가 표준화된, 즉 항등 �
 
 epipolar line 위의 점 p와 normal vector를 내적하면 영벡터가 되기 때문에 최종적으로 다음과 같이 표현할 수 있다.
 
-![](/assets/img/posts/2024-03-16-cs231a-강의-노트-3-epipolar-geometry-1/img4.png)
+![](/assets/posts/2024-03-16-cs231a-강의-노트-3-epipolar-geometry-1/img4.png)
 
 선형 대수에서 벡터간의 벡터곱은 다음과 같이 미분가능한 행렬-벡터간 곱셈으로 나타낼 수 있다.
 
-![](/assets/img/posts/2024-03-16-cs231a-강의-노트-3-epipolar-geometry-1/img5.png)
+![](/assets/posts/2024-03-16-cs231a-강의-노트-3-epipolar-geometry-1/img5.png)
 
 이를 이용하여 앞서 구한 3번식을 다음과 같은 행렬곱으로 표현할 수 있다.
 
-![](/assets/img/posts/2024-03-16-cs231a-강의-노트-3-epipolar-geometry-1/img6.png)
+![](/assets/posts/2024-03-16-cs231a-강의-노트-3-epipolar-geometry-1/img6.png)
 
 여기서 구한 $$ E=[T_{\times}]R $$ 3x3 행렬을 **Essential Matrix**라고 한다.
 

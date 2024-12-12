@@ -6,7 +6,7 @@ date: 2024-01-17 11:07:03.829 +0000
 categories: [TIL]
 tags: ['ai', 'til']
 description: 모르는 인공지능 개념 정리하기
-image: /assets/img/posts/2024-01-17-gangenerative-adversarial-networks-개념-정리/thumbnail.png
+image: /assets/posts/2024-01-17-gangenerative-adversarial-networks-개념-정리/thumbnail.png
 
 ---
 
@@ -28,11 +28,11 @@ GAN(Generative Adversarial Networks)은 생성 AI 모델의 한 종류로, '적�
 
 위에서 설명한 GAN의 구조를 간단히 그림으로 나타내면 다음과 같다.
 
-![](/assets/img/posts/2024-01-17-gangenerative-adversarial-networks-개념-정리/img0.png)
+![](/assets/posts/2024-01-17-gangenerative-adversarial-networks-개념-정리/img0.png)
 
 이를 수학적으로 나타내면 다음과 같은 수식을 풀게된다.
 
-![](/assets/img/posts/2024-01-17-gangenerative-adversarial-networks-개념-정리/img1.png)
+![](/assets/posts/2024-01-17-gangenerative-adversarial-networks-개념-정리/img1.png)
 
 - `D`가 discriminator, `G`가 Generator를 의미한다.
 - `x`는 실제 데이터를 의미하고, `z`는 노이즈를 의미한다.

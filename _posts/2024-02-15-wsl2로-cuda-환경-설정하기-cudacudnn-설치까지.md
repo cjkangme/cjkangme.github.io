@@ -40,7 +40,7 @@ Window 10, 11의 특정 빌드 이상을 요구하므로 되도록 **윈도우�
 
 ### 1. WSL 사용 설정 켜기
 
-![](/assets/img/posts/2024-02-15-wsl2로-cuda-환경-설정하기-cudacudnn-설치까지/img0.png)
+![](/assets/posts/2024-02-15-wsl2로-cuda-환경-설정하기-cudacudnn-설치까지/img0.png)
 
 검색창 → Windows 기능 켜기/끄기에서,
 
@@ -130,7 +130,7 @@ $ sudo apt install build-essential
 
 먼저 처음으로 설치할 CUDA Toolkit은 설치 가이드를 그대로 따르면 된다.
 
-![](/assets/img/posts/2024-02-15-wsl2로-cuda-환경-설정하기-cudacudnn-설치까지/img1.png)
+![](/assets/posts/2024-02-15-wsl2로-cuda-환경-설정하기-cudacudnn-설치까지/img1.png)
 
 ```shell
 $ wget https://developer.download.nvidia.com/compute/cuda/12.1.0/local_installers/cuda_12.1.0_530.30.02_linux.run
@@ -172,7 +172,7 @@ cuda-12.1
 [cuDNN 다운로드 페이지](https://developer.nvidia.com/cudnn-downloads)에서 먼저 다운로드를 받을 수 있다.
 CUDA 11버전, 12버전과 호환되는 cuDNN이 각각 다르므로 모두 다운받아주어야 한다. ~~12.1 말고 11.8 받을걸...~~
 
-![](/assets/img/posts/2024-02-15-wsl2로-cuda-환경-설정하기-cudacudnn-설치까지/img2.png)
+![](/assets/posts/2024-02-15-wsl2로-cuda-환경-설정하기-cudacudnn-설치까지/img2.png)
 
 이 때 Ubuntu의 deb 파일 대신 tar.xz 형태의 Tarball 파일을 받도록 하자
 

@@ -6,7 +6,7 @@ date: 2023-08-15 15:04:50.849 +0000
 categories: [TIL]
 tags: ['javascript', 'til']
 description: 이고잉님의 생활코딩 강의로 알아보는 Execute context와 Closure
-image: /assets/img/posts/2023-08-15-til-execute-context-closure/thumbnail.png
+image: /assets/posts/2023-08-15-til-execute-context-closure/thumbnail.png
 
 ---
 
@@ -27,7 +27,7 @@ debugger를 이용해서 Execute context와 Scope 개념을 알아보자.
 자바스크립트에서 Scope는 변수에 접근할 수 있는 범위라고 한다.
 현재 문맥이 접근할 수 있는 데이터의 범위를 나타낸다.
 
-![](/assets/img/posts/2023-08-15-til-execute-context-closure/img0.png)
+![](/assets/posts/2023-08-15-til-execute-context-closure/img0.png)
 
 크롬 개발자 도구의 debugger 기능을 이용해 Scope를 쉽게 확인할 수 있다.
 이들이 어떻게 동작하는지는 차차 알아보자
@@ -41,7 +41,7 @@ debugger를 이용해서 Execute context와 Scope 개념을 알아보자.
 </script>
 ```
 
-![](/assets/img/posts/2023-08-15-til-execute-context-closure/img1.png)
+![](/assets/posts/2023-08-15-til-execute-context-closure/img1.png)
 
 - 먼저 위코드에서 break point를 걸어 `n0`, `v0`를 선언한 직후 멈춘 상태이다. 
 `n0`, `v0`를 선언 했음에도 Script Scope에 보이지 않는다.
@@ -55,7 +55,7 @@ debugger를 이용해서 Execute context와 Scope 개념을 알아보자.
   - 먼저 현재 실행 문맥인 Script Scope에서 `n0`를 찾고, 없을 경우 부모 Scope인 Global Scope로 넘어와 `n0`를 가져온다.
 
 
-![](/assets/img/posts/2023-08-15-til-execute-context-closure/img2.png)
+![](/assets/posts/2023-08-15-til-execute-context-closure/img2.png)
 
 
 - 반면 `let`, `const` 키워드로 선언한 `c0`, `l0` 변수는 Script Scope에 저장된다.
@@ -76,7 +76,7 @@ console.log(window.v0, window.n0, window.l0, window.c0);
 
 ## callstack
 
-![](/assets/img/posts/2023-08-15-til-execute-context-closure/img3.png)
+![](/assets/posts/2023-08-15-til-execute-context-closure/img3.png)
 
 - callstack은 함수 호출에 따라 쌓이는 스택을 말한다.
 - 여기서 `anonymous` 는 최초로 생긴 execute context로, 전역에서 접근할 수 있어 Global Excute Context라고 한다.
@@ -93,7 +93,7 @@ function fn1(){
 fn1();
 ```
 
-![](/assets/img/posts/2023-08-15-til-execute-context-closure/img4.png)
+![](/assets/posts/2023-08-15-til-execute-context-closure/img4.png)
 
 - `f1` 함수 내에서 `f2` 함수를 호출한 경우이다.
 
@@ -117,7 +117,7 @@ function fn1(){
 fn1();
 ```
 
-![](/assets/img/posts/2023-08-15-til-execute-context-closure/img5.png)
+![](/assets/posts/2023-08-15-til-execute-context-closure/img5.png)
 
 
 - `n1 = ‘n1’`
@@ -188,7 +188,7 @@ function fn1 () {
 fn1() // l1 l2
 ```
 
-![](/assets/img/posts/2023-08-15-til-execute-context-closure/img6.png)
+![](/assets/posts/2023-08-15-til-execute-context-closure/img6.png)
 
 - 이 코드의 경우 `fn2` 함수가 `fn1` 함수 내에서 선언이 되었다.
 - Scope를 살펴보면 `Closure (fn1)` 이라는 Scope가 생성되었고, `fn1` 함수의 Local Scope가 저장되어있는 것을 알 수 있다.

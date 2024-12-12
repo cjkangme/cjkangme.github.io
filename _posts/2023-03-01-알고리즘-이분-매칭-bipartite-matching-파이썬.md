@@ -6,7 +6,7 @@ date: 2023-03-01 09:26:46.437 +0000
 categories: [Algorithm]
 tags: ['aivle', 'til', '백준', '알고리즘', '이분매칭']
 description: 백준 문제 풀이와 함께 알아보는 이분 매칭 알고리즘 (1671. 상어의 저녁식사)
-image: /assets/img/posts/2023-03-01-알고리즘-이분-매칭-bipartite-matching-파이썬/thumbnail.png
+image: /assets/posts/2023-03-01-알고리즘-이분-매칭-bipartite-matching-파이썬/thumbnail.png
 
 ---
 
@@ -20,7 +20,7 @@ image: /assets/img/posts/2023-03-01-알고리즘-이분-매칭-bipartite-matchin
 
 # 이분 매칭
 
-![](/assets/img/posts/2023-03-01-알고리즘-이분-매칭-bipartite-matching-파이썬/img0.png)
+![](/assets/posts/2023-03-01-알고리즘-이분-매칭-bipartite-matching-파이썬/img0.png)
 
 - 위와 같은 이분 그래프에서 서로를 매칭시켜준다고 가정해보자.
 
@@ -42,7 +42,7 @@ image: /assets/img/posts/2023-03-01-알고리즘-이분-매칭-bipartite-matchin
 
 이분 매칭은 사실 네트워크 유량 알고리즘으로 설명할 수 있다.
 
-![](/assets/img/posts/2023-03-01-알고리즘-이분-매칭-bipartite-matching-파이썬/img1.png)
+![](/assets/posts/2023-03-01-알고리즘-이분-매칭-bipartite-matching-파이썬/img1.png)
 
 - 이분 그래프의 최대 매칭 수는 모든 간선 용량이 1일 때 source에서 sink로 흐르는 최대 유량을 구하는 것과 같다.
 
@@ -54,27 +54,27 @@ image: /assets/img/posts/2023-03-01-알고리즘-이분-매칭-bipartite-matchin
 
 ## 알고리즘 설명
 
-![](/assets/img/posts/2023-03-01-알고리즘-이분-매칭-bipartite-matching-파이썬/img2.png)
+![](/assets/posts/2023-03-01-알고리즘-이분-매칭-bipartite-matching-파이썬/img2.png)
 
 - 우선 한쪽 집합을 선택해서 모든 노드가 매칭상대를 찾도록 for loop를 돈다.
 
 - 1-5에서 5번 노드가 비어있으므로 그대로 연결할 수 있다.
 
-![](/assets/img/posts/2023-03-01-알고리즘-이분-매칭-bipartite-matching-파이썬/img3.png)
+![](/assets/posts/2023-03-01-알고리즘-이분-매칭-bipartite-matching-파이썬/img3.png)
 
 - 2-4도 연결할 수 있으므로 연결한다.
 
-![](/assets/img/posts/2023-03-01-알고리즘-이분-매칭-bipartite-matching-파이썬/img4.png)
+![](/assets/posts/2023-03-01-알고리즘-이분-매칭-bipartite-matching-파이썬/img4.png)
 
 - 3-5에서 충돌이 발생하였다.
 
 - 5번 노드에는 부모노드가 1번으로 저장되어 있으므로, 1번 노드에게 다른 매칭 상대를 찾을 것을 요청한다. (DFS로 1번 노드에 대해 재귀적 호출을 함)
 
-![](/assets/img/posts/2023-03-01-알고리즘-이분-매칭-bipartite-matching-파이썬/img5.png)
+![](/assets/posts/2023-03-01-알고리즘-이분-매칭-bipartite-matching-파이썬/img5.png)
 
 - 1-6이라는 다른 매칭이 있으므로, 매칭을 한 뒤 True를 retrun하여 다른 매칭을 했음을 알려준다.
 
-![](/assets/img/posts/2023-03-01-알고리즘-이분-매칭-bipartite-matching-파이썬/img6.png)
+![](/assets/posts/2023-03-01-알고리즘-이분-매칭-bipartite-matching-파이썬/img6.png)
 
 - 기존 1-5 매칭은 끊어지고, 3-5 매칭이 생성된다 (5번 노드의 부모가 3이 됨)
 

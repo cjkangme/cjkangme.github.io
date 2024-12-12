@@ -6,7 +6,7 @@ date: 2024-04-28 06:03:26.645 +0000
 categories: [TIL]
 tags: ['cv']
 description: text-to-3D 모델에 사용되는 SDS loss에 대해 알아보자
-image: /assets/img/posts/2024-04-28-til-sds-loss-score-distillation-sampling/thumbnail.png
+image: /assets/posts/2024-04-28-til-sds-loss-score-distillation-sampling/thumbnail.png
 math: true
 ---
 
@@ -22,14 +22,14 @@ latent diffusion model의 손실 함수를 수식으로 나타내면 다음과 �
 
 $$ L_{diff}(\phi, \mathbf{x}) = \mathbb{E}_{t\sim U(0, 1), \epsilon \sim N(\mathbf{0}, \mathbf{I})}\left [ w(t) \| \epsilon_{\phi}(\alpha_t \mathbf{X} + \sigma_t \epsilon ; t) - \epsilon \right  ]^2_2 $$
 
-![](/assets/img/posts/2024-04-28-til-sds-loss-score-distillation-sampling/img0.png)
+![](/assets/posts/2024-04-28-til-sds-loss-score-distillation-sampling/img0.png)
 
 단순하게 위 수식을 설명하자면 t 시점에서 실제로 더해진 노이즈와, denoise 모델이 예측한 노이즈의 Loss이다.
 $$ w(t) $$는 t 시점에 대한 가중치 함수이다.
 
 DreamFusion 논문에서는 추가로 텍스트 임베딩을 통한 컨디셔닝과, classifier-free guidence(CFG)를 적용하였다.
 
-![](/assets/img/posts/2024-04-28-til-sds-loss-score-distillation-sampling/img1.png)
+![](/assets/posts/2024-04-28-til-sds-loss-score-distillation-sampling/img1.png)
 
 이것 역시 간략히 설명하자면 텍스트 임베딩($$ y $$)을 통해 컨디셔닝된 모델, 컨디셔닝하지 않은 모델을 동시에 이용한다. scaling factor($$ w $$)가 0보다 크면 모델의 다양성은 감소하지만 더 좋은 품질의 sample을 얻을 수 있다고 한다.
 
@@ -48,13 +48,13 @@ NeRF를 diffusion model에 적용할 경우 diffusion model 파라미터는 고�
 
 이러한 이유를 알기 위해 손실 함수의 그라디언트 계산을 들여다 보면
 
-![Dreamfusion 논문 Eq.2](/assets/img/posts/2024-04-28-til-sds-loss-score-distillation-sampling/img2.png)
+![Dreamfusion 논문 Eq.2](/assets/posts/2024-04-28-til-sds-loss-score-distillation-sampling/img2.png)
 
 논문에 직접 설명되어있지 않지만, 추측컨대 이 경우 노이즈 예측 모델인 `U-Net`과 `3D generator`를 동시에 최적화하는 것이 되어, 결국 최적화가 잘 이루어지지 않는다고 볼 수 있을 것 같다.
 
 저자들은 U-Net 그라디언트를 계산하는 것은 많은 계산이 필요하고, 작은 노이즈에 대한 컨디셔닝이 좋지 않다고 보고, U-Net Jacobian 항을 아예 빼는 것으로써 효과적인 최적화를 수행하는 그라디언트를 얻을 수 있게 되었다고 한다.
 
-즉 `Eq. 2`에서 U-Net Jacobian을 제거한 수식이 바로 SDS(Score Distillation Sample) Loss이다. ![Dreamfusion 논문 Eq.3](/assets/img/posts/2024-04-28-til-sds-loss-score-distillation-sampling/img3.png) ![Dreamfusion 논문 Eq.4](/assets/img/posts/2024-04-28-til-sds-loss-score-distillation-sampling/img4.png)
+즉 `Eq. 2`에서 U-Net Jacobian을 제거한 수식이 바로 SDS(Score Distillation Sample) Loss이다. ![Dreamfusion 논문 Eq.3](/assets/posts/2024-04-28-til-sds-loss-score-distillation-sampling/img3.png) ![Dreamfusion 논문 Eq.4](/assets/posts/2024-04-28-til-sds-loss-score-distillation-sampling/img4.png)
 
 이 SDS Loss는 $$ w(t) $$ 선택에 대해 상대적으로 robust하며, diffusion model은 고정되어 있으므로 backpropagation시 diffusion model까지 계산할 필요가 없어 효율적으로 연산이 가능하다.
 
@@ -62,7 +62,7 @@ NeRF를 diffusion model에 적용할 경우 diffusion model 파라미터는 고�
 
 `Dreamfusion` 논문의 appendix에서 SDS loss 계산의 슈도코드를 제공한다.
 
-![](/assets/img/posts/2024-04-28-til-sds-loss-score-distillation-sampling/img5.png)
+![](/assets/posts/2024-04-28-til-sds-loss-score-distillation-sampling/img5.png)
 
 1. 균일하게 정의된 time step $$ t $$에 따라 노이즈를 결정하는 alpha_t, sigma_t 정의
 2. reparameterization trick을 위한 랜덤 노이즈 eps 생성

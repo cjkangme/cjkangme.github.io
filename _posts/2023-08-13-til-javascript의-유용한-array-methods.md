@@ -6,7 +6,7 @@ date: 2023-08-13 13:52:59.055 +0000
 categories: [TIL]
 tags: ['javascript', 'til']
 description: map, reduce, filter, some, every에 대해 알아보자
-image: /assets/img/posts/2023-08-13-til-javascript의-유용한-array-methods/thumbnail.png
+image: /assets/posts/2023-08-13-til-javascript의-유용한-array-methods/thumbnail.png
 math: true
 ---
 
@@ -27,7 +27,7 @@ const result = arr.map((num) => num * 2)
 console.log(result)
 ```
 
-![](/assets/img/posts/2023-08-13-til-javascript의-유용한-array-methods/img0.png)
+![](/assets/posts/2023-08-13-til-javascript의-유용한-array-methods/img0.png)
 
 
 - 객체에 대해서도 적용이 가능하다.
@@ -51,7 +51,7 @@ mySkills.map((mySkill) => {
 });
 ```
 
-![](/assets/img/posts/2023-08-13-til-javascript의-유용한-array-methods/img1.png)
+![](/assets/posts/2023-08-13-til-javascript의-유용한-array-methods/img1.png)
 
 
 ## some()
@@ -70,7 +70,7 @@ console.log(`Is having 3? ${isHavingThree}`);
 console.log(`Is having 0? ${isHavingZero}`);
 ```
 
-![](/assets/img/posts/2023-08-13-til-javascript의-유용한-array-methods/img2.png)
+![](/assets/posts/2023-08-13-til-javascript의-유용한-array-methods/img2.png)
 
 ### some의 순회 종료
 
@@ -94,7 +94,7 @@ const isHavingZero = numbers.some((number) => {
 console.log(`Is having 0? ${isHavingZero}`);
 ```
 
-![](/assets/img/posts/2023-08-13-til-javascript의-유용한-array-methods/img3.png)
+![](/assets/posts/2023-08-13-til-javascript의-유용한-array-methods/img3.png)
 
 - 3을 찾는 경우 3을 탐색하자마자 순회가 종료되었지만, 0을 찾을 경우 배열 끝까지 순회한 후 `false`를 출력하였다.
 
@@ -114,7 +114,7 @@ console.log(`Is every elemnet number? ${isNumber}`);
 console.log(`Is every element positive? ${isPositve}`);
 ```
 
-![](/assets/img/posts/2023-08-13-til-javascript의-유용한-array-methods/img4.png)
+![](/assets/posts/2023-08-13-til-javascript의-유용한-array-methods/img4.png)
 
 ### every의 순회 종료
 
@@ -134,7 +134,7 @@ const even_numbers = numbers.filter((number) => number % 2 === 0)
 console.log(even_numbers)
 ```
 
-![](/assets/img/posts/2023-08-13-til-javascript의-유용한-array-methods/img5.png)
+![](/assets/posts/2023-08-13-til-javascript의-유용한-array-methods/img5.png)
 
 
 ## reduce()
@@ -169,7 +169,7 @@ console.log(reducedNumbrs);
 // 45
 ```
 
-![](/assets/img/posts/2023-08-13-til-javascript의-유용한-array-methods/img6.png)
+![](/assets/posts/2023-08-13-til-javascript의-유용한-array-methods/img6.png)
 
 ※ 리듀스 함수의 결과를 반환하지 않으면 acc 값은 undefined가 된다.
 

@@ -6,7 +6,7 @@ date: 2023-10-28 10:33:17.518 +0000
 categories: [three-js]
 tags: ['three.js']
 description: three.js의 기본 구성 요소 알아보기
-image: /assets/img/posts/2023-10-28-threejs-threejs의-기본-구성-요소/thumbnail.png
+image: /assets/posts/2023-10-28-threejs-threejs의-기본-구성-요소/thumbnail.png
 
 ---
 
@@ -14,7 +14,7 @@ image: /assets/img/posts/2023-10-28-threejs-threejs의-기본-구성-요소/thum
 
 여기서는 하나의 화면이 어떤 구성요소들로 구성되는지만 알아보자
 
-![](/assets/img/posts/2023-10-28-threejs-threejs의-기본-구성-요소/img0.png)
+![](/assets/posts/2023-10-28-threejs-threejs의-기본-구성-요소/img0.png)
 
 > <small>자료 출처 : https://sunzhongkui.wordpress.com/2015/08/08/3d-viewer-based-on-threejs/</small>
 
@@ -72,7 +72,7 @@ scene.add(cube);
 렌더링 된 씬을 보여주는 화면 시점을 담당한다.
 이용자가 보는 3D 장면은 전부 카메라를 통해 보여주는 것이다.
 
-![](/assets/img/posts/2023-10-28-threejs-threejs의-기본-구성-요소/img1.png)
+![](/assets/posts/2023-10-28-threejs-threejs의-기본-구성-요소/img1.png)
 > <small>자료 출처 : https://i.stack.imgur.com/3hUZ2.png</small>
 
 ```javascript

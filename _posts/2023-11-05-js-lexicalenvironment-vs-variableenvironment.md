@@ -6,7 +6,7 @@ date: 2023-11-05 13:32:24.525 +0000
 categories: [javascript]
 tags: []
 description: 렉시컬 환경에 존재하는 두 컴포넌트 LexicalEnvironment와 VariableEnvironment에는 무슨 차이가 있을까?
-image: /assets/img/posts/2023-11-05-js-lexicalenvironment-vs-variableenvironment/thumbnail.png
+image: /assets/posts/2023-11-05-js-lexicalenvironment-vs-variableenvironment/thumbnail.png
 
 ---
 
@@ -31,7 +31,7 @@ image: /assets/img/posts/2023-11-05-js-lexicalenvironment-vs-variableenvironment
 실행 컨텍스트에는 이 `렉시컬 환경` 컴포넌트가 2개 존재하는데, 각각 `Lexical Environment`와 `Variable Environment`이라는 이름으로 구분한다. 
 이번 게시글에서는 이 둘의 차이점이 뭔지, 각각 어떤 역할을 하는지에 대해 알아보자
 
-![](/assets/img/posts/2023-11-05-js-lexicalenvironment-vs-variableenvironment/img0.png)
+![](/assets/posts/2023-11-05-js-lexicalenvironment-vs-variableenvironment/img0.png)
 <small>출처: https://meetup.nhncloud.com/posts/86</small>
 
 ## 렉시컬 환경

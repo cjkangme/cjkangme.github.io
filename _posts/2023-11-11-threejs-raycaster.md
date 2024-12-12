@@ -6,7 +6,7 @@ date: 2023-11-11 11:52:40.781 +0000
 categories: [three-js]
 tags: ['three.js']
 description: three.js의 Raycaster에 대해 알아보자
-image: /assets/img/posts/2023-11-11-threejs-raycaster/thumbnail.png
+image: /assets/posts/2023-11-11-threejs-raycaster/thumbnail.png
 
 ---
 
@@ -14,7 +14,7 @@ Raycasting : 어떤 지점에서 광선을 발사해 그 광선에 닿는 물체
 
 3차원 공간을 2차원 화면에 투영하기 위해 각 픽셀마다 물체가 있는지 없는지 검사하는 것에 사용한다.
 
-![](/assets/img/posts/2023-11-11-threejs-raycaster/img0.png)
+![](/assets/posts/2023-11-11-threejs-raycaster/img0.png)
 <small>출처: https://ko.wikipedia.org/wiki/%EA%B4%91%EC%84%A0_%ED%88%AC%EC%82%AC</small>
 
 
@@ -28,7 +28,7 @@ raycasting이 필요한 이유는 마우스는 2차원 화면상에 있고, 물�
 
 만약 마우스가 (1, 1)을 가리키고 있을 때, 3차원 공간상에서는 (1, 1, 0)인지 (1, 1, 5)인지 알 수 없기 때문에 raycasting이 필요하다.
 
-![](/assets/img/posts/2023-11-11-threejs-raycaster/img1.png)
+![](/assets/posts/2023-11-11-threejs-raycaster/img1.png)
 <small>출처: https://docs.godotengine.org/ko/4.x/tutorials/physics/ray-casting.html</small>
 
 위 그림처럼 마우스가 위치한 지점과 눈(=카메라)을 기준삼아 광선(Ray)을 발사함으로써, 광선에 닿는 물체를 감지 및 선택할 수 있다.

@@ -6,13 +6,13 @@ date: 2023-08-18 15:33:28.754 +0000
 categories: [세미나]
 tags: ['세미나', '후기']
 description: Google I/O Extended 2023 Pangyo 참석 후기 (React 세션 위주)
-image: /assets/img/posts/2023-08-18-google-io-extended-2023-pangyo-후기/thumbnail.png
+image: /assets/posts/2023-08-18-google-io-extended-2023-pangyo-후기/thumbnail.png
 
 ---
 
 (사진 추후 추가 예정)
 
-![](/assets/img/posts/2023-08-18-google-io-extended-2023-pangyo-후기/img0.png)
+![](/assets/posts/2023-08-18-google-io-extended-2023-pangyo-후기/img0.png)
 
 
 # 서론

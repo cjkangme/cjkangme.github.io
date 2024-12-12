@@ -22,7 +22,7 @@ MVC, MVP, MVVM은 모두 아키텍처 패턴의 종류이다.
 
 ## MVC
 
-![](/assets/img/posts/2023-07-24-til-mvc-mvp-mvvm/img0.png)
+![](/assets/posts/2023-07-24-til-mvc-mvp-mvvm/img0.png)
 
 MVC는 모델-뷰-컨트롤러로 구성된 아키텍처 패턴이다.
 
@@ -55,7 +55,7 @@ MVC는 모델-뷰-컨트롤러로 구성된 아키텍처 패턴이다.
 
 ## MVP
 
-![](/assets/img/posts/2023-07-24-til-mvc-mvp-mvvm/img1.png)
+![](/assets/posts/2023-07-24-til-mvc-mvp-mvvm/img1.png)
 
 MVP는 모델-뷰-프레젠터로 구성된 아키텍처 패턴이다.
 
@@ -87,7 +87,7 @@ M-V가 1:1의 강한 연결을 갖는다는 특징이 있다.
 
 ## MVVM
 
-![](/assets/img/posts/2023-07-24-til-mvc-mvp-mvvm/img2.png)
+![](/assets/posts/2023-07-24-til-mvc-mvp-mvvm/img2.png)
 
 뷰 모델(View Model) : 뷰를 추상화한 계층으로 뷰와 1:N 관계를 갖는다. 뷰 모델은 뷰를 알지 못하고 알림만 전송할 수 있다. 뷰는 데이터바인딩, 커맨드를 통해서 뷰 모델을 지켜보고 있다.
 

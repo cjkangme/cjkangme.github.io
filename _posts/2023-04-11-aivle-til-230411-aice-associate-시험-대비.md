@@ -6,7 +6,7 @@ date: 2023-04-11 14:12:26.931 +0000
 categories: [에이블스쿨]
 tags: ['aivle']
 description: 힐링(?)되는 AICE Associate 이틀간의 AICE 특강
-image: /assets/img/posts/2023-04-11-aivle-til-230411-aice-associate-시험-대비/thumbnail.png
+image: /assets/posts/2023-04-11-aivle-til-230411-aice-associate-시험-대비/thumbnail.png
 
 ---
 

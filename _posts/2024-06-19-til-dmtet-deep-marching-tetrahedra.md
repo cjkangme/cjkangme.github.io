@@ -6,7 +6,7 @@ date: 2024-06-19 11:44:05.811 +0000
 categories: [TIL]
 tags: ['cv', 'til', '논문']
 description: DMTet 겉핥기
-image: /assets/img/posts/2024-06-19-til-dmtet-deep-marching-tetrahedra/thumbnail.png
+image: /assets/posts/2024-06-19-til-dmtet-deep-marching-tetrahedra/thumbnail.png
 math: true
 ---
 
@@ -30,7 +30,7 @@ math: true
 
 ## 1.2 Volume Subdivision
 
-![Figure 2](/assets/img/posts/2024-06-19-til-dmtet-deep-marching-tetrahedra/img0.png)
+![Figure 2](/assets/posts/2024-06-19-til-dmtet-deep-marching-tetrahedra/img0.png)
 
 
 저해상도의 표현으로부터 고해상도의 3D 형상을 얻어야 하므로, coarse to fine manner를 적용합니다.
@@ -41,7 +41,7 @@ Figure 2에 나타난 것처럼 사면체를 구성하는 각 엣지의 중심�
 
 ## 1.3 Convert Surface Shape
 
-![Figure 3](/assets/img/posts/2024-06-19-til-dmtet-deep-marching-tetrahedra/img1.png)
+![Figure 3](/assets/posts/2024-06-19-til-dmtet-deep-marching-tetrahedra/img1.png)
 
 표면 사면체들을 삼각형 mesh로 변환하기 위해서는, 각 사면체가 어떤 shape을 나타내는지 결정해야 합니다.
 
@@ -99,7 +99,7 @@ print(verts)
 앞서 사면체 그리드를 표면 mesh로 변환하는 과정에 대해 알아보았습니다.
 이번 섹션에서는 input을 받아 고해상도의 삼각형 mesh를 생성하는 모델에 대해 구체적으로 알아보겠습니다.
 
-![](/assets/img/posts/2024-06-19-til-dmtet-deep-marching-tetrahedra/img2.png)
+![](/assets/posts/2024-06-19-til-dmtet-deep-marching-tetrahedra/img2.png)
 
 
 ## 2.1 3D Generator
@@ -135,7 +135,7 @@ MLP를 통해 각 정점의 위치, feature vector를 입력으로 정점의 SDF
 이제 예측에 사용되었던 모델을 최적화하기 위한 loss를 구해야 합니다.
 `DMTet`에서는 이 역할을 `DECOR-GAN`의 discriminator가 수행한다고 합니다.
 
-![](/assets/img/posts/2024-06-19-til-dmtet-deep-marching-tetrahedra/img3.png)
+![](/assets/posts/2024-06-19-til-dmtet-deep-marching-tetrahedra/img3.png)
 
 Figure 4에 묘사된 것 처럼 GT를 복셀화하여 곡률이 높은 포인트 $$ v $$를 랜덤하게 선택하고, GT signed distance field $$ S_{real} \in \mathbb{R}^{N \times N \times N} $$을 계산합니다.
 비슷하게, 예측한 mesh $$ M $$에서 $$ v $$ 위치에 해당하는 signed distance filed $$ S_{pred} \in \mathbb{R}^{N \times N \times N} $$를 계산합니다.
@@ -149,16 +149,16 @@ Figure 4에 묘사된 것 처럼 GT를 복셀화하여 곡률이 높은 포인�
 `DMTet`의 loss는 총 3가지의 term으로 구성됩니다.
 - Adversarial loss
 
-![Eq. 3](/assets/img/posts/2024-06-19-til-dmtet-deep-marching-tetrahedra/img4.png)
+![Eq. 3](/assets/posts/2024-06-19-til-dmtet-deep-marching-tetrahedra/img4.png)
 
 
 - GT 표면과 정렬되도록 유도하는 surface alignment loss
 
-![Eq. 4](/assets/img/posts/2024-06-19-til-dmtet-deep-marching-tetrahedra/img5.png)
+![Eq. 4](/assets/posts/2024-06-19-til-dmtet-deep-marching-tetrahedra/img5.png)
 
 - SDF값과 vertex position이 덜 변형되도록 하는 regularization term
 
-![Eq. 5](/assets/img/posts/2024-06-19-til-dmtet-deep-marching-tetrahedra/img6.png)
+![Eq. 5](/assets/posts/2024-06-19-til-dmtet-deep-marching-tetrahedra/img6.png)
 
 
 $$ L_{SDF} $$가 필요한 이유는, SDF값을 기반으로 표면을 추출하여 loss를 계산하는데, 앞서 계산한 두 loss는 SDF값의 부호를 바꾸어도 똑같은 결과가 나온다고 합니다. (어디가 바깥이고 안쪽인지를 고려하지 않음)
@@ -171,7 +171,7 @@ $$ L_{SDF} $$가 필요한 이유는, SDF값을 기반으로 표면을 추출하
 
 최종 loss는 다음과 같습니다.
 
-![Eq. 6](/assets/img/posts/2024-06-19-til-dmtet-deep-marching-tetrahedra/img7.png)
+![Eq. 6](/assets/posts/2024-06-19-til-dmtet-deep-marching-tetrahedra/img7.png)
 
 여기서 람다값은 하이퍼파라미터입니다.
 

@@ -6,7 +6,7 @@ date: 2024-05-29 12:17:45.537 +0000
 categories: [논문]
 tags: ['cv', 'nerf', '논문']
 description: SDS loss를 정말 간단한 방법으로 개선해 text-to-3D 성능을 끌어올린 NFSD loss에 대해 알아보자
-image: /assets/img/posts/2024-05-29-nfsd-noise-free-score-distillation-논문-리뷰/thumbnail.png
+image: /assets/posts/2024-05-29-nfsd-noise-free-score-distillation-논문-리뷰/thumbnail.png
 math: true
 ---
 
@@ -22,7 +22,7 @@ SDS Loss에 대해서는 이전 게시글에서도 다루었지만, 다시 읽�
 
 SDS Loss는 매우 뛰어난 성능을 보이는 2D diffusion model의 강력함을 다른 분야의 학습에 적용하기 위한 loss입니다. Diffusion model이 현실(또는 목표한 분야)의 분포를 아주 잘 학습하였으니, diffusion model의 가중치는 고정시켜 놓고, 어떤 미분 가능한 이미지 렌더러가 diffusion model이 갖고 있는 분포를 근사하도록 설계되었습니다.
 
-![](/assets/img/posts/2024-05-29-nfsd-noise-free-score-distillation-논문-리뷰/img0.png)
+![](/assets/posts/2024-05-29-nfsd-noise-free-score-distillation-논문-리뷰/img0.png)
 
 이 수식은 `DDPM` 논문에서 제시된 Diffusion Model의 loss입니다.
 $$ \phi $$는 모델의 U-Net 모델 파라미터입니다. U-Net은 timestep $$ t $$만큼 노이즈가 더해진 이미지를 입력받아 이미지에 더해진 노이즈를 예측합니다 ($$ \epsilon_\phi $$). $$ \epsilon $$은 실제 더해진 노이즈입니다.
@@ -42,7 +42,7 @@ $$ \frac{\delta \hat{\epsilon}}{\delta \mathbf{x}} = \alpha_t \frac{\delta \epsi
 
 여기서 $$ \hat{\epsilon} $$은 U-Net의 output을 간소화하여 표현한 것입니다.
 
-![](/assets/img/posts/2024-05-29-nfsd-noise-free-score-distillation-논문-리뷰/img1.png)
+![](/assets/posts/2024-05-29-nfsd-noise-free-score-distillation-논문-리뷰/img1.png)
 
 이렇게 해서 나온 것이 `DreamFusion` 논문의 식 2번입니다.
 실제 이미지 대신 latent $$ \mathbf{z}_t $$가 사용되었고, condition $$ y $$(여기서는 text 임베딩)가 추가되었다는 점이 다릅니다.
@@ -52,13 +52,13 @@ $$ \frac{\delta \hat{\epsilon}}{\delta \mathbf{x}} = \alpha_t \frac{\delta \epsi
 그라디언트 계산을 위해 U-Net 전체에 대해 역전파를 진행해야 해서 계산이 너무 무거워지고, small noise level에 적합하지 않다고 합니다.
 
 때문에 U-Net Jacobian term을 아예 제거한 것을 score로 사용한 것이 바로 SDS Loss입니다.
-![](/assets/img/posts/2024-05-29-nfsd-noise-free-score-distillation-논문-리뷰/img2.png)
+![](/assets/posts/2024-05-29-nfsd-noise-free-score-distillation-논문-리뷰/img2.png)
 
 ## SDS Loss의 한계
 
 text-to-image task를 수행하는 최신 diffusion model은 대부분 CFG(Classifier-Free Guidance)를 적용합니다. 이 부분은 아직 저도 자세히 공부하지 못했기 때문에 이런걸 쓴다 정도로만 짚고 넘어가겠습니다.
 
-![](/assets/img/posts/2024-05-29-nfsd-noise-free-score-distillation-논문-리뷰/img3.png)
+![](/assets/posts/2024-05-29-nfsd-noise-free-score-distillation-논문-리뷰/img3.png)
 
 
 CFG를 적용할 때 CFG계수($$ s \in \mathbb{R} $$)를 정하는데, $$ s $$가 클수록 diversity는 감소하지만 렌더링 품질이 좋아진다고 합니다. 하지만 너무 높을 경우 over-saturated한 이미지를 얻게 됩니다.
@@ -75,14 +75,14 @@ NFSD는 SDS loss를 세 개의 구성요소로 쪼개어, 왜 높은 $$ s $$에�
 
 ## Score Decomposition
 
-![](/assets/img/posts/2024-05-29-nfsd-noise-free-score-distillation-논문-리뷰/img2.png)![](/assets/img/posts/2024-05-29-nfsd-noise-free-score-distillation-논문-리뷰/img5.png)
+![](/assets/posts/2024-05-29-nfsd-noise-free-score-distillation-논문-리뷰/img2.png)![](/assets/posts/2024-05-29-nfsd-noise-free-score-distillation-논문-리뷰/img5.png)
 
 SDS Loss의 $$ \hat{\epsilon}_\phi $$에 대해 CFG를 적용한 것이 $$ \epsilon^s_\phi $$입니다.
 $$ \epsilon_\phi(\mathbf{z}_t; y, t) $$는 condition $$ y $$를 적용한 노이즈 예측 결과, $$ \epsilon_\phi(\mathbf{z}_t; y=\varnothing, t) $$는 condition이 없는(null condition) 예측 결과입니다.
 
 NFSD는 이 U-Net의 노이즈 예측 결과를 아래와 같이 3개의 컴포넌트로 쪼개어 생각했습니다.
 
-![](/assets/img/posts/2024-05-29-nfsd-noise-free-score-distillation-논문-리뷰/img6.png)
+![](/assets/posts/2024-05-29-nfsd-noise-free-score-distillation-논문-리뷰/img6.png)
 
 $$ \delta_C = \epsilon_\phi(\mathbf{z}_t; y, t) - \epsilon_\phi(\mathbf{z}_t; \varnothing, t) $$
 $$ \delta_D + \delta_N = \epsilon_\phi(\mathbf{z}_t; \varnothing, t) $$
@@ -109,7 +109,7 @@ U-Net은 현실의 이미지 분포에 노이즈를 더한 것을 학습했는�
 
 Score Decomposition을 통해 SDS loss를 다시 나타내면 아래의 수식이 완성됩니다.
 
-![](/assets/img/posts/2024-05-29-nfsd-noise-free-score-distillation-논문-리뷰/img7.png)
+![](/assets/posts/2024-05-29-nfsd-noise-free-score-distillation-논문-리뷰/img7.png)
 
 ## Noise-Free Score Distillation
 
@@ -128,7 +128,7 @@ Score Decomposition을 통해 SDS loss를 다시 나타내면 아래의 수식�
 
 ## NFSD Loss
 
-![](/assets/img/posts/2024-05-29-nfsd-noise-free-score-distillation-논문-리뷰/img8.png)
+![](/assets/posts/2024-05-29-nfsd-noise-free-score-distillation-논문-리뷰/img8.png)
 
 기존의 SDS loss에서 학습을 방해하는 $$ \delta_N - \epsilon $$을 제거한 것이 NFSD loss입니다.
 
@@ -161,9 +161,9 @@ $$ \epsilon_\phi(\mathbf{z}_t; \varnothing, t) - \epsilon_\phi(\mathbf{z}_t; y=p
 
 논문에서는 이 timestep $$ t $$의 threshold를 200으로 설정하였습니다.
 
-![](/assets/img/posts/2024-05-29-nfsd-noise-free-score-distillation-논문-리뷰/img9.png)
+![](/assets/posts/2024-05-29-nfsd-noise-free-score-distillation-논문-리뷰/img9.png)
 
-![](/assets/img/posts/2024-05-29-nfsd-noise-free-score-distillation-논문-리뷰/img8.png)
+![](/assets/posts/2024-05-29-nfsd-noise-free-score-distillation-논문-리뷰/img8.png)
 
 # 결론
 

@@ -6,7 +6,7 @@ date: 2023-04-28 12:46:00.151 +0000
 categories: [에이블스쿨]
 tags: []
 description: 수업은 이틀이지만 3편이 있습니다.
-image: /assets/img/posts/2023-04-28-aivle-til-230428-webwasdb-2/thumbnail.png
+image: /assets/posts/2023-04-28-aivle-til-230428-webwasdb-2/thumbnail.png
 math: true
 ---
 
@@ -182,7 +182,7 @@ db.info1.insert([
 db.info1.find();
 ```
 
-![](/assets/img/posts/2023-04-28-aivle-til-230428-webwasdb-2/img0.png)
+![](/assets/posts/2023-04-28-aivle-til-230428-webwasdb-2/img0.png)
 
 분명 7개를 추가했는데 5개만 조회가 된다.
 그 이유는 `info1` 컬렉션을 생성했을 때 `capped, max` 옵션을 이용해 데이터의 최대 개수를 5개로 한정했기 때문이다.
@@ -224,7 +224,7 @@ db.info2.insert([
 db.info2.deleteOne({level:5})
 db.info2.find();
 ```
-![](/assets/img/posts/2023-04-28-aivle-til-230428-webwasdb-2/img1.png)
+![](/assets/posts/2023-04-28-aivle-til-230428-webwasdb-2/img1.png)
 
 `level: 5`인 데이터는 총 3개이지만, 가장 먼저 선언되었던 데이터만 제거된 것을 확인할 수 있다.
 
@@ -238,7 +238,7 @@ db.info2.find();
 // READ : 비교 연산자 사용 (4 이상인 데이터)
 db.info2.find({ level: {$gte: 4} }); 
 ```
-![](/assets/img/posts/2023-04-28-aivle-til-230428-webwasdb-2/img2.png)
+![](/assets/posts/2023-04-28-aivle-til-230428-webwasdb-2/img2.png)
 
 
 > [mongoDB 연산자 공식문서](https://www.mongodb.com/docs/manual/reference/operator/query/)
@@ -271,7 +271,7 @@ find의 문법은 `find(criteria?, projection?)` 인데, 조회 범위 다음으
 // Projection
 db.info2.find( {}, {subject: true});
 ```
-![](/assets/img/posts/2023-04-28-aivle-til-230428-webwasdb-2/img3.png)
+![](/assets/posts/2023-04-28-aivle-til-230428-webwasdb-2/img3.png)
 
 `_id`와 `subject` 컬럼만 조회되는 것을 확인할 수 있다.
 
@@ -295,7 +295,7 @@ db.info2.find().sort({level: -1});
 // limit + sort
 db.info2.find({level: {$lte: 5}}).sort({level: -1}).limit(3);
 ```
-![](/assets/img/posts/2023-04-28-aivle-til-230428-webwasdb-2/img4.png)
+![](/assets/posts/2023-04-28-aivle-til-230428-webwasdb-2/img4.png)
 
 1. 레벨이 5이하인 데이터를
 2. 내림차순으로 정렬하고
@@ -315,7 +315,7 @@ db.info2.find({level: {$lte: 5}}).sort({level: -1}).limit(3);
 // UPDATE : update
 db.info2.update({subject: 'css'}, {$set: {level: 5}});
 ```
-![](/assets/img/posts/2023-04-28-aivle-til-230428-webwasdb-2/img5.png)
+![](/assets/posts/2023-04-28-aivle-til-230428-webwasdb-2/img5.png)
 
 ### mongoDB 함수
 

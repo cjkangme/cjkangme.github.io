@@ -6,7 +6,7 @@ date: 2023-07-20 12:48:10.547 +0000
 categories: [TIL]
 tags: ['cs', 'til', '네트워크']
 description: 프로젝트 내내 우리를 괴롭힌 CORS에 대해 배워보자
-image: /assets/img/posts/2023-07-20-til-cors-에러와-sop-개념/thumbnail.png
+image: /assets/posts/2023-07-20-til-cors-에러와-sop-개념/thumbnail.png
 
 ---
 
@@ -18,7 +18,7 @@ CORS 에러를 이해하기 위해서는 가장 먼저 SOP에 대해 알아야 �
 
 ## SOP : same origin policy
 
-![](/assets/img/posts/2023-07-20-til-cors-에러와-sop-개념/img0.png)
+![](/assets/posts/2023-07-20-til-cors-에러와-sop-개념/img0.png)
 
 - origin : URL에서 프로토콜과 호스트까지의 주소를 합친 것
     - **https://naver.com:8080/**search?… → bold 처리된 부분이 origin

@@ -6,11 +6,11 @@ date: 2023-05-04 14:28:31.891 +0000
 categories: [에이블스쿨]
 tags: ['ai', 'aice', 'aivle', '머신러닝']
 description: AIVLE ASSOCIATE 합격 후기
-image: /assets/img/posts/2023-05-04-aivle-aice-associate-시험-후기/thumbnail.png
+image: /assets/posts/2023-05-04-aivle-aice-associate-시험-후기/thumbnail.png
 
 ---
 
-![](/assets/img/posts/2023-05-04-aivle-aice-associate-시험-후기/img0.png)
+![](/assets/posts/2023-05-04-aivle-aice-associate-시험-후기/img0.png)
 
 > [AICE 공식 소개 페이지](https://aice.study/info/aice)
 
@@ -50,7 +50,7 @@ image: /assets/img/posts/2023-05-04-aivle-aice-associate-시험-후기/thumbnail
 
 # 결과
 
-![](/assets/img/posts/2023-05-04-aivle-aice-associate-시험-후기/img1.png)
+![](/assets/posts/2023-05-04-aivle-aice-associate-시험-후기/img1.png)
 
 - 약 2주정도 후 결과가 나왔는데 무난하게 합격하였다.
 - 머신러닝 경험이 있다면 (특히 에이블러라면!!!) 쉽게 합격할 수 있기 때문에 너무 걱정하지 않아도 될 것 같다.

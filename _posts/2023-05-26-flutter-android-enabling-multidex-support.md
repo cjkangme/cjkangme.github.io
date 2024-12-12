@@ -6,12 +6,12 @@ date: 2023-05-26 09:03:22.448 +0000
 categories: [error]
 tags: []
 description: 정말 간단한 오류인데...
-image: /assets/img/posts/2023-05-26-flutter-android-enabling-multidex-support/thumbnail.png
+image: /assets/posts/2023-05-26-flutter-android-enabling-multidex-support/thumbnail.png
 
 ---
 
 # 오류 발생
-![](/assets/img/posts/2023-05-26-flutter-android-enabling-multidex-support/img0.png)
+![](/assets/posts/2023-05-26-flutter-android-enabling-multidex-support/img0.png)
 
 플러터로 Api 코드를 작성하다보니 다음과 같은 오류가 발생하였다.
 

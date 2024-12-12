@@ -6,7 +6,7 @@ date: 2023-10-30 11:58:31.933 +0000
 categories: [three-js]
 tags: ['three.js']
 description: Scene Graph 를 이용해 손쉽게 공전 모형 만들어보기
-image: /assets/img/posts/2023-10-30-threejs-scene-graph/thumbnail.png
+image: /assets/posts/2023-10-30-threejs-scene-graph/thumbnail.png
 
 ---
 
@@ -31,11 +31,11 @@ Scene Graph는 복잡한 3차원 객체(scene)를 그려내기 위해 계층 구
 
 ## Scene Graph 실습
 
-![](/assets/img/posts/2023-10-30-threejs-scene-graph/img0.png)
+![](/assets/posts/2023-10-30-threejs-scene-graph/img0.png)
 
 자전하는 태양, 태양을 공전하며 자전하는 지구, 지구를 공전하며 자전하는 달
 
-![](/assets/img/posts/2023-10-30-threejs-scene-graph/img1.png)
+![](/assets/posts/2023-10-30-threejs-scene-graph/img1.png)
 
 위 Scene을 구성하기 위해 다음과 같은 Scene Graph 구조를 사용할 수 있다.
 

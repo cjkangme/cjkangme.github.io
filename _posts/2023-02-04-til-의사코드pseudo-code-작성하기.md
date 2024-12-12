@@ -6,7 +6,7 @@ date: 2023-02-04 04:37:13.688 +0000
 categories: [TIL]
 tags: ['til']
 description: 슈도코드를 배우고, 직접 작성해보는 TIL
-image: /assets/img/posts/2023-02-04-til-의사코드pseudo-code-작성하기/thumbnail.png
+image: /assets/posts/2023-02-04-til-의사코드pseudo-code-작성하기/thumbnail.png
 
 ---
 
@@ -41,7 +41,7 @@ image: /assets/img/posts/2023-02-04-til-의사코드pseudo-code-작성하기/thu
 4. Indent를 명확히 하기
 조건문, 반복문을 사용할 때는 Indent를 명확히 해주어야 한눈에 보기 쉽다. (Clearly)
 조건문, 반복문을 빠져나오는 것을 확실하게 알려주는 방법도 좋고, 편집기에서 처럼 줄을 그어주는 것도 방법이다.
-![](/assets/img/posts/2023-02-04-til-의사코드pseudo-code-작성하기/img0.png)
+![](/assets/posts/2023-02-04-til-의사코드pseudo-code-작성하기/img0.png)
 
 5. 키워드를 명확히 하기
 arr, num과 같은 변수명은 소문자, IF, FOR, PRINT 같은 키워드는 대문자로 구분하면 읽기가 더 쉽다.
