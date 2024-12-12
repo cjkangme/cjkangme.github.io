@@ -12,7 +12,7 @@ math: true
 
 ![img](/assets/posts/2024-10-18-stable-diffusion-web-ui-api로-사용하기/img0.png) <small>우리가 흔히 보는 SD web UI의 모습</small>
 
-[Stable Diffusion web UI](stable-diffusion-webui)(이하 webui)는 git이나 CLI에 조금만 친숙한 사람이면 복잡한 코드 없이 여러 기법이 적용된 Stable Diffusion 모델을 사용할 수 있는 라이브러리입니다.
+[Stable Diffusion web UI](https://github.com/AUTOMATIC1111/stable-diffusion-webui)(이하 webui)는 git이나 CLI에 조금만 친숙한 사람이면 복잡한 코드 없이 여러 기법이 적용된 Stable Diffusion 모델을 사용할 수 있는 라이브러리입니다.
 
 사용하기 쉬운 GUI에 자동화 기능까지 제공하기 때문에 원하는 이미지를 빠르게 뽑기 위해 더할 나위 없이 좋은 방법이죠.
 
