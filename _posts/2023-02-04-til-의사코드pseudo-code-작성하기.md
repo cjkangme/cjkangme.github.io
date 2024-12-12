@@ -1,16 +1,16 @@
 
 
-        ---
-        title: [TIL] 의사코드(Pseudo-Code) 작성하기
-        date: 2023-02-04 04:37:13.688 +0000
-        categories: [TIL]
-        tags: ['til']
-        description: 슈도코드를 배우고, 직접 작성해보는 TIL
-        image: /assets/img/posts/2023-02-04-til-의사코드pseudo-code-작성하기/thumbnail.png
-        
-        ---
+---
+title: [TIL] 의사코드(Pseudo-Code) 작성하기
+date: 2023-02-04 04:37:13.688 +0000
+categories: [TIL]
+tags: ['til']
+description: 슈도코드를 배우고, 직접 작성해보는 TIL
+image: /assets/img/posts/2023-02-04-til-의사코드pseudo-code-작성하기/thumbnail.png
 
-        # 의사코드(Pseudo-Code)란?
+---
+
+# 의사코드(Pseudo-Code)란?
 
 개인적으로 의사코드라는 말 보다는 슈도코드가 더 입에 잘 붙기 때문에 여기서는 `슈도코드`라고 하겠다.
 

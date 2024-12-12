@@ -1,16 +1,16 @@
 
 
-        ---
-        title: [AIVLE] AICE ASSOCIATE 시험 후기
-        date: 2023-05-04 14:28:31.891 +0000
-        categories: [에이블스쿨]
-        tags: ['ai', 'aice', 'aivle', '머신러닝']
-        description: AIVLE ASSOCIATE 합격 후기
-        image: /assets/img/posts/2023-05-04-aivle-aice-associate-시험-후기/thumbnail.png
-        
-        ---
+---
+title: [AIVLE] AICE ASSOCIATE 시험 후기
+date: 2023-05-04 14:28:31.891 +0000
+categories: [에이블스쿨]
+tags: ['ai', 'aice', 'aivle', '머신러닝']
+description: AIVLE ASSOCIATE 합격 후기
+image: /assets/img/posts/2023-05-04-aivle-aice-associate-시험-후기/thumbnail.png
 
-        ![](/assets/img/posts/2023-05-04-aivle-aice-associate-시험-후기/img0.png)
+---
+
+![](/assets/img/posts/2023-05-04-aivle-aice-associate-시험-후기/img0.png)
 
 > [AICE 공식 소개 페이지](https://aice.study/info/aice)
 

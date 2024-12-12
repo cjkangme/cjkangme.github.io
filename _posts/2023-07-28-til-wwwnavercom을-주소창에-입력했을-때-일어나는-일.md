@@ -1,16 +1,16 @@
 
 
-        ---
-        title: [TIL] www.naver.com을 주소창에 입력했을 때 일어나는 일
-        date: 2023-07-28 06:57:22.985 +0000
-        categories: [TIL]
-        tags: ['cs', 'til', '네트워크']
-        description: 면접 단골질문인 웹 사이트가 화면에 표시되기까지의 과정을 알아보자
-        
-        
-        ---
+---
+title: [TIL] www.naver.com을 주소창에 입력했을 때 일어나는 일
+date: 2023-07-28 06:57:22.985 +0000
+categories: [TIL]
+tags: ['cs', 'til', '네트워크']
+description: 면접 단골질문인 웹 사이트가 화면에 표시되기까지의 과정을 알아보자
 
-        > 참고 강의 : https://youtu.be/YahjHM9UNCA
+
+---
+
+> 참고 강의 : https://youtu.be/YahjHM9UNCA
 
 ## 면접 답변용
 

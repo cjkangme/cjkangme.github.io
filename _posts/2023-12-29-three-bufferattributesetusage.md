@@ -1,16 +1,16 @@
 
 
-        ---
-        title: [three] BufferAttribute.setUsage()
-        date: 2023-12-29 00:52:16.085 +0000
-        categories: [three-js]
-        tags: ['til', 'three.js']
-        description: 처음보는 setUsage 메서드에 대한 정리
-        
-        
-        ---
+---
+title: [three] BufferAttribute.setUsage()
+date: 2023-12-29 00:52:16.085 +0000
+categories: [three-js]
+tags: ['til', 'three.js']
+description: 처음보는 setUsage 메서드에 대한 정리
 
-        # setUsage()가 필요한 이유
+
+---
+
+# setUsage()가 필요한 이유
 
 three.js는 OpenGL에 기반해 3D 물체를 렌더링하므로, OpenGL의 API를 사용한다.
 

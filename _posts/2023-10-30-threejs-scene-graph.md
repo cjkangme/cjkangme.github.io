@@ -1,16 +1,16 @@
 
 
-        ---
-        title: [three.js] Scene Graph
-        date: 2023-10-30 11:58:31.933 +0000
-        categories: [three-js]
-        tags: ['three.js']
-        description: Scene Graph 를 이용해 손쉽게 공전 모형 만들어보기
-        image: /assets/img/posts/2023-10-30-threejs-scene-graph/thumbnail.png
-        
-        ---
+---
+title: [three.js] Scene Graph
+date: 2023-10-30 11:58:31.933 +0000
+categories: [three-js]
+tags: ['three.js']
+description: Scene Graph 를 이용해 손쉽게 공전 모형 만들어보기
+image: /assets/img/posts/2023-10-30-threejs-scene-graph/thumbnail.png
 
-        > 참고 강의 : [GIS Developer 유튜브 강의](https://youtu.be/nKK7L6QLjkg?si=6anDPt0UkfzJDKDg)
+---
+
+> 참고 강의 : [GIS Developer 유튜브 강의](https://youtu.be/nKK7L6QLjkg?si=6anDPt0UkfzJDKDg)
 
 ## Scene Graph(씬 그래프)란
 

@@ -1,18 +1,18 @@
 
 
-        ---
-        title: [TIL] diffusers SDXL 파이프라인에 ip_adapter, controlnet 로드하기
-        date: 2024-11-11 07:11:52.260 +0000
-        categories: [TIL]
-        tags: ['til']
-        description: diffusers 라이브러리를 사용할 때 대부분의 기본값이 sd1.5를 기준으로 적용되어 있기 때문에 sdxl로 포팅할 때 여러가지 오류가 발생하는 경우가 많습니다.
+---
+title: [TIL] diffusers SDXL 파이프라인에 ip_adapter, controlnet 로드하기
+date: 2024-11-11 07:11:52.260 +0000
+categories: [TIL]
+tags: ['til']
+description: diffusers 라이브러리를 사용할 때 대부분의 기본값이 sd1.5를 기준으로 적용되어 있기 때문에 sdxl로 포팅할 때 여러가지 오류가 발생하는 경우가 많습니다.
 
 controlnet고 ip_adapter 로드 역시 이러한 경우에 속하기 때문에 오류 없이 로드하는 
-        
-        
-        ---
 
-        diffusers 라이브러리를 사용할 때 대부분의 기본값이 sd1.5를 기준으로 적용되어 있기 때문에 sdxl로 포팅할 때 여러가지 오류가 발생하는 경우가 많습니다.
+
+---
+
+diffusers 라이브러리를 사용할 때 대부분의 기본값이 sd1.5를 기준으로 적용되어 있기 때문에 sdxl로 포팅할 때 여러가지 오류가 발생하는 경우가 많습니다.
 
 controlnet고 ip_adapter 로드 역시 이러한 경우에 속하기 때문에 오류 없이 로드하는 방법을 정리하고자 합니다.
 

@@ -1,16 +1,16 @@
 
 
-        ---
-        title: AIVLE TIL ('23.04.11) AICE Associate 시험 대비
-        date: 2023-04-11 14:12:26.931 +0000
-        categories: [에이블스쿨]
-        tags: ['aivle']
-        description: 힐링(?)되는 AICE Associate 이틀간의 AICE 특강
-        image: /assets/img/posts/2023-04-11-aivle-til-230411-aice-associate-시험-대비/thumbnail.png
-        
-        ---
+---
+title: AIVLE TIL ('23.04.11) AICE Associate 시험 대비
+date: 2023-04-11 14:12:26.931 +0000
+categories: [에이블스쿨]
+tags: ['aivle']
+description: 힐링(?)되는 AICE Associate 이틀간의 AICE 특강
+image: /assets/img/posts/2023-04-11-aivle-til-230411-aice-associate-시험-대비/thumbnail.png
 
-        # AICE란?
+---
+
+# AICE란?
 
 - AI Certificate for Everyone의 약자로, 쉽게 말하면 인공지능 자격시험이다.
 - 초등학생 수준부터 전공자 수준까지 총 5단계로 구분하여 자격 시험을 실행중이다.

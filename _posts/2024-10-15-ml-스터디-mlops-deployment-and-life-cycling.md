@@ -1,16 +1,16 @@
 
 
-        ---
-        title: [ML 스터디] MLOps Deployment and Life Cycling+
-        date: 2024-10-15 12:41:24.179 +0000
-        categories: [developer-AI-powered]
-        tags: []
-        description: [4주차] 가짜연구소 9기 "AI를 잘 활용하는 개발자로 성장하기" 프로젝트에 참여하여 Datacamp의 "Machine Learning Engineer" 강의를 수강하고 해당 내용을 정리한 게시글입니다.
-        image: /assets/img/posts/2024-10-15-ml-스터디-mlops-deployment-and-life-cycling/thumbnail.png
-        
-        ---
+---
+title: [ML 스터디] MLOps Deployment and Life Cycling+
+date: 2024-10-15 12:41:24.179 +0000
+categories: [developer-AI-powered]
+tags: []
+description: [4주차] 가짜연구소 9기 "AI를 잘 활용하는 개발자로 성장하기" 프로젝트에 참여하여 Datacamp의 "Machine Learning Engineer" 강의를 수강하고 해당 내용을 정리한 게시글입니다.
+image: /assets/img/posts/2024-10-15-ml-스터디-mlops-deployment-and-life-cycling/thumbnail.png
 
-        > 가짜연구소 9기 "AI를 잘 활용하는 개발자로 성장하기" 프로젝트에 참여하여 Datacamp의 "Machine Learning Engineer" 강의를 수강하고 해당 내용을 정리한 게시글입니다.
+---
+
+> 가짜연구소 9기 "AI를 잘 활용하는 개발자로 성장하기" 프로젝트에 참여하여 Datacamp의 "Machine Learning Engineer" 강의를 수강하고 해당 내용을 정리한 게시글입니다.
 > [Datacamp Machine Learning 코스 페이지](https://www.datacamp.com/category/machine-learning)
 
 # Chapter 1. MLOps in a Nutshell

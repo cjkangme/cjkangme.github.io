@@ -1,16 +1,16 @@
 
 
-        ---
-        title: [TIL] 딥러닝 Grid Search
-        date: 2023-03-04 09:58:48.666 +0000
-        categories: [TIL]
-        tags: ['aivle']
-        description: 딥러닝에서 Grid Search로 최적 파라미터를 찾는 방법
-        image: /assets/img/posts/2023-03-04-til-딥러닝-grid-search/thumbnail.png
-        
-        ---
+---
+title: [TIL] 딥러닝 Grid Search
+date: 2023-03-04 09:58:48.666 +0000
+categories: [TIL]
+tags: ['aivle']
+description: 딥러닝에서 Grid Search로 최적 파라미터를 찾는 방법
+image: /assets/img/posts/2023-03-04-til-딥러닝-grid-search/thumbnail.png
 
-        > 참조 칼럼 : [How to Grid Search Hyperparameters for Deep Learning Models in Python with Keras](https://machinelearningmastery.com/grid-search-hyperparameters-deep-learning-models-python-keras/)
+---
+
+> 참조 칼럼 : [How to Grid Search Hyperparameters for Deep Learning Models in Python with Keras](https://machinelearningmastery.com/grid-search-hyperparameters-deep-learning-models-python-keras/)
 
 # 딥러닝의 하이퍼파라미터 튜닝
 

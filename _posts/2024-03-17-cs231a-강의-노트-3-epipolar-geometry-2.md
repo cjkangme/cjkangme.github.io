@@ -1,11 +1,11 @@
 
 
-        ---
-        title: CS231A 강의 노트 3 - epipolar geometry (2)
-        date: 2024-03-17 07:17:37.228 +0000
-        categories: [cs231a]
-        tags: ['cv', 'cs231a']
-        description: 이전 게시글
+---
+title: CS231A 강의 노트 3 - epipolar geometry (2)
+date: 2024-03-17 07:17:37.228 +0000
+categories: [cs231a]
+tags: ['cv', 'cs231a']
+description: 이전 게시글
 
 4. Fundamental Matrix
 
@@ -14,11 +14,11 @@ Essential Matrix를 구할 때에는 두 카메라가 canonical camera라고 가
 그러나 현실의 카메라에 적용하기 위해서는 canonical이 아닌 카메라에 대응하는 Matrix가 필요하다. 이것이 바로 Fundamental Matrix이다.
 
 두 카메라의 Intrinsic Ma...
-        image: /assets/img/posts/2024-03-17-cs231a-강의-노트-3-epipolar-geometry-2/thumbnail.png
-        math: true
-        ---
+image: /assets/img/posts/2024-03-17-cs231a-강의-노트-3-epipolar-geometry-2/thumbnail.png
+math: true
+---
 
-        > [이전 게시글](https://velog.io/@cjkangme/CS231A-%EA%B0%95%EC%9D%98-%EB%85%B8%ED%8A%B8-3-epipolar-geometry-1)
+> [이전 게시글](https://velog.io/@cjkangme/CS231A-%EA%B0%95%EC%9D%98-%EB%85%B8%ED%8A%B8-3-epipolar-geometry-1)
 
 # 4. Fundamental Matrix
 

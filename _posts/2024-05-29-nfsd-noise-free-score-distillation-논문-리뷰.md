@@ -1,16 +1,16 @@
 
 
-        ---
-        title: [NFSD] Noise-Free Score Distillation (논문 리뷰)
-        date: 2024-05-29 12:17:45.537 +0000
-        categories: [논문]
-        tags: ['cv', 'nerf', '논문']
-        description: SDS loss를 정말 간단한 방법으로 개선해 text-to-3D 성능을 끌어올린 NFSD loss에 대해 알아보자
-        image: /assets/img/posts/2024-05-29-nfsd-noise-free-score-distillation-논문-리뷰/thumbnail.png
-        math: true
-        ---
+---
+title: [NFSD] Noise-Free Score Distillation (논문 리뷰)
+date: 2024-05-29 12:17:45.537 +0000
+categories: [논문]
+tags: ['cv', 'nerf', '논문']
+description: SDS loss를 정말 간단한 방법으로 개선해 text-to-3D 성능을 끌어올린 NFSD loss에 대해 알아보자
+image: /assets/img/posts/2024-05-29-nfsd-noise-free-score-distillation-논문-리뷰/thumbnail.png
+math: true
+---
 
-        # Background
+# Background
 
 NFSD는 SDS Loss의 한계를 극복하기 위해 새롭게 제안된 loss입니다.
 

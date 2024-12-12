@@ -1,16 +1,16 @@
 
 
-        ---
-        title: [TIL] 부스트코스 CNN-Convolution은 무엇인가? 강의 정리
-        date: 2023-01-05 08:49:21.884 +0000
-        categories: [부스트코스]
-        tags: ['프리코스']
-        description: 썸네일 메이커두개의 함수를 섞어주는 방법 또는 연산자를 말한다.주로 2D image convolution에 이용한다.(I \* K)(i, j) = Σ(m)Σ(n) I(m, n)K(i-m, j-n) = Σ(m)Σ(n) I(i-m, j-n)K(m, n) = O(i-m, j
-        image: /assets/img/posts/2023-01-05-til-부스트코스-cnn-convolution은-무엇인가-강의-정리/thumbnail.png
-        
-        ---
+---
+title: [TIL] 부스트코스 CNN-Convolution은 무엇인가? 강의 정리
+date: 2023-01-05 08:49:21.884 +0000
+categories: [부스트코스]
+tags: ['프리코스']
+description: 썸네일 메이커두개의 함수를 섞어주는 방법 또는 연산자를 말한다.주로 2D image convolution에 이용한다.(I \* K)(i, j) = Σ(m)Σ(n) I(m, n)K(i-m, j-n) = Σ(m)Σ(n) I(i-m, j-n)K(m, n) = O(i-m, j
+image: /assets/img/posts/2023-01-05-til-부스트코스-cnn-convolution은-무엇인가-강의-정리/thumbnail.png
 
-        ![](/assets/img/posts/2023-01-05-til-부스트코스-cnn-convolution은-무엇인가-강의-정리/img0.png)
+---
+
+![](/assets/img/posts/2023-01-05-til-부스트코스-cnn-convolution은-무엇인가-강의-정리/img0.png)
 > [썸네일 메이커](https://ye-yo.github.io/thumbnail-maker/)
 
 # Convolution

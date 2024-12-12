@@ -1,16 +1,16 @@
 
 
-        ---
-        title: [JS] 자식 요소의 변화 감지하기(ResizeObserver, MutationObserver)
-        date: 2023-12-12 11:11:31.075 +0000
-        categories: [react]
-        tags: ['javascript', 'react']
-        description: 동적 UI는 너무 어려워..
-        image: /assets/img/posts/2023-12-12-js-자식-요소의-변화-감지하기resizeobserver-mutationobserver/thumbnail.png
-        
-        ---
+---
+title: [JS] 자식 요소의 변화 감지하기(ResizeObserver, MutationObserver)
+date: 2023-12-12 11:11:31.075 +0000
+categories: [react]
+tags: ['javascript', 'react']
+description: 동적 UI는 너무 어려워..
+image: /assets/img/posts/2023-12-12-js-자식-요소의-변화-감지하기resizeobserver-mutationobserver/thumbnail.png
 
-        ![](/assets/img/posts/2023-12-12-js-자식-요소의-변화-감지하기resizeobserver-mutationobserver/img0.png)
+---
+
+![](/assets/img/posts/2023-12-12-js-자식-요소의-변화-감지하기resizeobserver-mutationobserver/img0.png)
 
 # 문제
 

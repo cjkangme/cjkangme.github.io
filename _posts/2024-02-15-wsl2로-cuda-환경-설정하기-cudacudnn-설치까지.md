@@ -1,22 +1,22 @@
 
 
-        ---
-        title: WSL2로 CUDA 환경 설정하기 (CUDA+cuDNN 설치까지)
-        date: 2024-02-15 13:17:09.111 +0000
-        categories: [TIL]
-        tags: ['wsl', 'cuda', 'ubuntu']
-        description: WSL
+---
+title: WSL2로 CUDA 환경 설정하기 (CUDA+cuDNN 설치까지)
+date: 2024-02-15 13:17:09.111 +0000
+categories: [TIL]
+tags: ['wsl', 'cuda', 'ubuntu']
+description: WSL
 
 WSL(Windows Subsystem for Linux)은 윈도우 환경에서 리눅스 환경을 실행할 수 있는 프로그램이다.
 
 딥러닝 관련 오픈소스 모델을 사용하다보면 Linux Installer만 존재한다거나 각종 버전 호환성 문제가 발생할 수 있는데, 이 경우 WSL을 이용하여 Linux 환경에서 딥러닝 환경을 구축할 수 있다.
 
 이 글을 쓰게된 ...
-        
-        math: true
-        ---
 
-        # WSL
+math: true
+---
+
+# WSL
 
 WSL(Windows Subsystem for Linux)은 윈도우 환경에서 리눅스 환경을 실행할 수 있는 프로그램이다.
 

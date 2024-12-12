@@ -1,16 +1,16 @@
 
 
-        ---
-        title: [알고리즘] 위상 정렬(Topological Sorting) (파이썬)
-        date: 2023-04-20 07:28:18.524 +0000
-        categories: [Algorithm]
-        tags: ['python', '백준', '알고리즘']
-        description: 백준 2623. 음악프로그램 문제풀이와 함께 알아보는 위상 정렬 알고리즘 (Gold 3) 
-        image: /assets/img/posts/2023-04-20-알고리즘-위상-정렬topological-sorting-파이썬/thumbnail.png
-        
-        ---
+---
+title: [알고리즘] 위상 정렬(Topological Sorting) (파이썬)
+date: 2023-04-20 07:28:18.524 +0000
+categories: [Algorithm]
+tags: ['python', '백준', '알고리즘']
+description: 백준 2623. 음악프로그램 문제풀이와 함께 알아보는 위상 정렬 알고리즘 (Gold 3) 
+image: /assets/img/posts/2023-04-20-알고리즘-위상-정렬topological-sorting-파이썬/thumbnail.png
 
-        > 참고하면 좋은 글 들
+---
+
+> 참고하면 좋은 글 들
 - [위상 정렬(Topological sort) 개념 및 구현](https://yoongrammer.tistory.com/86)
 - [[알고리즘] 위상 정렬 (Topological Sorting)](https://velog.io/@kimdukbae/%EC%9C%84%EC%83%81-%EC%A0%95%EB%A0%AC-Topological-Sorting)
 

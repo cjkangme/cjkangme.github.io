@@ -1,16 +1,16 @@
 
 
-        ---
-        title: [논문 공부] Compact 3D Gaussian Representation for Radiance Field
-        date: 2024-05-18 03:29:56.058 +0000
-        categories: [논문]
-        tags: ['cv', '논문']
-        description: (CVPR 2024 Highrights) 수백MB~수GB가 필요한 3D 가우시안을 25배로 압축하여, 가우시안 저장 및 렌더링에 필요한 메모리를 획기적으로 절약할 수 있는 논문
-        image: /assets/img/posts/2024-05-18-논문-공부-compact-3d-gaussian-representation-for-radiance-field/thumbnail.png
-        
-        ---
+---
+title: [논문 공부] Compact 3D Gaussian Representation for Radiance Field
+date: 2024-05-18 03:29:56.058 +0000
+categories: [논문]
+tags: ['cv', '논문']
+description: (CVPR 2024 Highrights) 수백MB~수GB가 필요한 3D 가우시안을 25배로 압축하여, 가우시안 저장 및 렌더링에 필요한 메모리를 획기적으로 절약할 수 있는 논문
+image: /assets/img/posts/2024-05-18-논문-공부-compact-3d-gaussian-representation-for-radiance-field/thumbnail.png
 
-        # 논문 소개
+---
+
+# 논문 소개
 
 제한된 입력(이미지, 텍스트 등)으로 3D Scene을 복원하는 문제는 컴퓨터 비전에서 매우 활발하게 연구되고 있는 분야입니다.
 그 중 `NeRF`는 상당한 수준의 high-fidelity한 3D 복원이 가능했기 때문에 3D reconstruction 분야 발전에 큰 기여를 하였습니다.

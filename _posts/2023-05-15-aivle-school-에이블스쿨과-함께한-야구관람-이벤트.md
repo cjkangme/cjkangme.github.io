@@ -1,16 +1,16 @@
 
 
-        ---
-        title: [AIVLE SCHOOL] 에이블스쿨과 함께한 야구관람 이벤트
-        date: 2023-05-15 13:00:16.857 +0000
-        categories: [에이블스쿨]
-        tags: ['aivle']
-        description: 공짜로 야구경기 보러 갔다온 썰
-        image: /assets/img/posts/2023-05-15-aivle-school-에이블스쿨과-함께한-야구관람-이벤트/thumbnail.png
-        
-        ---
+---
+title: [AIVLE SCHOOL] 에이블스쿨과 함께한 야구관람 이벤트
+date: 2023-05-15 13:00:16.857 +0000
+categories: [에이블스쿨]
+tags: ['aivle']
+description: 공짜로 야구경기 보러 갔다온 썰
+image: /assets/img/posts/2023-05-15-aivle-school-에이블스쿨과-함께한-야구관람-이벤트/thumbnail.png
 
-        ![](/assets/img/posts/2023-05-15-aivle-school-에이블스쿨과-함께한-야구관람-이벤트/img0.png)
+---
+
+![](/assets/img/posts/2023-05-15-aivle-school-에이블스쿨과-함께한-야구관람-이벤트/img0.png)
 
 알다시피 KT는 KT Wiz라는 신생 야구팀을 운영하고 있습니다.
 2021년에는 창단 8년만에 리그 우승이라는 쾌거를 달성하기도 했으며, 강백호와 소형준 등 인기스타를 많이 보유한 팀이기도 하죠.

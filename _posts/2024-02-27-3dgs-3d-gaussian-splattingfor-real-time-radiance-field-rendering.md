@@ -1,17 +1,17 @@
 
 
-        ---
-        title: [3DGS] 3D Gaussian Splatting
+---
+title: [3DGS] 3D Gaussian Splatting
 for Real-Time Radiance Field Rendering
-        date: 2024-02-27 12:32:18.948 +0000
-        categories: [논문]
-        tags: ['3d', 'ai', '논문']
-        description: 3D Vision 분야에서 떠오르는 논문 3DGS에 대해 알아보자
-        image: /assets/img/posts/2024-02-27-3dgs-3d-gaussian-splattingfor-real-time-radiance-field-rendering/thumbnail.png
-        math: true
-        ---
+date: 2024-02-27 12:32:18.948 +0000
+categories: [논문]
+tags: ['3d', 'ai', '논문']
+description: 3D Vision 분야에서 떠오르는 논문 3DGS에 대해 알아보자
+image: /assets/img/posts/2024-02-27-3dgs-3d-gaussian-splattingfor-real-time-radiance-field-rendering/thumbnail.png
+math: true
+---
 
-        > 그다지 전문적이지 않습니다...
+> 그다지 전문적이지 않습니다...
 
 # 서론
 

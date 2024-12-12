@@ -1,16 +1,16 @@
 
 
-        ---
-        title: [TIL] 부스트코스 Python Data Structure 정리
-        date: 2022-12-22 06:16:05.511 +0000
-        categories: [부스트코스-PreCourse]
-        tags: ['부스트코스', '프리코스']
-        description: 데이터 구조(Data Structure) : 특징이 있는 데이터를 효율적으로 저장하기 위해 필요한 구조LIFO(Last In First Out) 구조 : 나중에 넣은 데이터를 먼저 반환데이터의 입력을 Push, 출력을 Pop이라고 한다.파이썬에서는 리스트를 사용하여 스
-        
-        
-        ---
+---
+title: [TIL] 부스트코스 Python Data Structure 정리
+date: 2022-12-22 06:16:05.511 +0000
+categories: [부스트코스-PreCourse]
+tags: ['부스트코스', '프리코스']
+description: 데이터 구조(Data Structure) : 특징이 있는 데이터를 효율적으로 저장하기 위해 필요한 구조LIFO(Last In First Out) 구조 : 나중에 넣은 데이터를 먼저 반환데이터의 입력을 Push, 출력을 Pop이라고 한다.파이썬에서는 리스트를 사용하여 스
 
-        # 파이썬의 기본 데이터 구조
+
+---
+
+# 파이썬의 기본 데이터 구조
 데이터 구조(Data Structure) : 특징이 있는 데이터를 효율적으로 저장하기 위해 필요한 구조
 
 ## 스택(Stack)

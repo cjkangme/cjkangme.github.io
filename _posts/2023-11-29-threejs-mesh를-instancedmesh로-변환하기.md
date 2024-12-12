@@ -1,16 +1,16 @@
 
 
-        ---
-        title: [Three.js] Mesh를 InstancedMesh로 변환하기
-        date: 2023-11-29 13:13:52.129 +0000
-        categories: [three-js]
-        tags: ['three.js']
-        description: 복잡한 구조의 Object3D를 InstancedMesh로 변환해보자
-        image: /assets/img/posts/2023-11-29-threejs-mesh를-instancedmesh로-변환하기/thumbnail.png
-        
-        ---
+---
+title: [Three.js] Mesh를 InstancedMesh로 변환하기
+date: 2023-11-29 13:13:52.129 +0000
+categories: [three-js]
+tags: ['three.js']
+description: 복잡한 구조의 Object3D를 InstancedMesh로 변환해보자
+image: /assets/img/posts/2023-11-29-threejs-mesh를-instancedmesh로-변환하기/thumbnail.png
 
-        대부분의 3D Assets은 여러개의 Mesh가 계층 구조로 묶여있는 하나의 Group이다.
+---
+
+대부분의 3D Assets은 여러개의 Mesh가 계층 구조로 묶여있는 하나의 Group이다.
 
 이러한 Assets를 대량으로 렌더링해야한다면, DrawCall이 급격하게 증가할 것이다. 이럴 때 인스턴싱을 고려해볼 수 있다.
 

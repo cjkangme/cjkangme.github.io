@@ -1,16 +1,16 @@
 
 
-        ---
-        title: [TIL] SDS loss (Score Distillation Sampling)
-        date: 2024-04-28 06:03:26.645 +0000
-        categories: [TIL]
-        tags: ['cv']
-        description: text-to-3D 모델에 사용되는 SDS loss에 대해 알아보자
-        image: /assets/img/posts/2024-04-28-til-sds-loss-score-distillation-sampling/thumbnail.png
-        math: true
-        ---
+---
+title: [TIL] SDS loss (Score Distillation Sampling)
+date: 2024-04-28 06:03:26.645 +0000
+categories: [TIL]
+tags: ['cv']
+description: text-to-3D 모델에 사용되는 SDS loss에 대해 알아보자
+image: /assets/img/posts/2024-04-28-til-sds-loss-score-distillation-sampling/thumbnail.png
+math: true
+---
 
-        ### Score Distillation Sampling이란
+### Score Distillation Sampling이란
 SDS(Score Distillation Sampling) loss는 [DreamFusion](https://dreamfusion3d.github.io/) 논문에서 처음 제시된 손실 함수로, 현재 다양한 Text-to-3D 모델에서 중요하게 사용되고 있다.
 
 ### SDS의 기반이 되는 손실 함수

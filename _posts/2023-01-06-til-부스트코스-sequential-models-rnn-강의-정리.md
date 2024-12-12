@@ -1,16 +1,16 @@
 
 
-        ---
-        title: [TIL] 부스트코스 Sequential Models - RNN 강의 정리
-        date: 2023-01-06 03:31:57.323 +0000
-        categories: [부스트코스-PreCourse]
-        tags: ['부스트코스', '프리코스']
-        description: Sequential Model이란 연속적인 입력으로부터 연속적인 출력을 생성하는 모델이다.일상생활에서 접하는 대부분의 데이터(Audio, Video, 동작 등)는 sequential data 형태이기 때문에 이를 다루는 것을 목표로 한다.어려움 : 얻고 싶은 것은 결국
-        image: /assets/img/posts/2023-01-06-til-부스트코스-sequential-models-rnn-강의-정리/thumbnail.png
-        
-        ---
+---
+title: [TIL] 부스트코스 Sequential Models - RNN 강의 정리
+date: 2023-01-06 03:31:57.323 +0000
+categories: [부스트코스-PreCourse]
+tags: ['부스트코스', '프리코스']
+description: Sequential Model이란 연속적인 입력으로부터 연속적인 출력을 생성하는 모델이다.일상생활에서 접하는 대부분의 데이터(Audio, Video, 동작 등)는 sequential data 형태이기 때문에 이를 다루는 것을 목표로 한다.어려움 : 얻고 싶은 것은 결국
+image: /assets/img/posts/2023-01-06-til-부스트코스-sequential-models-rnn-강의-정리/thumbnail.png
 
-        ![](/assets/img/posts/2023-01-06-til-부스트코스-sequential-models-rnn-강의-정리/img0.png)
+---
+
+![](/assets/img/posts/2023-01-06-til-부스트코스-sequential-models-rnn-강의-정리/img0.png)
 
 
 # Sequential Model

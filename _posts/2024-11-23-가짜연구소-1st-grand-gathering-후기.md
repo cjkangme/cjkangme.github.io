@@ -1,16 +1,16 @@
 
 
-        ---
-        title: 가짜연구소 1st Grand Gathering 후기
-        date: 2024-11-23 11:11:29.033 +0000
-        categories: [conference]
-        tags: ['ai', '가짜연구소', '컨퍼런스']
-        description: 고봉밥 후기
-        image: /assets/img/posts/2024-11-23-가짜연구소-1st-grand-gathering-후기/thumbnail.png
-        
-        ---
+---
+title: 가짜연구소 1st Grand Gathering 후기
+date: 2024-11-23 11:11:29.033 +0000
+categories: [conference]
+tags: ['ai', '가짜연구소', '컨퍼런스']
+description: 고봉밥 후기
+image: /assets/img/posts/2024-11-23-가짜연구소-1st-grand-gathering-후기/thumbnail.png
 
-        # 참여 계기
+---
+
+# 참여 계기
 
 올해 3월 AI에 대해 아직 아무것도 잘 모를때 가짜연구소 8기 러너로 시작하여 현재는 9기 러너로 참여하고 있습니다. 8기 때 Pseudo-con에 참석하여 많은 인사이트를 얻기도 하였고, 최근 여러모로 동기부여를 받을 기회를 접하고 싶어서 참여 신청 링크가 열리자마자 신청하게 되었습니다.
 

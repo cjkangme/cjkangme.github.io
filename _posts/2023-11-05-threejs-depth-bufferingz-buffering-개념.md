@@ -1,16 +1,16 @@
 
 
-        ---
-        title: [three.js] Depth Buffering(Z-buffering) 개념
-        date: 2023-11-05 01:47:49.466 +0000
-        categories: [three-js]
-        tags: ['three.js']
-        description: 3D 객체를 렌더링 할 때 화면에 가까운 물체만을 렌더링하는 기법을 알아보자
-        image: /assets/img/posts/2023-11-05-threejs-depth-bufferingz-buffering-개념/thumbnail.png
-        
-        ---
+---
+title: [three.js] Depth Buffering(Z-buffering) 개념
+date: 2023-11-05 01:47:49.466 +0000
+categories: [three-js]
+tags: ['three.js']
+description: 3D 객체를 렌더링 할 때 화면에 가까운 물체만을 렌더링하는 기법을 알아보자
+image: /assets/img/posts/2023-11-05-threejs-depth-bufferingz-buffering-개념/thumbnail.png
 
-        참고 강의: [GIS Developer 유튜브 강의](https://youtu.be/TF1Bs6-vIAw?si=GIWL-h5nEKVa1Y48)
+---
+
+참고 강의: [GIS Developer 유튜브 강의](https://youtu.be/TF1Bs6-vIAw?si=GIWL-h5nEKVa1Y48)
 
 
 

@@ -1,16 +1,16 @@
 
 
-        ---
-        title: CS231A 강의 노트 4 - stereo systems
-        date: 2024-04-11 07:57:53.487 +0000
-        categories: [cs231a]
-        tags: ['cv', 'cs231a']
-        description: 스탠포드 3D CV 강의 CS231A 내용을 이해하는 것을 목표로 정리해보는 글
-        image: /assets/img/posts/2024-04-11-cs231a-강의-노트-4-stereo-systems/thumbnail.png
-        math: true
-        ---
+---
+title: CS231A 강의 노트 4 - stereo systems
+date: 2024-04-11 07:57:53.487 +0000
+categories: [cs231a]
+tags: ['cv', 'cs231a']
+description: 스탠포드 3D CV 강의 CS231A 내용을 이해하는 것을 목표로 정리해보는 글
+image: /assets/img/posts/2024-04-11-cs231a-강의-노트-4-stereo-systems/thumbnail.png
+math: true
+---
 
-        # 1. Introduction
+# 1. Introduction
 이전 강의 노트에서는 epipolar geometry를 통해 현실에서 하나의 3D point가 두 이미지 평면에서 각각 어떤 위치에 투영되는지의 관계를 나타낼 수 있다는 것을 배웠다.
 즉, 3D 정보 없이도 두 이미지 평면간의 관계를 알아 낼 수 있다는 것이다.
 이번 강의 노트에서는 이를 이용해 여러 장의 2D 이미지로부터 3D 정보를 복원하는 방법에 대해 다루고 있다.

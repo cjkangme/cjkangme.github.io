@@ -1,16 +1,16 @@
 
 
-        ---
-        title: [three.js] Raycaster
-        date: 2023-11-11 11:52:40.781 +0000
-        categories: [three-js]
-        tags: ['three.js']
-        description: three.js의 Raycaster에 대해 알아보자
-        image: /assets/img/posts/2023-11-11-threejs-raycaster/thumbnail.png
-        
-        ---
+---
+title: [three.js] Raycaster
+date: 2023-11-11 11:52:40.781 +0000
+categories: [three-js]
+tags: ['three.js']
+description: three.js의 Raycaster에 대해 알아보자
+image: /assets/img/posts/2023-11-11-threejs-raycaster/thumbnail.png
 
-        Raycasting : 어떤 지점에서 광선을 발사해 그 광선에 닿는 물체가 있는지 없는지 검사하는 기법
+---
+
+Raycasting : 어떤 지점에서 광선을 발사해 그 광선에 닿는 물체가 있는지 없는지 검사하는 기법
 
 3차원 공간을 2차원 화면에 투영하기 위해 각 픽셀마다 물체가 있는지 없는지 검사하는 것에 사용한다.
 

@@ -1,16 +1,16 @@
 
 
-        ---
-        title: [JS] LexicalEnvironment vs VariableEnvironment
-        date: 2023-11-05 13:32:24.525 +0000
-        categories: [javascript]
-        tags: []
-        description: 렉시컬 환경에 존재하는 두 컴포넌트 LexicalEnvironment와 VariableEnvironment에는 무슨 차이가 있을까?
-        image: /assets/img/posts/2023-11-05-js-lexicalenvironment-vs-variableenvironment/thumbnail.png
-        
-        ---
+---
+title: [JS] LexicalEnvironment vs VariableEnvironment
+date: 2023-11-05 13:32:24.525 +0000
+categories: [javascript]
+tags: []
+description: 렉시컬 환경에 존재하는 두 컴포넌트 LexicalEnvironment와 VariableEnvironment에는 무슨 차이가 있을까?
+image: /assets/img/posts/2023-11-05-js-lexicalenvironment-vs-variableenvironment/thumbnail.png
 
-        # 서론
+---
+
+# 서론
 
 모던자바스크립트 Deep Dive를 공부하던 중, 렉시컬 환경에는 `LexicalEnvironment`와 `VariableEnvironment` 두 종류가 있는데, 책에서는 하나로 본다는 설명을 읽게 되었다.
 

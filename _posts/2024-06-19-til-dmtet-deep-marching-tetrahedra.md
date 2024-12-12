@@ -1,16 +1,16 @@
 
 
-        ---
-        title: [TIL] DMTet (Deep Marching Tetrahedra)
-        date: 2024-06-19 11:44:05.811 +0000
-        categories: [TIL]
-        tags: ['cv', 'til', '논문']
-        description: DMTet 겉핥기
-        image: /assets/img/posts/2024-06-19-til-dmtet-deep-marching-tetrahedra/thumbnail.png
-        math: true
-        ---
+---
+title: [TIL] DMTet (Deep Marching Tetrahedra)
+date: 2024-06-19 11:44:05.811 +0000
+categories: [TIL]
+tags: ['cv', 'til', '논문']
+description: DMTet 겉핥기
+image: /assets/img/posts/2024-06-19-til-dmtet-deep-marching-tetrahedra/thumbnail.png
+math: true
+---
 
-        `DMTet`은 저해상도의 voxel 또는 포인트 클라우드를 고해상도의 삼각형 mesh로 변환할 수 있는 hybrid representation입니다.
+`DMTet`은 저해상도의 voxel 또는 포인트 클라우드를 고해상도의 삼각형 mesh로 변환할 수 있는 hybrid representation입니다.
 
 여기서 hybrid라고 하는 이유는 voxel이라는 explicit representation과 signed distance field라는 implicit representation을 동시에 사용하기 때문입니다.
 

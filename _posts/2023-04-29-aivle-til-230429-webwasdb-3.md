@@ -1,16 +1,16 @@
 
 
-        ---
-        title: AIVLE TIL ('23.04.29) WEB/WAS/DB (3)
-        date: 2023-04-29 14:45:48.306 +0000
-        categories: [에이블스쿨]
-        tags: ['aivle']
-        description: Flask 다루어보기
-        image: /assets/img/posts/2023-04-29-aivle-til-230429-webwasdb-3/thumbnail.png
-        
-        ---
+---
+title: AIVLE TIL ('23.04.29) WEB/WAS/DB (3)
+date: 2023-04-29 14:45:48.306 +0000
+categories: [에이블스쿨]
+tags: ['aivle']
+description: Flask 다루어보기
+image: /assets/img/posts/2023-04-29-aivle-til-230429-webwasdb-3/thumbnail.png
 
-        # 웹 호스팅
+---
+
+# 웹 호스팅
 
 ![](/assets/img/posts/2023-04-29-aivle-til-230429-webwasdb-3/img0.png)
 

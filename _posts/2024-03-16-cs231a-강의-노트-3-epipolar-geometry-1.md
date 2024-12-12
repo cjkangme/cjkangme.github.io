@@ -1,16 +1,16 @@
 
 
-        ---
-        title: CS231A 강의 노트 3 - epipolar geometry (1)
-        date: 2024-03-16 06:54:57.975 +0000
-        categories: [cs231a]
-        tags: ['cv', 'cs231a']
-        description: 사실 반도 이해 못한거 같은데..
-        image: /assets/img/posts/2024-03-16-cs231a-강의-노트-3-epipolar-geometry-1/thumbnail.png
-        math: true
-        ---
+---
+title: CS231A 강의 노트 3 - epipolar geometry (1)
+date: 2024-03-16 06:54:57.975 +0000
+categories: [cs231a]
+tags: ['cv', 'cs231a']
+description: 사실 반도 이해 못한거 같은데..
+image: /assets/img/posts/2024-03-16-cs231a-강의-노트-3-epipolar-geometry-1/thumbnail.png
+math: true
+---
 
-        # 1. Introduction
+# 1. Introduction
 이전 강의 노트에서는 하나의 Scene에 대한 하나 이상의 이미지들로부터 Scene에 대한 특징 정보를 유도할 수 있었다.
 하지만 3D Scene에서 2D Image로 맵핑하는 과정에서 특징 정보가 손실될수밖에 없다.
 

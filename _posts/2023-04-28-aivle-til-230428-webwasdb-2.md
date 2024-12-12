@@ -1,16 +1,16 @@
 
 
-        ---
-        title: AIVLE TIL ('23.04.28) WEB/WAS/DB (2)
-        date: 2023-04-28 12:46:00.151 +0000
-        categories: [에이블스쿨]
-        tags: []
-        description: 수업은 이틀이지만 3편이 있습니다.
-        image: /assets/img/posts/2023-04-28-aivle-til-230428-webwasdb-2/thumbnail.png
-        math: true
-        ---
+---
+title: AIVLE TIL ('23.04.28) WEB/WAS/DB (2)
+date: 2023-04-28 12:46:00.151 +0000
+categories: [에이블스쿨]
+tags: []
+description: 수업은 이틀이지만 3편이 있습니다.
+image: /assets/img/posts/2023-04-28-aivle-til-230428-webwasdb-2/thumbnail.png
+math: true
+---
 
-        # 데이터베이스
+# 데이터베이스
 
 ## 데이터베이스 기초 이론
 

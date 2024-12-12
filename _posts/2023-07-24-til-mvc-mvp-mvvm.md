@@ -1,16 +1,16 @@
 
 
-        ---
-        title: [TIL] MVC - MVP - MVVM
-        date: 2023-07-24 03:56:09.939 +0000
-        categories: [TIL]
-        tags: []
-        description: 겁나 헷갈리는 MVC-MVP-MVVM의 차이를 알아보자
-        
-        
-        ---
+---
+title: [TIL] MVC - MVP - MVVM
+date: 2023-07-24 03:56:09.939 +0000
+categories: [TIL]
+tags: []
+description: 겁나 헷갈리는 MVC-MVP-MVVM의 차이를 알아보자
 
-        # 서론
+
+---
+
+# 서론
 
 MVC, MVP, MVVM은 모두 아키텍처 패턴의 종류이다.
 

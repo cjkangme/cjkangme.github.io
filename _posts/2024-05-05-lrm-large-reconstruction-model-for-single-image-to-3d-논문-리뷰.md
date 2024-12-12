@@ -1,16 +1,16 @@
 
 
-        ---
-        title: [LRM] Large Reconstruction Model For Single Image To 3D (논문 리뷰)
-        date: 2024-05-05 05:21:26.441 +0000
-        categories: [논문]
-        tags: ['ai', '논문']
-        description: 한 장의 이미지로 5초만에 3D를 만들어 주는 모델 LRM에 대해 배우기
-        image: /assets/img/posts/2024-05-05-lrm-large-reconstruction-model-for-single-image-to-3d-논문-리뷰/thumbnail.png
-        math: true
-        ---
+---
+title: [LRM] Large Reconstruction Model For Single Image To 3D (논문 리뷰)
+date: 2024-05-05 05:21:26.441 +0000
+categories: [논문]
+tags: ['ai', '논문']
+description: 한 장의 이미지로 5초만에 3D를 만들어 주는 모델 LRM에 대해 배우기
+image: /assets/img/posts/2024-05-05-lrm-large-reconstruction-model-for-single-image-to-3d-논문-리뷰/thumbnail.png
+math: true
+---
 
-        # 서론
+# 서론
 LRM(Large Reconstruction Model)은 이름 그대로 '큰' 3D Reconstruction 모델이다.
 
 이전의 single image to 3D reconstruction 모델들은 주로 특정 카테고리에 대해서만 prior를 학습하여 새로운 카테고리를 생성하기 어려운 모델이거나, `Stable Diffusion`과 같은 pre-trained 2D 생성형 모델에 의존하여 3D를 생성하는 접근 방식을 취했다. 하지만 성능이 너무 떨어지거나, 너무 많은 연산이 필요하거나 하는 등 2D 이미지나 자연어 처리 분야에 비해 발전이 덜 이루지고 있었다.

@@ -1,16 +1,16 @@
 
 
-        ---
-        title: [TIL] 파이썬 filter 함수
-        date: 2023-01-16 04:08:41.079 +0000
-        categories: [TIL]
-        tags: ['python']
-        description: filter(조건 함수, iterable 객체)filter 함수는 iterator 중에서 조건 함수를 만족하는 값만을 filter 객체에 담아 반환한다.filter 객체 역시 iterator이므로, 리스트 등 다른 자료형으로 변환하여 사용하면 된다.'아... 리스트에서
-        image: /assets/img/posts/2023-01-16-til-파이썬-filter-함수/thumbnail.png
-        
-        ---
+---
+title: [TIL] 파이썬 filter 함수
+date: 2023-01-16 04:08:41.079 +0000
+categories: [TIL]
+tags: ['python']
+description: filter(조건 함수, iterable 객체)filter 함수는 iterator 중에서 조건 함수를 만족하는 값만을 filter 객체에 담아 반환한다.filter 객체 역시 iterator이므로, 리스트 등 다른 자료형으로 변환하여 사용하면 된다.'아... 리스트에서
+image: /assets/img/posts/2023-01-16-til-파이썬-filter-함수/thumbnail.png
 
-        ## `filter` 함수
+---
+
+## `filter` 함수
 
 > `filter(조건 함수, iterable 객체)`
 

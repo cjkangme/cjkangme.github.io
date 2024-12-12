@@ -1,16 +1,16 @@
 
 
-        ---
-        title: [알고리즘] 네트워크 유량 (Network Flow) (파이썬)
-        date: 2023-02-25 17:03:44.777 +0000
-        categories: [Algorithm]
-        tags: ['til', '백준', '알고리즘']
-        description: 백준 문제 풀이와 함께 알아보는 네트워크 유량 개념과 에드몬드-카프 알고리즘 (Platinum)
-        image: /assets/img/posts/2023-02-25-알고리즘-네트워크-유량-network-flow-파이썬/thumbnail.png
-        
-        ---
+---
+title: [알고리즘] 네트워크 유량 (Network Flow) (파이썬)
+date: 2023-02-25 17:03:44.777 +0000
+categories: [Algorithm]
+tags: ['til', '백준', '알고리즘']
+description: 백준 문제 풀이와 함께 알아보는 네트워크 유량 개념과 에드몬드-카프 알고리즘 (Platinum)
+image: /assets/img/posts/2023-02-25-알고리즘-네트워크-유량-network-flow-파이썬/thumbnail.png
 
-        > 참고자료
+---
+
+> 참고자료
 > - [네트워크 유량(Network Flow) - 기내식은수박바](https://soobarkbar.tistory.com/198)
 가장 이론적인 부분을 잘 설명한 것 같다.
 > - [네트워크 유량(Network Flow) (수정: 2019-08-14) - 라이](https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=kks227&logNo=220804885235)

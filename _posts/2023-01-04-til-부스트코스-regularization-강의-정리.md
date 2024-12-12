@@ -1,16 +1,16 @@
 
 
-        ---
-        title: [TIL] 부스트코스 Regularization 강의 정리
-        date: 2023-01-04 09:39:01.937 +0000
-        categories: [부스트코스]
-        tags: ['프리코스']
-        description: 강의 주소 : https&#x3A;//www.boostcourse.org/ai111/lecture/1162943학습을 방해하는 패널티를 부여하는 것을 통해, 모델이 test data에 대해서도 잘 동작하게 하는 방법론이다.Generalization Performance
-        image: /assets/img/posts/2023-01-04-til-부스트코스-regularization-강의-정리/thumbnail.png
-        
-        ---
+---
+title: [TIL] 부스트코스 Regularization 강의 정리
+date: 2023-01-04 09:39:01.937 +0000
+categories: [부스트코스]
+tags: ['프리코스']
+description: 강의 주소 : https&#x3A;//www.boostcourse.org/ai111/lecture/1162943학습을 방해하는 패널티를 부여하는 것을 통해, 모델이 test data에 대해서도 잘 동작하게 하는 방법론이다.Generalization Performance
+image: /assets/img/posts/2023-01-04-til-부스트코스-regularization-강의-정리/thumbnail.png
 
-        > 강의 주소 : https://www.boostcourse.org/ai111/lecture/1162943
+---
+
+> 강의 주소 : https://www.boostcourse.org/ai111/lecture/1162943
 
 # Regularization
 

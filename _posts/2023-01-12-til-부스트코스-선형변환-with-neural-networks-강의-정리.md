@@ -1,16 +1,16 @@
 
 
-        ---
-        title: [TIL] 부스트코스 선형변환 with Neural Networks 강의 정리
-        date: 2023-01-12 05:54:56.718 +0000
-        categories: [부스트코스-PreCourse]
-        tags: ['부스트코스', '프리코스']
-        description: 강의주소 : https&#x3A;//www.boostcourse.org/ai251/lecture/540318신경망에서의 Wx + b변환은 아래 그림과 같이 표현할 수 있다.선형변환 -> bias에 의한 translation -> 비선형 함수에 의한 변형위 그림을 토대로
-        image: /assets/img/posts/2023-01-12-til-부스트코스-선형변환-with-neural-networks-강의-정리/thumbnail.png
-        
-        ---
+---
+title: [TIL] 부스트코스 선형변환 with Neural Networks 강의 정리
+date: 2023-01-12 05:54:56.718 +0000
+categories: [부스트코스-PreCourse]
+tags: ['부스트코스', '프리코스']
+description: 강의주소 : https&#x3A;//www.boostcourse.org/ai251/lecture/540318신경망에서의 Wx + b변환은 아래 그림과 같이 표현할 수 있다.선형변환 -> bias에 의한 translation -> 비선형 함수에 의한 변형위 그림을 토대로
+image: /assets/img/posts/2023-01-12-til-부스트코스-선형변환-with-neural-networks-강의-정리/thumbnail.png
 
-        > 강의주소 : https://www.boostcourse.org/ai251/lecture/540318
+---
+
+> 강의주소 : https://www.boostcourse.org/ai251/lecture/540318
 
 # Neural Networks(신경망)에서의 선형변환
 

@@ -1,16 +1,16 @@
 
 
-        ---
-        title: [알고리즘] 이분 매칭 (Bipartite Matching) (파이썬)
-        date: 2023-03-01 09:26:46.437 +0000
-        categories: [Algorithm]
-        tags: ['aivle', 'til', '백준', '알고리즘', '이분매칭']
-        description: 백준 문제 풀이와 함께 알아보는 이분 매칭 알고리즘 (1671. 상어의 저녁식사)
-        image: /assets/img/posts/2023-03-01-알고리즘-이분-매칭-bipartite-matching-파이썬/thumbnail.png
-        
-        ---
+---
+title: [알고리즘] 이분 매칭 (Bipartite Matching) (파이썬)
+date: 2023-03-01 09:26:46.437 +0000
+categories: [Algorithm]
+tags: ['aivle', 'til', '백준', '알고리즘', '이분매칭']
+description: 백준 문제 풀이와 함께 알아보는 이분 매칭 알고리즘 (1671. 상어의 저녁식사)
+image: /assets/img/posts/2023-03-01-알고리즘-이분-매칭-bipartite-matching-파이썬/thumbnail.png
 
-        > 참고자료
+---
+
+> 참고자료
 > - [29. 이분 매칭(Bipartite Matching)](https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=ndb796&logNo=221240613074)
 > 알고리즘의 단계가 하나하나 잘 설명되어 있다. 강의도 하시는 분인지 유튜브 링크도 있다.
 > - [[알고리즘] 이분 매칭 알고리즘 (Bipartite Matching)](https://yjg-lab.tistory.com/209)

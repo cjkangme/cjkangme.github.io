@@ -1,16 +1,16 @@
 
 
-        ---
-        title: CS231A 강의 노트 4 - stereo systems (2)
-        date: 2024-04-14 05:44:15.984 +0000
-        categories: [cs231a]
-        tags: ['cv', 'cs231a']
-        description: 스탠포드 3D CV 강의 CS231A 내용을 이해하는 것을 목표로 정리해보는 글. 완벽히 이해했어!(이해못함)
-        image: /assets/img/posts/2024-04-14-cs231a-강의-노트-4-stereo-systems-2/thumbnail.png
-        math: true
-        ---
+---
+title: CS231A 강의 노트 4 - stereo systems (2)
+date: 2024-04-14 05:44:15.984 +0000
+categories: [cs231a]
+tags: ['cv', 'cs231a']
+description: 스탠포드 3D CV 강의 CS231A 내용을 이해하는 것을 목표로 정리해보는 글. 완벽히 이해했어!(이해못함)
+image: /assets/img/posts/2024-04-14-cs231a-강의-노트-4-stereo-systems-2/thumbnail.png
+math: true
+---
 
-        # 3. Affine structure from motion
+# 3. Affine structure from motion
 
 **structure from motion(SfM)**은 multiple view 이미지로부터 씬(scene)의 3D 구조와 카메라 파라미터를 동시에 결정할 수 있는 방법이다.
 

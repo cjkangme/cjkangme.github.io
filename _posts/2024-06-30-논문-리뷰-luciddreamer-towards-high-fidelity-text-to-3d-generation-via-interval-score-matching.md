@@ -1,16 +1,16 @@
 
 
-        ---
-        title: [논문 리뷰] LucidDreamer:  Towards High-Fidelity Text-to-3D Generation via Interval Score Matching
-        date: 2024-06-30 07:10:48.770 +0000
-        categories: [논문]
-        tags: ['ai', 'cv', '논문']
-        description: text-to-3d 최신 논문 공부
-        image: /assets/img/posts/2024-06-30-논문-리뷰-luciddreamer-towards-high-fidelity-text-to-3d-generation-via-interval-score-matching/thumbnail.png
-        math: true
-        ---
+---
+title: [논문 리뷰] LucidDreamer:  Towards High-Fidelity Text-to-3D Generation via Interval Score Matching
+date: 2024-06-30 07:10:48.770 +0000
+categories: [논문]
+tags: ['ai', 'cv', '논문']
+description: text-to-3d 최신 논문 공부
+image: /assets/img/posts/2024-06-30-논문-리뷰-luciddreamer-towards-high-fidelity-text-to-3d-generation-via-interval-score-matching/thumbnail.png
+math: true
+---
 
-        > 일부는 저의 해석이 들어가 있어서 잘못된 부분이 있을 수 있습니다. 혹시 잘못된 부분이 있다면 지적 부탁드립니다.
+> 일부는 저의 해석이 들어가 있어서 잘못된 부분이 있을 수 있습니다. 혹시 잘못된 부분이 있다면 지적 부탁드립니다.
 
 # text-to-3D
 

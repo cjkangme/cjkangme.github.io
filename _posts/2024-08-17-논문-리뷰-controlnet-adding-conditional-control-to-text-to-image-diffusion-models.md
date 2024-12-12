@@ -1,16 +1,16 @@
 
 
-        ---
-        title: [논문 리뷰] ControlNet: Adding Conditional Control to Text-to-Image Diffusion Models
-        date: 2024-08-17 07:43:14.275 +0000
-        categories: [논문]
-        tags: ['ai', 'cv', '논문']
-        description: 우리가 원하는 생각을 정확히 Diffusion에게 가르칠 수 있는 ControlNet에 대해 알아보기
-        image: /assets/img/posts/2024-08-17-논문-리뷰-controlnet-adding-conditional-control-to-text-to-image-diffusion-models/thumbnail.png
-        math: true
-        ---
+---
+title: [논문 리뷰] ControlNet: Adding Conditional Control to Text-to-Image Diffusion Models
+date: 2024-08-17 07:43:14.275 +0000
+categories: [논문]
+tags: ['ai', 'cv', '논문']
+description: 우리가 원하는 생각을 정확히 Diffusion에게 가르칠 수 있는 ControlNet에 대해 알아보기
+image: /assets/img/posts/2024-08-17-논문-리뷰-controlnet-adding-conditional-control-to-text-to-image-diffusion-models/thumbnail.png
+math: true
+---
 
-        # Introduction
+# Introduction
 기존의 diffusion 기반 모델들은 이미지 생성은 정말 뛰어났지만, 텍스트 프롬프트 만으로는 우리가 원하는 이미지를 뽑기에는 상당히 어려웠습니다.
 
 ![](/assets/img/posts/2024-08-17-논문-리뷰-controlnet-adding-conditional-control-to-text-to-image-diffusion-models/img0.png)

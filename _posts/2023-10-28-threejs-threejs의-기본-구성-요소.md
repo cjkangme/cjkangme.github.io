@@ -1,16 +1,16 @@
 
 
-        ---
-        title: [three.js] three.js의 기본 구성 요소
-        date: 2023-10-28 10:33:17.518 +0000
-        categories: [three-js]
-        tags: ['three.js']
-        description: three.js의 기본 구성 요소 알아보기
-        image: /assets/img/posts/2023-10-28-threejs-threejs의-기본-구성-요소/thumbnail.png
-        
-        ---
+---
+title: [three.js] three.js의 기본 구성 요소
+date: 2023-10-28 10:33:17.518 +0000
+categories: [three-js]
+tags: ['three.js']
+description: three.js의 기본 구성 요소 알아보기
+image: /assets/img/posts/2023-10-28-threejs-threejs의-기본-구성-요소/thumbnail.png
 
-        각각의 구성요소는 여러가지 종류의 클래스, 옵션을 가지므로 좀 더 깊이 알아야하지만
+---
+
+각각의 구성요소는 여러가지 종류의 클래스, 옵션을 가지므로 좀 더 깊이 알아야하지만
 
 여기서는 하나의 화면이 어떤 구성요소들로 구성되는지만 알아보자
 

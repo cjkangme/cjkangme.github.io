@@ -1,16 +1,16 @@
 
 
-        ---
-        title: [Flutter-Android] 백그라운드에서 위치 정보 받아오기 + Kakao REST API 
-        date: 2023-05-22 10:34:12.348 +0000
-        categories: [K-DT해커톤]
-        tags: ['aivle', 'flutter', '공모전/경진대회']
-        description: 사용자 위치정보를 백그라운드에서 받아와 사용해보자
-        image: /assets/img/posts/2023-05-22-flutter-android-백그라운드에서-위치-정보-받아오기-kakao-rest-api/thumbnail.png
-        math: true
-        ---
+---
+title: [Flutter-Android] 백그라운드에서 위치 정보 받아오기 + Kakao REST API 
+date: 2023-05-22 10:34:12.348 +0000
+categories: [K-DT해커톤]
+tags: ['aivle', 'flutter', '공모전/경진대회']
+description: 사용자 위치정보를 백그라운드에서 받아와 사용해보자
+image: /assets/img/posts/2023-05-22-flutter-android-백그라운드에서-위치-정보-받아오기-kakao-rest-api/thumbnail.png
+math: true
+---
 
-        > KT 에이블스쿨 수강생들과 함께 참여한 공모전을 위해 개발한 내용에 대해 작성한 게시글입니다.
+> KT 에이블스쿨 수강생들과 함께 참여한 공모전을 위해 개발한 내용에 대해 작성한 게시글입니다.
 
 # 백그라운드에서 위치 정보 수집
 

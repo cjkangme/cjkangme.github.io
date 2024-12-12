@@ -1,16 +1,16 @@
 
 
-        ---
-        title: [ML 스터디] Introduction to Shell
-        date: 2024-10-08 10:25:01.599 +0000
-        categories: [developer-AI-powered]
-        tags: []
-        description: [3주차] 가짜연구소 9기 "AI를 잘 활용하는 개발자로 성장하기" 프로젝트에 참여하여 Datacamp의 "Machine Learning Engineer" 강의를 수강하고 해당 내용을 정리한 게시글입니다.
-        image: /assets/img/posts/2024-10-08-ml-스터디-introduction-to-shell/thumbnail.png
-        math: true
-        ---
+---
+title: [ML 스터디] Introduction to Shell
+date: 2024-10-08 10:25:01.599 +0000
+categories: [developer-AI-powered]
+tags: []
+description: [3주차] 가짜연구소 9기 "AI를 잘 활용하는 개발자로 성장하기" 프로젝트에 참여하여 Datacamp의 "Machine Learning Engineer" 강의를 수강하고 해당 내용을 정리한 게시글입니다.
+image: /assets/img/posts/2024-10-08-ml-스터디-introduction-to-shell/thumbnail.png
+math: true
+---
 
-        > 가짜연구소 9기 "AI를 잘 활용하는 개발자로 성장하기" 프로젝트에 참여하여 Datacamp의 "Machine Learning Engineer" 강의를 수강하고 해당 내용을 정리한 게시글입니다.
+> 가짜연구소 9기 "AI를 잘 활용하는 개발자로 성장하기" 프로젝트에 참여하여 Datacamp의 "Machine Learning Engineer" 강의를 수강하고 해당 내용을 정리한 게시글입니다.
 > [Datacamp Machine Learning 코스 페이지](https://www.datacamp.com/category/machine-learning)
 
 이전까지의 강의들은 동영상 강의 + 연습문제 형태로 구성되었는데, 이번에는 모든 챕터가 Linux 관련 명령어 연습 문제로만 구성되어있다는 점이 독특했습니다.

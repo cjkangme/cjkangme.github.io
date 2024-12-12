@@ -1,16 +1,16 @@
 
 
-        ---
-        title: [TIL] React Lifecycle (생명주기)
-        date: 2023-08-20 12:12:11.857 +0000
-        categories: [TIL]
-        tags: ['til']
-        description: 프론트엔드 면접 단골질문 React Lifecycle
-        image: /assets/img/posts/2023-08-20-til-react-lifecycle-생명주기/thumbnail.png
-        
-        ---
+---
+title: [TIL] React Lifecycle (생명주기)
+date: 2023-08-20 12:12:11.857 +0000
+categories: [TIL]
+tags: ['til']
+description: 프론트엔드 면접 단골질문 React Lifecycle
+image: /assets/img/posts/2023-08-20-til-react-lifecycle-생명주기/thumbnail.png
 
-        > 참고 자료들
+---
+
+> 참고 자료들
 - [한빛미디어 | [리액트 초보 / 입문] 07-1강_훅](https://youtu.be/_eq5h9JzN4U)
 - [ZeroCho | React의 생명 주기(Life Cycle)](https://www.zerocho.com/category/React/post/579b5ec26958781500ed9955)
 - [93jm | 리액트 shouldcomponentupdate](https://velog.io/@93jm/%EB%A6%AC%EC%95%A1%ED%8A%B8-shouldcomponentupdate)

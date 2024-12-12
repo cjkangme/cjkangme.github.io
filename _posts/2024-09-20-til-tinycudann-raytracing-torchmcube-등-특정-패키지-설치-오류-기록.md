@@ -1,16 +1,16 @@
 
 
-        ---
-        title: [TIL] tinycudann, raytracing, torchmcube 등 특정 패키지 설치 오류 기록
-        date: 2024-09-20 05:44:59.149 +0000
-        categories: [TIL]
-        tags: []
-        description: 패키지 설치부터 어려워..
-        image: /assets/img/posts/2024-09-20-til-tinycudann-raytracing-torchmcube-등-특정-패키지-설치-오류-기록/thumbnail.png
-        
-        ---
+---
+title: [TIL] tinycudann, raytracing, torchmcube 등 특정 패키지 설치 오류 기록
+date: 2024-09-20 05:44:59.149 +0000
+categories: [TIL]
+tags: []
+description: 패키지 설치부터 어려워..
+image: /assets/img/posts/2024-09-20-til-tinycudann-raytracing-torchmcube-등-특정-패키지-설치-오류-기록/thumbnail.png
 
-        ![](/assets/img/posts/2024-09-20-til-tinycudann-raytracing-torchmcube-등-특정-패키지-설치-오류-기록/img0.png)
+---
+
+![](/assets/img/posts/2024-09-20-til-tinycudann-raytracing-torchmcube-등-특정-패키지-설치-오류-기록/img0.png)
 
 오픈소스 코드를 쓰려고 하다보면 이렇게 clone을 해서 패키지를 설치해야 하는 경우가 많은데
 생각없이 클론 후 `pip install`을 하면 바로 빌드 과정에서 오류가 나는 경우가 많다.

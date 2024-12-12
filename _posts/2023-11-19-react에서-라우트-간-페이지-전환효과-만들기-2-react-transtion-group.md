@@ -1,16 +1,16 @@
 
 
-        ---
-        title: React에서 라우트 간 페이지 전환효과 만들기 (2) react-transtion-group
-        date: 2023-11-19 06:08:57.465 +0000
-        categories: [react]
-        tags: ['javascript', 'react']
-        description: react-transition-group을 통해 url을 이동할 때도 모바일 앱처럼 페이지 전환효과를 넣어보자.
-        image: /assets/img/posts/2023-11-19-react에서-라우트-간-페이지-전환효과-만들기-2-react-transtion-group/thumbnail.png
-        
-        ---
+---
+title: React에서 라우트 간 페이지 전환효과 만들기 (2) react-transtion-group
+date: 2023-11-19 06:08:57.465 +0000
+categories: [react]
+tags: ['javascript', 'react']
+description: react-transition-group을 통해 url을 이동할 때도 모바일 앱처럼 페이지 전환효과를 넣어보자.
+image: /assets/img/posts/2023-11-19-react에서-라우트-간-페이지-전환효과-만들기-2-react-transtion-group/thumbnail.png
 
-        > [React에서 모바일 앱 같은 페이지 전환효과 만들기 (1) framer-motion](https://velog.io/@cjkangme/React%EC%97%90%EC%84%9C-%EB%AA%A8%EB%B0%94%EC%9D%BC-%EC%95%B1-%EA%B0%99%EC%9D%80-%ED%8E%98%EC%9D%B4%EC%A7%80-%EC%A0%84%ED%99%98%ED%9A%A8%EA%B3%BC-%EB%A7%8C%EB%93%A4%EA%B8%B0-1)
+---
+
+> [React에서 모바일 앱 같은 페이지 전환효과 만들기 (1) framer-motion](https://velog.io/@cjkangme/React%EC%97%90%EC%84%9C-%EB%AA%A8%EB%B0%94%EC%9D%BC-%EC%95%B1-%EA%B0%99%EC%9D%80-%ED%8E%98%EC%9D%B4%EC%A7%80-%EC%A0%84%ED%99%98%ED%9A%A8%EA%B3%BC-%EB%A7%8C%EB%93%A4%EA%B8%B0-1)
 
 이전 게시글에서 `framer-motion` 라이브러리를 이용해 페이지 전환 효과를 만들었다.
 

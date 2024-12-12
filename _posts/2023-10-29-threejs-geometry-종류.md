@@ -1,16 +1,16 @@
 
 
-        ---
-        title: [three.js] Geometry 종류
-        date: 2023-10-29 12:21:06.007 +0000
-        categories: [three-js]
-        tags: ['three.js']
-        description: three.js가 제공하는 다양한 geometry에 대해 알아보자
-        image: /assets/img/posts/2023-10-29-threejs-geometry-종류/thumbnail.png
-        
-        ---
+---
+title: [three.js] Geometry 종류
+date: 2023-10-29 12:21:06.007 +0000
+categories: [three-js]
+tags: ['three.js']
+description: three.js가 제공하는 다양한 geometry에 대해 알아보자
+image: /assets/img/posts/2023-10-29-threejs-geometry-종류/thumbnail.png
 
-        > 참고 강의 : [GIS Developer 유튜브 강의](https://youtu.be/ITA9no8Bsio?si=hX8ZV_zJ6ibzvCag)
+---
+
+> 참고 강의 : [GIS Developer 유튜브 강의](https://youtu.be/ITA9no8Bsio?si=hX8ZV_zJ6ibzvCag)
 
 three.js의 `BufferGeometry`는 배열 형태로 3차원 오브젝트를 구성하는 정점의 정보와 인덱스 정보 등을 저장함으로써 3차원 구조체의 형상을 정의한다.
 

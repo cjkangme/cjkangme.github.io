@@ -1,16 +1,16 @@
 
 
-        ---
-        title: [3D] KD Tree와 BVH
-        date: 2024-01-11 11:28:32.265 +0000
-        categories: [three-js]
-        tags: []
-        description: 3D 최적화는 어렵다..
-        image: /assets/img/posts/2024-01-11-3d-kd-tree와-bvh/thumbnail.png
-        
-        ---
+---
+title: [3D] KD Tree와 BVH
+date: 2024-01-11 11:28:32.265 +0000
+categories: [three-js]
+tags: []
+description: 3D 최적화는 어렵다..
+image: /assets/img/posts/2024-01-11-3d-kd-tree와-bvh/thumbnail.png
 
-        ![](/assets/img/posts/2024-01-11-3d-kd-tree와-bvh/img0.png)
+---
+
+![](/assets/img/posts/2024-01-11-3d-kd-tree와-bvh/img0.png)
 
 <small>출처: https://www.fwilliams.info/point-cloud-utils/sections/closest_point_on_mesh/</small>
 

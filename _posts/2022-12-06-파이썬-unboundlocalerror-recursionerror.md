@@ -1,16 +1,16 @@
 
 
-        ---
-        title: [파이썬] UnboundLocalError, RecursionError
-        date: 2022-12-06 05:40:48.501 +0000
-        categories: [error]
-        tags: ['python', '백준', '에러']
-        description: 백준: 손익분기점 문제https&#x3A;//www.acmicpc.net/problem/1712위의 백준 문제를 풀어보다 2가지 에러와 마주했다.간단히 설명하자면 def, if, for, while 등의 안에서 선언된 변수를 바깥에서 사용할 때 발생하는 에러이다. 지역
-        
-        
-        ---
+---
+title: [파이썬] UnboundLocalError, RecursionError
+date: 2022-12-06 05:40:48.501 +0000
+categories: [error]
+tags: ['python', '백준', '에러']
+description: 백준: 손익분기점 문제https&#x3A;//www.acmicpc.net/problem/1712위의 백준 문제를 풀어보다 2가지 에러와 마주했다.간단히 설명하자면 def, if, for, while 등의 안에서 선언된 변수를 바깥에서 사용할 때 발생하는 에러이다. 지역
 
-        > 백준: 손익분기점 문제
+
+---
+
+> 백준: 손익분기점 문제
 > https://www.acmicpc.net/problem/1712
 
 위의 백준 문제를 풀어보다 2가지 에러와 마주했다.

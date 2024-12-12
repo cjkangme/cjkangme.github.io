@@ -1,16 +1,16 @@
 
 
-        ---
-        title: [TIL] Execute Context & Closure
-        date: 2023-08-15 15:04:50.849 +0000
-        categories: [TIL]
-        tags: ['javascript', 'til']
-        description: 이고잉님의 생활코딩 강의로 알아보는 Execute context와 Closure
-        image: /assets/img/posts/2023-08-15-til-execute-context-closure/thumbnail.png
-        
-        ---
+---
+title: [TIL] Execute Context & Closure
+date: 2023-08-15 15:04:50.849 +0000
+categories: [TIL]
+tags: ['javascript', 'til']
+description: 이고잉님의 생활코딩 강의로 알아보는 Execute context와 Closure
+image: /assets/img/posts/2023-08-15-til-execute-context-closure/thumbnail.png
 
-        # Execute context
+---
+
+# Execute context
 
 > 생활코딩 강의 : https://youtu.be/QtOF0uMBy7k
 

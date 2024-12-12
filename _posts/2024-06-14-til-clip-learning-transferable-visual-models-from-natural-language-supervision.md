@@ -1,16 +1,16 @@
 
 
-        ---
-        title: [TIL] CLIP (Learning Transferable Visual Models From Natural Language Supervision)
-        date: 2024-06-14 10:31:15.766 +0000
-        categories: [TIL]
-        tags: ['cv', 'til']
-        description: Computer Vision에서 자주 사용되는 CLIP에 대해 가볍게 배워보기
-        image: /assets/img/posts/2024-06-14-til-clip-learning-transferable-visual-models-from-natural-language-supervision/thumbnail.png
-        math: true
-        ---
+---
+title: [TIL] CLIP (Learning Transferable Visual Models From Natural Language Supervision)
+date: 2024-06-14 10:31:15.766 +0000
+categories: [TIL]
+tags: ['cv', 'til']
+description: Computer Vision에서 자주 사용되는 CLIP에 대해 가볍게 배워보기
+image: /assets/img/posts/2024-06-14-til-clip-learning-transferable-visual-models-from-natural-language-supervision/thumbnail.png
+math: true
+---
 
-        `CLIP`은 텍스트와 이미지를 모두 다루는 task에서 특징을 추출하기 위해 매우 자주 사용되는 인코더입니다.
+`CLIP`은 텍스트와 이미지를 모두 다루는 task에서 특징을 추출하기 위해 매우 자주 사용되는 인코더입니다.
 
 CLIP을 그냥 가져다 쓰더라도 어느정도 알고 써야할 것 같아, 간단히 어떤 모델인지만 가볍게 정리하고자 합니다.
 

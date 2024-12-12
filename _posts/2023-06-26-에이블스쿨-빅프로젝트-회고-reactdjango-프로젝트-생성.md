@@ -1,16 +1,16 @@
 
 
-        ---
-        title: [에이블스쿨] 빅프로젝트 회고 - React/Django 프로젝트 생성
-        date: 2023-06-26 16:12:54.666 +0000
-        categories: [에이블스쿨]
-        tags: ['aivle']
-        description: 회고라기보다는 공부 내용 정리
-        
-        
-        ---
+---
+title: [에이블스쿨] 빅프로젝트 회고 - React/Django 프로젝트 생성
+date: 2023-06-26 16:12:54.666 +0000
+categories: [에이블스쿨]
+tags: ['aivle']
+description: 회고라기보다는 공부 내용 정리
 
-        # React/Django 연동하기
+
+---
+
+# React/Django 연동하기
 
 ## Anaconda 가상환경 생성
 

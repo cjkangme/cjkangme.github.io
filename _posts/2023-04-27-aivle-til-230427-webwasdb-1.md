@@ -1,16 +1,16 @@
 
 
-        ---
-        title: AIVLE TIL ('23.04.27) WEB/WAS/DB (1)
-        date: 2023-04-27 13:30:16.649 +0000
-        categories: [에이블스쿨]
-        tags: ['aivle']
-        description: 서버 빌려서 웹 호스팅 하기
-        image: /assets/img/posts/2023-04-27-aivle-til-230427-webwasdb-1/thumbnail.png
-        
-        ---
+---
+title: AIVLE TIL ('23.04.27) WEB/WAS/DB (1)
+date: 2023-04-27 13:30:16.649 +0000
+categories: [에이블스쿨]
+tags: ['aivle']
+description: 서버 빌려서 웹 호스팅 하기
+image: /assets/img/posts/2023-04-27-aivle-til-230427-webwasdb-1/thumbnail.png
 
-        # 웹 호스팅
+---
+
+# 웹 호스팅
 
 > [웹 호스팅이란 무엇입니까?](https://aws.amazon.com/ko/what-is/web-hosting/)
 

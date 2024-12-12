@@ -1,16 +1,16 @@
 
 
-        ---
-        title: [논문리뷰] Coin3D: Controllable and Interactive 3D Assets Generation with Proxy-Guided Conditioning
-        date: 2024-09-07 05:57:51.409 +0000
-        categories: [논문]
-        tags: ['ai', 'cv', 'diffusion', '논문']
-        description: 사용자가 원하는대로 3D 에셋을 생성하고, 원하는대로 수정이 가능한 프레임워크 Coin3D에 대한 리뷰
-        image: /assets/img/posts/2024-09-07-논문리뷰-coin3d-controllable-and-interactive-3d-assets-generation-with-proxy-guided-conditioning/thumbnail.png
-        math: true
-        ---
+---
+title: [논문리뷰] Coin3D: Controllable and Interactive 3D Assets Generation with Proxy-Guided Conditioning
+date: 2024-09-07 05:57:51.409 +0000
+categories: [논문]
+tags: ['ai', 'cv', 'diffusion', '논문']
+description: 사용자가 원하는대로 3D 에셋을 생성하고, 원하는대로 수정이 가능한 프레임워크 Coin3D에 대한 리뷰
+image: /assets/img/posts/2024-09-07-논문리뷰-coin3d-controllable-and-interactive-3d-assets-generation-with-proxy-guided-conditioning/thumbnail.png
+math: true
+---
 
-        ![](/assets/img/posts/2024-09-07-논문리뷰-coin3d-controllable-and-interactive-3d-assets-generation-with-proxy-guided-conditioning/img0.png)
+![](/assets/img/posts/2024-09-07-논문리뷰-coin3d-controllable-and-interactive-3d-assets-generation-with-proxy-guided-conditioning/img0.png)
 
 # Introduction
 최근 3D Object Generation에 대한 많은 연구가 이루어지고 있고, 짧은 시간내에 꽤 근사한 에셋을 만들어줄 수 있게 되었습니다.

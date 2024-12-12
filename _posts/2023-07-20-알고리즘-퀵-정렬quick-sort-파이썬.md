@@ -1,16 +1,16 @@
 
 
-        ---
-        title: [알고리즘] 퀵 정렬(Quick Sort) (파이썬)
-        date: 2023-07-20 12:28:12.850 +0000
-        categories: [Algorithm]
-        tags: ['백준', '알고리즘', '정렬']
-        description: 백준 안테나 문제풀이와 함께 알아보는 퀵 정렬
-        image: /assets/img/posts/2023-07-20-알고리즘-퀵-정렬quick-sort-파이썬/thumbnail.png
-        
-        ---
+---
+title: [알고리즘] 퀵 정렬(Quick Sort) (파이썬)
+date: 2023-07-20 12:28:12.850 +0000
+categories: [Algorithm]
+tags: ['백준', '알고리즘', '정렬']
+description: 백준 안테나 문제풀이와 함께 알아보는 퀵 정렬
+image: /assets/img/posts/2023-07-20-알고리즘-퀵-정렬quick-sort-파이썬/thumbnail.png
 
-        # 퀵 정렬
+---
+
+# 퀵 정렬
 
 ## 정의
 

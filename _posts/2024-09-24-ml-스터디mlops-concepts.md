@@ -1,16 +1,16 @@
 
 
-        ---
-        title: [ML 스터디]MLOps Concepts
-        date: 2024-09-24 11:12:53.835 +0000
-        categories: [developer-AI-powered]
-        tags: ['mlops', '가짜연구소', '스터디']
-        description: [1주차] 가짜연구소 9기 "AI를 잘 활용하는 개발자로 성장하기" 프로젝트에 참여하여 Datacamp의 "Machine Learning Engineer" 강의를 수강하고 해당 내용을 정리한 게시글입니다.
-        image: /assets/img/posts/2024-09-24-ml-스터디mlops-concepts/thumbnail.png
-        
-        ---
+---
+title: [ML 스터디]MLOps Concepts
+date: 2024-09-24 11:12:53.835 +0000
+categories: [developer-AI-powered]
+tags: ['mlops', '가짜연구소', '스터디']
+description: [1주차] 가짜연구소 9기 "AI를 잘 활용하는 개발자로 성장하기" 프로젝트에 참여하여 Datacamp의 "Machine Learning Engineer" 강의를 수강하고 해당 내용을 정리한 게시글입니다.
+image: /assets/img/posts/2024-09-24-ml-스터디mlops-concepts/thumbnail.png
 
-        > 가짜연구소 9기 "AI를 잘 활용하는 개발자로 성장하기" 프로젝트에 참여하여 Datacamp의 "Machine Learning Engineer" 강의를 수강하고 해당 내용을 정리한 게시글입니다.
+---
+
+> 가짜연구소 9기 "AI를 잘 활용하는 개발자로 성장하기" 프로젝트에 참여하여 Datacamp의 "Machine Learning Engineer" 강의를 수강하고 해당 내용을 정리한 게시글입니다.
 > [Datacamp Machine Learning 코스 페이지](https://www.datacamp.com/category/machine-learning)
 
 # 1. MLOps 소개

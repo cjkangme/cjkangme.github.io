@@ -1,16 +1,16 @@
 
 
-        ---
-        title: [TIL] 주피터 노트북 단축키 (feat. VS Code)
-        date: 2023-02-05 13:53:23.663 +0000
-        categories: [TIL]
-        tags: ['til']
-        description: 주피터 노트북 단축키를 알아보는 TIL
-        image: /assets/img/posts/2023-02-05-til-주피터-노트북-단축키-feat-vs-code/thumbnail.png
-        
-        ---
+---
+title: [TIL] 주피터 노트북 단축키 (feat. VS Code)
+date: 2023-02-05 13:53:23.663 +0000
+categories: [TIL]
+tags: ['til']
+description: 주피터 노트북 단축키를 알아보는 TIL
+image: /assets/img/posts/2023-02-05-til-주피터-노트북-단축키-feat-vs-code/thumbnail.png
 
-        # VS Code에서 주피터 노트북 사용하기
+---
+
+# VS Code에서 주피터 노트북 사용하기
 VS Code에서 `Jupyter` 익스텐션을 설치하면 주피터 노트북을 사용할 수 있다.
 원하는 폰트, 테마 등 본인이 원하는 작업환경에서 자동완성까지 지원해주기 때문에 여러모로 편리하다.
 

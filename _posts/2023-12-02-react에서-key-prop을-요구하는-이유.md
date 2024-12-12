@@ -1,16 +1,16 @@
 
 
-        ---
-        title: React에서 key prop을 요구하는 이유
-        date: 2023-12-02 13:24:29.908 +0000
-        categories: [react]
-        tags: []
-        description: map 함수를 사용할 때 key를 부여하지 않으면 오류 메세지가 나오는 이유를 알아보자
-        image: /assets/img/posts/2023-12-02-react에서-key-prop을-요구하는-이유/thumbnail.png
-        
-        ---
+---
+title: React에서 key prop을 요구하는 이유
+date: 2023-12-02 13:24:29.908 +0000
+categories: [react]
+tags: []
+description: map 함수를 사용할 때 key를 부여하지 않으면 오류 메세지가 나오는 이유를 알아보자
+image: /assets/img/posts/2023-12-02-react에서-key-prop을-요구하는-이유/thumbnail.png
 
-        ![](/assets/img/posts/2023-12-02-react에서-key-prop을-요구하는-이유/img0.png)
+---
+
+![](/assets/img/posts/2023-12-02-react에서-key-prop을-요구하는-이유/img0.png)
 
 리액트에서 `map` 고차 함수를 통해 여러개의 컴포넌트를 렌더링할 때 각 컴포넌트의 root에 `key` prop을 입력하지 않을 경우 다음과 같은 에러가 발생한다.
 

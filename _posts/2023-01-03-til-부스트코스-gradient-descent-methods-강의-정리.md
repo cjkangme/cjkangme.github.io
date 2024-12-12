@@ -1,16 +1,16 @@
 
 
-        ---
-        title: [TIL] 부스트코스 Gradient Descent Methods 강의 정리
-        date: 2023-01-03 07:03:15.566 +0000
-        categories: [부스트코스-PreCourse]
-        tags: ['부스트코스', '프리코스']
-        description: 강의 주소 : https&#x3A;//www.boostcourse.org/ai111/lecture/116294210만개의 데이터가 있다고 가정을 했을 때, 데이터를 한번에 얼마만큼 사용하는지에 따라 Gradient Descent를 크게 3가지로 분류할 수 있다.한번에 
-        image: /assets/img/posts/2023-01-03-til-부스트코스-gradient-descent-methods-강의-정리/thumbnail.png
-        
-        ---
+---
+title: [TIL] 부스트코스 Gradient Descent Methods 강의 정리
+date: 2023-01-03 07:03:15.566 +0000
+categories: [부스트코스-PreCourse]
+tags: ['부스트코스', '프리코스']
+description: 강의 주소 : https&#x3A;//www.boostcourse.org/ai111/lecture/116294210만개의 데이터가 있다고 가정을 했을 때, 데이터를 한번에 얼마만큼 사용하는지에 따라 Gradient Descent를 크게 3가지로 분류할 수 있다.한번에 
+image: /assets/img/posts/2023-01-03-til-부스트코스-gradient-descent-methods-강의-정리/thumbnail.png
 
-        > 강의 주소 : https://www.boostcourse.org/ai111/lecture/1162942
+---
+
+> 강의 주소 : https://www.boostcourse.org/ai111/lecture/1162942
 
 # Practical Gradient Descent Methods
 

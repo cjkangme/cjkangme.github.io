@@ -1,16 +1,16 @@
 
 
-        ---
-        title: [TIL] Javascript의 유용한 Array Methods
-        date: 2023-08-13 13:52:59.055 +0000
-        categories: [TIL]
-        tags: ['javascript', 'til']
-        description: map, reduce, filter, some, every에 대해 알아보자
-        image: /assets/img/posts/2023-08-13-til-javascript의-유용한-array-methods/thumbnail.png
-        math: true
-        ---
+---
+title: [TIL] Javascript의 유용한 Array Methods
+date: 2023-08-13 13:52:59.055 +0000
+categories: [TIL]
+tags: ['javascript', 'til']
+description: map, reduce, filter, some, every에 대해 알아보자
+image: /assets/img/posts/2023-08-13-til-javascript의-유용한-array-methods/thumbnail.png
+math: true
+---
 
-        > 참고 영상 : https://youtu.be/WdSQK72G7tw
+> 참고 영상 : https://youtu.be/WdSQK72G7tw
 
 Javascript의 Array 객체에서 사용할 수 있는 유용한 알고리즘들에 대해 알아보자
 

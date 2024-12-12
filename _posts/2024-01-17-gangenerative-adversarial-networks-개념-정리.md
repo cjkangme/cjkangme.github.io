@@ -1,16 +1,16 @@
 
 
-        ---
-        title: GAN(Generative Adversarial Networks) 개념 정리
-        date: 2024-01-17 11:07:03.829 +0000
-        categories: [TIL]
-        tags: ['ai', 'til']
-        description: 모르는 인공지능 개념 정리하기
-        image: /assets/img/posts/2024-01-17-gangenerative-adversarial-networks-개념-정리/thumbnail.png
-        
-        ---
+---
+title: GAN(Generative Adversarial Networks) 개념 정리
+date: 2024-01-17 11:07:03.829 +0000
+categories: [TIL]
+tags: ['ai', 'til']
+description: 모르는 인공지능 개념 정리하기
+image: /assets/img/posts/2024-01-17-gangenerative-adversarial-networks-개념-정리/thumbnail.png
 
-        # GAN이란?
+---
+
+# GAN이란?
 
 GAN(Generative Adversarial Networks)은 생성 AI 모델의 한 종류로, '적대적 생성 신경망'이라고 번역된다.
 

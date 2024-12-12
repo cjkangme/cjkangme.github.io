@@ -1,16 +1,16 @@
 
 
-        ---
-        title: MongoServerError: E11000 duplicate key error collection
-        date: 2022-11-17 13:17:10.773 +0000
-        categories: [error]
-        tags: ['mongodb', 'nodejs', '에러']
-        description: 노마드코더 유튜브 클론 강의를 듣던 중, Model.create()를 통한 유저 생성 기능에서 오류가 발생했다.github_1라는 유니크 인덱스(일종의 키값)를 사용하는 유저가 이미 있어서, 이로인해 중복이 발생했다는 메세지이다.분명히 처음엔 잘 작동했었는데, gith
-        
-        
-        ---
+---
+title: MongoServerError: E11000 duplicate key error collection
+date: 2022-11-17 13:17:10.773 +0000
+categories: [error]
+tags: ['mongodb', 'nodejs', '에러']
+description: 노마드코더 유튜브 클론 강의를 듣던 중, Model.create()를 통한 유저 생성 기능에서 오류가 발생했다.github_1라는 유니크 인덱스(일종의 키값)를 사용하는 유저가 이미 있어서, 이로인해 중복이 발생했다는 메세지이다.분명히 처음엔 잘 작동했었는데, gith
 
-        ## 에러 발생
+
+---
+
+## 에러 발생
 노마드코더 유튜브 클론 강의를 듣던 중, `Model.create()`를 통한 유저 생성 기능에서 오류가 발생했다.
 ```
 MongoServerError: E11000 duplicate key error collection: ...users index: github_1 dup key: { github: null }

@@ -1,16 +1,16 @@
 
 
-        ---
-        title: [TIL] CORS 에러와, sop 개념
-        date: 2023-07-20 12:48:10.547 +0000
-        categories: [TIL]
-        tags: ['cs', 'til', '네트워크']
-        description: 프로젝트 내내 우리를 괴롭힌 CORS에 대해 배워보자
-        image: /assets/img/posts/2023-07-20-til-cors-에러와-sop-개념/thumbnail.png
-        
-        ---
+---
+title: [TIL] CORS 에러와, sop 개념
+date: 2023-07-20 12:48:10.547 +0000
+categories: [TIL]
+tags: ['cs', 'til', '네트워크']
+description: 프로젝트 내내 우리를 괴롭힌 CORS에 대해 배워보자
+image: /assets/img/posts/2023-07-20-til-cors-에러와-sop-개념/thumbnail.png
 
-        > 참고 강의 : https://youtu.be/j2Q2Ev6CZzQ
+---
+
+> 참고 강의 : https://youtu.be/j2Q2Ev6CZzQ
 
 # COSR (Cross Origin Resource Sharing)
 CORS 에러는 웹 개발을 하다보면 꼭 한번 씩 마주치게 되는 문제이다.

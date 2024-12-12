@@ -1,16 +1,16 @@
 
 
-        ---
-        title: javascript 이미지 압축 라이브러리 정리
-        date: 2024-01-25 10:12:34.325 +0000
-        categories: [javascript]
-        tags: []
-        description: 프로젝트에 사용할 라이브러리 조사
-        
-        
-        ---
+---
+title: javascript 이미지 압축 라이브러리 정리
+date: 2024-01-25 10:12:34.325 +0000
+categories: [javascript]
+tags: []
+description: 프로젝트에 사용할 라이브러리 조사
 
-        # browser-image-compression
+
+---
+
+# browser-image-compression
 
 github: https://github.com/Donaldcwl/browser-image-compression/issues/189
 

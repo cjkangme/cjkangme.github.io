@@ -1,16 +1,16 @@
 
 
-        ---
-        title: [ML 스터디] End-to-End Machine Learning
-        date: 2024-10-01 11:55:39.149 +0000
-        categories: [developer-AI-powered]
-        tags: []
-        description: [2주차] 가짜연구소 9기 "AI를 잘 활용하는 개발자로 성장하기" 프로젝트에 참여하여 Datacamp의 "Machine Learning Engineer" 강의를 수강하고 해당 내용을 정리한 게시글입니다.
-        image: /assets/img/posts/2024-10-01-ml-스터디-end-to-end-machine-learning/thumbnail.png
-        
-        ---
+---
+title: [ML 스터디] End-to-End Machine Learning
+date: 2024-10-01 11:55:39.149 +0000
+categories: [developer-AI-powered]
+tags: []
+description: [2주차] 가짜연구소 9기 "AI를 잘 활용하는 개발자로 성장하기" 프로젝트에 참여하여 Datacamp의 "Machine Learning Engineer" 강의를 수강하고 해당 내용을 정리한 게시글입니다.
+image: /assets/img/posts/2024-10-01-ml-스터디-end-to-end-machine-learning/thumbnail.png
 
-        > 가짜연구소 9기 "AI를 잘 활용하는 개발자로 성장하기" 프로젝트에 참여하여 Datacamp의 "Machine Learning Engineer" 강의를 수강하고 해당 내용을 정리한 게시글입니다.
+---
+
+> 가짜연구소 9기 "AI를 잘 활용하는 개발자로 성장하기" 프로젝트에 참여하여 Datacamp의 "Machine Learning Engineer" 강의를 수강하고 해당 내용을 정리한 게시글입니다.
 > [Datacamp Machine Learning 코스 페이지](https://www.datacamp.com/category/machine-learning)
 
 # Chapter 1. Design and Exploration

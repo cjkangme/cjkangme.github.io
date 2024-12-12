@@ -1,16 +1,16 @@
 
 
-        ---
-        title: React에서 모바일 앱 같은 페이지 전환효과 만들기 (1) framer-motion
-        date: 2023-11-18 09:41:22.811 +0000
-        categories: [react]
-        tags: ['javascript', 'react']
-        description: 사용자 경험을 좋게 만들어주는 페이지 전환효과 만들기
-        image: /assets/img/posts/2023-11-18-react에서-모바일-앱-같은-페이지-전환효과-만들기-1-framer-motion/thumbnail.png
-        
-        ---
+---
+title: React에서 모바일 앱 같은 페이지 전환효과 만들기 (1) framer-motion
+date: 2023-11-18 09:41:22.811 +0000
+categories: [react]
+tags: ['javascript', 'react']
+description: 사용자 경험을 좋게 만들어주는 페이지 전환효과 만들기
+image: /assets/img/posts/2023-11-18-react에서-모바일-앱-같은-페이지-전환효과-만들기-1-framer-motion/thumbnail.png
 
-        # 페이지 전환 효과
+---
+
+# 페이지 전환 효과
 
 <img src="https://www.yasinilhan.com/page_transition/transition.gif"  width="240"/>
 
