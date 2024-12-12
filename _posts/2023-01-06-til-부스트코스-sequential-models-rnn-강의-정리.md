@@ -10,7 +10,7 @@ image: /assets/posts/2023-01-06-til-부스트코스-sequential-models-rnn-강의
 
 ---
 
-![](/assets/posts/2023-01-06-til-부스트코스-sequential-models-rnn-강의-정리/img0.png)
+![img](/assets/posts/2023-01-06-til-부스트코스-sequential-models-rnn-강의-정리/img0.png)
 
 
 # Sequential Model
@@ -58,7 +58,7 @@ image: /assets/posts/2023-01-06-til-부스트코스-sequential-models-rnn-강의
 - Sequential Model을 구현할 수 있는 방법 중 하나가 바로 **`RNN(Recurrent Neural Networks)`**이다.
 - MLP와 거의 동일하지만, 자기자신으로 돌아오는 구조가 있다는 차이를 갖는다.
 
-![](/assets/posts/2023-01-06-til-부스트코스-sequential-models-rnn-강의-정리/img1.png)
+![img](/assets/posts/2023-01-06-til-부스트코스-sequential-models-rnn-강의-정리/img1.png)
 
 - RNN을 시간순으로 풀면(unroll) t는 t-1에서 전달된 정보에 의존함을 알 수 있다.
 - 이는 입력이 굉장히 많은 fully connected layer로 표현될 수 있다.
@@ -85,11 +85,11 @@ image: /assets/posts/2023-01-06-til-부스트코스-sequential-models-rnn-강의
 # Long Short Term Memory(LSTM)
 
 - 이전 RNN(Vanilla RNN)의 구조는 다음과 같다.
-![](/assets/posts/2023-01-06-til-부스트코스-sequential-models-rnn-강의-정리/img2.png)
+![img](/assets/posts/2023-01-06-til-부스트코스-sequential-models-rnn-강의-정리/img2.png)
 
 ## LSTM의 구조
 
-![](/assets/posts/2023-01-06-til-부스트코스-sequential-models-rnn-강의-정리/img3.png)
+![img](/assets/posts/2023-01-06-til-부스트코스-sequential-models-rnn-강의-정리/img3.png)
 
 
 
@@ -112,7 +112,7 @@ image: /assets/posts/2023-01-06-til-부스트코스-sequential-models-rnn-강의
 
 ### Forget gate
 
-![](/assets/posts/2023-01-06-til-부스트코스-sequential-models-rnn-강의-정리/img4.png)
+![img](/assets/posts/2023-01-06-til-부스트코스-sequential-models-rnn-강의-정리/img4.png)
 
 - Previous Cell State에서 어떤 정보를 버릴지 결정하는 게이트이다.
 
@@ -124,24 +124,24 @@ image: /assets/posts/2023-01-06-til-부스트코스-sequential-models-rnn-강의
     
 ### Input gate
 
-![](/assets/posts/2023-01-06-til-부스트코스-sequential-models-rnn-강의-정리/img5.png)
+![img](/assets/posts/2023-01-06-til-부스트코스-sequential-models-rnn-강의-정리/img5.png)
 
 - forget gate는 `Ct-1`에서 어떤 것을 버릴지를 결정했다면, input gate는 `Ct-1`에서 어떤 정보를 추가해서 `Ct`를 만들지 결정하는 게이트이다.
 - tanh를 통해 업데이트하고자 하는 값을 -1 ~ 1로 조정하고, 여기에 sigmoid gate로 한번 더 조정한 값이다.
 
-![](/assets/posts/2023-01-06-til-부스트코스-sequential-models-rnn-강의-정리/img6.png)
+![img](/assets/posts/2023-01-06-til-부스트코스-sequential-models-rnn-강의-정리/img6.png)
 
 - 최종적으로 next cell state(`Ct`)는 각각의 게이트를 통과한 두 cell state를 더하한 것이다.
 
 ### Output gate and Output
 
-![](/assets/posts/2023-01-06-til-부스트코스-sequential-models-rnn-강의-정리/img7.png)
+![img](/assets/posts/2023-01-06-til-부스트코스-sequential-models-rnn-강의-정리/img7.png)
 
 - 새로 업데이트 된 cell state(`Ct`)를 바탕으로 output(`ht`)를 생성한다.
 
 ## GRU
 
-![](/assets/posts/2023-01-06-til-부스트코스-sequential-models-rnn-강의-정리/img8.png)
+![img](/assets/posts/2023-01-06-til-부스트코스-sequential-models-rnn-강의-정리/img8.png)
 
 
 - 간단하게 다루자면 LSTM에서 gate를 2개로 줄여 network parameter의 수를 줄인 모델이다.

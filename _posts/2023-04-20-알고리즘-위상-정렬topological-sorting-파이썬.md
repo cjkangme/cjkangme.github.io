@@ -26,17 +26,17 @@ image: /assets/posts/2023-04-20-알고리즘-위상-정렬topological-sorting-�
 
 - 일렬로 나열한다는 것은 무슨뜻일까?
 
-![](/assets/posts/2023-04-20-알고리즘-위상-정렬topological-sorting-파이썬/img0.png)
+![img](/assets/posts/2023-04-20-알고리즘-위상-정렬topological-sorting-파이썬/img0.png)
 
 - 이런 단방향 그래프가 주어졌다고 가정했을 때, 노드의 위치만 바꾸면 다음과 같이 그릴 수 있다.
 
-![](/assets/posts/2023-04-20-알고리즘-위상-정렬topological-sorting-파이썬/img1.png)
+![img](/assets/posts/2023-04-20-알고리즘-위상-정렬topological-sorting-파이썬/img1.png)
 
 - 위와 같이 일렬로 정렬할 수 있으며, 정렬된 그래프의 간선이 모두 같은 방향을 가리키는 것을 알 수 있다.
 - 이렇게 모든 간선의 방향이 유지되면서 일렬로 나열되는 경우를 위상 정렬되었다고 할 수 있다.
 - `[1, 6, 2, 5, 4, 3]`은 위상 정렬된 배열이다.
 
-![](/assets/posts/2023-04-20-알고리즘-위상-정렬topological-sorting-파이썬/img2.png)
+![img](/assets/posts/2023-04-20-알고리즘-위상-정렬topological-sorting-파이썬/img2.png)
 
 - 만약 1과 4의 위치가 바뀐다면 방향이 다른 간선이 발생하기 때문에 정렬되었다고 볼 수 없다.
 - `[4, 6, 2, 5, 1, 3]`은 위상 정렬되지 않은 배열이다.
@@ -45,9 +45,9 @@ image: /assets/posts/2023-04-20-알고리즘-위상-정렬topological-sorting-�
 
 - **그래프에 사이클이 존재할 경우 위상 정렬이 불가능하다.**
 
-![](/assets/posts/2023-04-20-알고리즘-위상-정렬topological-sorting-파이썬/img3.png)
+![img](/assets/posts/2023-04-20-알고리즘-위상-정렬topological-sorting-파이썬/img3.png)
 
-![](/assets/posts/2023-04-20-알고리즘-위상-정렬topological-sorting-파이썬/img4.png)![](/assets/posts/2023-04-20-알고리즘-위상-정렬topological-sorting-파이썬/img5.png)
+![img](/assets/posts/2023-04-20-알고리즘-위상-정렬topological-sorting-파이썬/img4.png)![img](/assets/posts/2023-04-20-알고리즘-위상-정렬topological-sorting-파이썬/img5.png)
 
 - 위 그림과 같이 어떻게 배열을 해도 위상 정렬이 되지 않게 된다.
 
@@ -61,7 +61,7 @@ image: /assets/posts/2023-04-20-알고리즘-위상-정렬topological-sorting-�
 ### 필요한 데이터 정의
 - 첫번째 예시는 다음과 같이 표현할 수 있다.
 
-![](/assets/posts/2023-04-20-알고리즘-위상-정렬topological-sorting-파이썬/img0.png)
+![img](/assets/posts/2023-04-20-알고리즘-위상-정렬topological-sorting-파이썬/img0.png)
 
 ||1|2|3|4|5|6|
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|

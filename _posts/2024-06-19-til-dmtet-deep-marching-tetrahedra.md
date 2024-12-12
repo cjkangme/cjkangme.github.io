@@ -99,7 +99,7 @@ print(verts)
 앞서 사면체 그리드를 표면 mesh로 변환하는 과정에 대해 알아보았습니다.
 이번 섹션에서는 input을 받아 고해상도의 삼각형 mesh를 생성하는 모델에 대해 구체적으로 알아보겠습니다.
 
-![](/assets/posts/2024-06-19-til-dmtet-deep-marching-tetrahedra/img2.png)
+![img](/assets/posts/2024-06-19-til-dmtet-deep-marching-tetrahedra/img2.png)
 
 
 ## 2.1 3D Generator
@@ -135,7 +135,7 @@ MLP를 통해 각 정점의 위치, feature vector를 입력으로 정점의 SDF
 이제 예측에 사용되었던 모델을 최적화하기 위한 loss를 구해야 합니다.
 `DMTet`에서는 이 역할을 `DECOR-GAN`의 discriminator가 수행한다고 합니다.
 
-![](/assets/posts/2024-06-19-til-dmtet-deep-marching-tetrahedra/img3.png)
+![img](/assets/posts/2024-06-19-til-dmtet-deep-marching-tetrahedra/img3.png)
 
 Figure 4에 묘사된 것 처럼 GT를 복셀화하여 곡률이 높은 포인트 $$ v $$를 랜덤하게 선택하고, GT signed distance field $$ S_{real} \in \mathbb{R}^{N \times N \times N} $$을 계산합니다.
 비슷하게, 예측한 mesh $$ M $$에서 $$ v $$ 위치에 해당하는 signed distance filed $$ S_{pred} \in \mathbb{R}^{N \times N \times N} $$를 계산합니다.

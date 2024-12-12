@@ -40,7 +40,7 @@ image: /assets/posts/2023-04-19-aivle-cs-스터디-cpu-스케줄링/thumbnail.pn
     - 대기 큐에 있는 프로세스는 입출력 완료 인터럽트를 받으면 준비 큐로 이동한다.
 - 기본적으로 운영체제는 큐에 PCB가 삽입 된 순서대로 실행하되, 우선순위가 높은 프로세스를 먼저 실행한다.
 
-![](/assets/posts/2023-04-19-aivle-cs-스터디-cpu-스케줄링/img0.png)
+![img](/assets/posts/2023-04-19-aivle-cs-스터디-cpu-스케줄링/img0.png)
 
 - 최종적으로 프로세스 상태 다이어그램을 위와 같이 그릴 수 있다.
 

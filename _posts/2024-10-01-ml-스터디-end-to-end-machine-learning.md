@@ -168,7 +168,7 @@ Feature engineering은 데이터 준비 과정 후에 진행되며, 일부는 �
 - 모델의 성능을 평가하는 견고한 방법으로, 데이터를 학습 및 테스트 데이터로 분리할 때 여러번의 분리 결과에 대해 각각 테스트를 하여 모델 성능을 평균내는 방법
 - 그중 `k-fold cross-validation`은 데이터셋을 데이터를 'k'개의 그룹으로 나누고, 테스트 데이터셋의 크기를 1/k개로 지정하여, 각 실험마다 테스트 데이터셋이 겹치지 않도록 하여 데이터를 분리한다.
 
-![](/assets/posts/2024-10-01-ml-스터디-end-to-end-machine-learning/img0.png)
+![img](/assets/posts/2024-10-01-ml-스터디-end-to-end-machine-learning/img0.png)
 출처 : https://scikit-learn.org/stable/modules/cross_validation.html
 ###  Cross validation usage
 - `sklearn.model_selection` 라이브러리에서 `KFold, cross_val_score`을 통해 K-fold cross validation을 수행할 수 있음

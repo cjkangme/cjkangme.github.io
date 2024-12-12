@@ -13,7 +13,7 @@ math: true
 # Introduction
 기존의 diffusion 기반 모델들은 이미지 생성은 정말 뛰어났지만, 텍스트 프롬프트 만으로는 우리가 원하는 이미지를 뽑기에는 상당히 어려웠습니다.
 
-![](/assets/posts/2024-08-17-논문-리뷰-controlnet-adding-conditional-control-to-text-to-image-diffusion-models/img0.png)
+![img](/assets/posts/2024-08-17-논문-리뷰-controlnet-adding-conditional-control-to-text-to-image-diffusion-models/img0.png)
 
 예를들어 왼쪽과 같은 포즈 스켈레톤과 동일한 자세를 취하는 사람 이미지를 생성하고 싶어도, 프롬프트 만으로는 여러차례 시도해야 간신히 한 두장 정도 비슷한 사진을 건질 수 있습니다.
 
@@ -25,7 +25,7 @@ math: true
 
 ## 1. ControlNet의 기본 구조
 
-![](/assets/posts/2024-08-17-논문-리뷰-controlnet-adding-conditional-control-to-text-to-image-diffusion-models/img1.png)
+![img](/assets/posts/2024-08-17-논문-리뷰-controlnet-adding-conditional-control-to-text-to-image-diffusion-models/img1.png)
 
 ControlNet의 기본 구조는 다음과 같습니다.
 
@@ -36,12 +36,12 @@ ControlNet의 기본 구조는 다음과 같습니다.
 여기서 zero convolution layer는 모든 weight, bias가 0으로 초기화된 1x1 convolution layer를 말합니다.
 
 수식으로 나타내자면 기존의 Diffusion model의 각 블록의 동작은 다음과 같이 나타낼 수 있습니다.
-![](/assets/posts/2024-08-17-논문-리뷰-controlnet-adding-conditional-control-to-text-to-image-diffusion-models/img2.png)
+![img](/assets/posts/2024-08-17-논문-리뷰-controlnet-adding-conditional-control-to-text-to-image-diffusion-models/img2.png)
 
 input feature $$ \mathbf{x} $$를 입력으로 받아 파라미터 $$ \Theta $$를 갖는 블록을 통과하면 output feature $$ \mathbf{y} $$가 출력됩니다.
 
 여기에 ControlNet을 더하면 다음과 같습니다.
-![](/assets/posts/2024-08-17-논문-리뷰-controlnet-adding-conditional-control-to-text-to-image-diffusion-models/img3.png)
+![img](/assets/posts/2024-08-17-논문-리뷰-controlnet-adding-conditional-control-to-text-to-image-diffusion-models/img3.png)
 
 1. $$ \mathbf{x} $$에 zero convolution으로 인코딩 된 condition feature $$ Z(c; \Theta_{z1}) $$를 합산
 2. 학습가능한 사본 layer를 통과하여 $$ \mathbf{y} $$와 동일한 크기의 condition feature를 추출
@@ -53,7 +53,7 @@ input feature $$ \mathbf{x} $$를 입력으로 받아 파라미터 $$ \Theta $$�
 
 
 ## 2. ControlNet for Text-to-Image diffusion
-![](/assets/posts/2024-08-17-논문-리뷰-controlnet-adding-conditional-control-to-text-to-image-diffusion-models/img4.png)
+![img](/assets/posts/2024-08-17-논문-리뷰-controlnet-adding-conditional-control-to-text-to-image-diffusion-models/img4.png)
 
 논문에서는 가장 대중적인 Stable Diffusion(SD)에 ControlNet을 적용하는 것을 예시로 설명합니다.
 
@@ -72,7 +72,7 @@ ControlNet 학습에 적용된 기법에 대해 설명하겠습니다.
 
 ControlNet이 적용된 Diffusion model의 학습을 수식으로 나타내면 다음과 같습니다.
 
-![](/assets/posts/2024-08-17-논문-리뷰-controlnet-adding-conditional-control-to-text-to-image-diffusion-models/img5.png) 
+![img](/assets/posts/2024-08-17-논문-리뷰-controlnet-adding-conditional-control-to-text-to-image-diffusion-models/img5.png) 
 - $$ z_t $$ : input latent
 - $$ t $$ : timestep
 - $$ c_t $$ : input prompt
@@ -83,7 +83,7 @@ ControlNet이 적용된 Diffusion model의 학습을 수식으로 나타내면 �
 하지만 저자들은 주어진 condition에 맞는 이미지를 더 잘 만들어내도록 하기 위해, 학습 데이터의 절반에 대해 $$ c_t $$를 빈 문자열을 인코딩 한 것으로 교체했다고 합니다. 
 이렇게 함으로써 모델이 텍스트 프롬프트에 의존하지 않고 주어진 condition image의 의미론적인 부분을 더 잘 인식할 수 있다고 합니다.
 
-![](/assets/posts/2024-08-17-논문-리뷰-controlnet-adding-conditional-control-to-text-to-image-diffusion-models/img6.png)
+![img](/assets/posts/2024-08-17-논문-리뷰-controlnet-adding-conditional-control-to-text-to-image-diffusion-models/img6.png)
 
 추가적으로 저자들은 모델이 점진적으로 학습하지 않고, 어느 순간 갑자기 입력 컨디션을 정확히 따라가는 것을 관찰했다고 합니다.
 
@@ -101,14 +101,14 @@ CFG의 공식은 $$ \epsilon_{pred} = \epsilon_{uc} + \beta_{cfg}(\epsilon_{c}-\
 
 여기에 ControlNet의 컨디션(hint)이 더해진다고 했을 때, $$ \epsilon_{hint} $$이 cond, uncond 양쪽에 더할 것인지, cond에만 더할 것인지 선택할 수 있다.
 
-![](/assets/posts/2024-08-17-논문-리뷰-controlnet-adding-conditional-control-to-text-to-image-diffusion-models/img7.png)
+![img](/assets/posts/2024-08-17-논문-리뷰-controlnet-adding-conditional-control-to-text-to-image-diffusion-models/img7.png)
 
 논문에서는 양쪽에 더하는 경우 CFG guidance의 영향을 완전히 제거해버린다고 하며(b), cond에만 더하는 경우 guidance가 너무 강력하게 적용된다고 합니다(c).
 
 때문에 저자들은 cond에만 $$ \epsilon_{hint} $$를 더하되, 가중치 $$ w_i $$를 곱해서 더하는 방식으로 적용되는 정도를 조절했다고 합니다.
 구체적으로 $$ w_i = 64 / h_i $$로 $$ h_i $$는 i번째 블럭의 사이즈를 의미합니다.
 
-![](/assets/posts/2024-08-17-논문-리뷰-controlnet-adding-conditional-control-to-text-to-image-diffusion-models/img8.png)
+![img](/assets/posts/2024-08-17-논문-리뷰-controlnet-adding-conditional-control-to-text-to-image-diffusion-models/img8.png)
 
 그런데 이상한 점이 논문에서는 $$ h_1 = 8, h_2 = 16, ... , h_{13} = 64 $$로 설명하고 있는데, 이 경우 $$ w_i $$가 1보다 커지게 됩니다.
 또, 제가 알기로 블럭의 사이즈는 512, 256, ... , 64로 점점 줄어드는 것으로 알고 있는데 8, 16, ..., 64로 커지는 형태도 이상하다고 생각했습니다.

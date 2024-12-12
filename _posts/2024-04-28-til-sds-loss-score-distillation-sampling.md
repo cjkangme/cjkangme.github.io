@@ -22,14 +22,14 @@ latent diffusion model의 손실 함수를 수식으로 나타내면 다음과 �
 
 $$ L_{diff}(\phi, \mathbf{x}) = \mathbb{E}_{t\sim U(0, 1), \epsilon \sim N(\mathbf{0}, \mathbf{I})}\left [ w(t) \| \epsilon_{\phi}(\alpha_t \mathbf{X} + \sigma_t \epsilon ; t) - \epsilon \right  ]^2_2 $$
 
-![](/assets/posts/2024-04-28-til-sds-loss-score-distillation-sampling/img0.png)
+![img](/assets/posts/2024-04-28-til-sds-loss-score-distillation-sampling/img0.png)
 
 단순하게 위 수식을 설명하자면 t 시점에서 실제로 더해진 노이즈와, denoise 모델이 예측한 노이즈의 Loss이다.
 $$ w(t) $$는 t 시점에 대한 가중치 함수이다.
 
 DreamFusion 논문에서는 추가로 텍스트 임베딩을 통한 컨디셔닝과, classifier-free guidence(CFG)를 적용하였다.
 
-![](/assets/posts/2024-04-28-til-sds-loss-score-distillation-sampling/img1.png)
+![img](/assets/posts/2024-04-28-til-sds-loss-score-distillation-sampling/img1.png)
 
 이것 역시 간략히 설명하자면 텍스트 임베딩($$ y $$)을 통해 컨디셔닝된 모델, 컨디셔닝하지 않은 모델을 동시에 이용한다. scaling factor($$ w $$)가 0보다 크면 모델의 다양성은 감소하지만 더 좋은 품질의 sample을 얻을 수 있다고 한다.
 
@@ -62,7 +62,7 @@ NeRF를 diffusion model에 적용할 경우 diffusion model 파라미터는 고�
 
 `Dreamfusion` 논문의 appendix에서 SDS loss 계산의 슈도코드를 제공한다.
 
-![](/assets/posts/2024-04-28-til-sds-loss-score-distillation-sampling/img5.png)
+![img](/assets/posts/2024-04-28-til-sds-loss-score-distillation-sampling/img5.png)
 
 1. 균일하게 정의된 time step $$ t $$에 따라 노이즈를 결정하는 alpha_t, sigma_t 정의
 2. reparameterization trick을 위한 랜덤 노이즈 eps 생성

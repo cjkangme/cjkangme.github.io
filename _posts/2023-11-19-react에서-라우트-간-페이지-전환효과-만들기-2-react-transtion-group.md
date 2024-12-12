@@ -20,7 +20,7 @@ image: /assets/posts/2023-11-19-react에서-라우트-간-페이지-전환효과
 
 ## react-transition-group
 
-![](/assets/posts/2023-11-19-react에서-라우트-간-페이지-전환효과-만들기-2-react-transtion-group/img0.png)
+![img](/assets/posts/2023-11-19-react에서-라우트-간-페이지-전환효과-만들기-2-react-transtion-group/img0.png)
 
 [공식문서](https://reactcommunity.org/react-transition-group/)
 
@@ -111,9 +111,9 @@ export default App;
 
 `timeout`에 5000ms를 준 이유는 개발자 도구에서 변화를 관찰하기 위해서이다.
 
-![](/assets/posts/2023-11-19-react에서-라우트-간-페이지-전환효과-만들기-2-react-transtion-group/img1.png)
+![img](/assets/posts/2023-11-19-react에서-라우트-간-페이지-전환효과-만들기-2-react-transtion-group/img1.png)
 
-![](/assets/posts/2023-11-19-react에서-라우트-간-페이지-전환효과-만들기-2-react-transtion-group/img2.png)
+![img](/assets/posts/2023-11-19-react에서-라우트-간-페이지-전환효과-만들기-2-react-transtion-group/img2.png)
 
 위와 같이 `timeout`에 명시된 5000ms의 시간 동안
 마운트 되는 요소에는 `*-enter`, `*-enter-active` className이 부여되고
@@ -165,7 +165,7 @@ export default App;
 애니메이션 의도에 따라 다르겠지만, 새로 마운트 되는 페이지는 일반적으로 언마운트 될 페이지 보다 앞에 표시되어야 하므로 `z-index`를 명시하는 것이 좋다.
 
 ### 적용 결과
-![](/assets/posts/2023-11-19-react에서-라우트-간-페이지-전환효과-만들기-2-react-transtion-group/img3.png)
+![img](/assets/posts/2023-11-19-react에서-라우트-간-페이지-전환효과-만들기-2-react-transtion-group/img3.png)
 
 `framer-motion`에서 만들었던 것과 동일한 페이지 트랜지션 효과를 적용하였다!
 
@@ -278,7 +278,7 @@ export default App;
 ```
 
 ### 결과
-![](/assets/posts/2023-11-19-react에서-라우트-간-페이지-전환효과-만들기-2-react-transtion-group/img4.png)
+![img](/assets/posts/2023-11-19-react에서-라우트-간-페이지-전환효과-만들기-2-react-transtion-group/img4.png)
 
 이제 뒤로가기를 할 때 다른 애니메이션이 적용된다.
 

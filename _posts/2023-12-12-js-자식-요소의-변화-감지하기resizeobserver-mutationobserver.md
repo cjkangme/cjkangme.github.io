@@ -10,7 +10,7 @@ image: /assets/posts/2023-12-12-js-자식-요소의-변화-감지하기resizeobs
 
 ---
 
-![](/assets/posts/2023-12-12-js-자식-요소의-변화-감지하기resizeobserver-mutationobserver/img0.png)
+![img](/assets/posts/2023-12-12-js-자식-요소의-변화-감지하기resizeobserver-mutationobserver/img0.png)
 
 # 문제
 
@@ -66,7 +66,7 @@ useEffect(() => {
 }, []);
 ```
 
-![](/assets/posts/2023-12-12-js-자식-요소의-변화-감지하기resizeobserver-mutationobserver/img1.png)
+![img](/assets/posts/2023-12-12-js-자식-요소의-변화-감지하기resizeobserver-mutationobserver/img1.png)
 
 자식 요소를 추가/제거 할 때마다 [MutationRecord](https://developer.mozilla.org/en-US/docs/Web/API/MutationRecord) 객체를 콜백함수에 전달하여 호출한다.
 
@@ -106,7 +106,7 @@ useEffect(() => {
   }, []);
 ```
 
-![](/assets/posts/2023-12-12-js-자식-요소의-변화-감지하기resizeobserver-mutationobserver/img2.png)
+![img](/assets/posts/2023-12-12-js-자식-요소의-변화-감지하기resizeobserver-mutationobserver/img2.png)
 
 `ResizeObserver`는 Observing하고 있는 요소의 크기 변화를 감지하고, 해당 요소의 크기 정보를 담은 [ResizeObserverEntry](https://developer.mozilla.org/en-US/docs/Web/API/ResizeObserverEntry) 객체를 콜백함수에 인자로 전달한다.
 
@@ -128,7 +128,7 @@ const observer = new ResizeObserver((entries) => {
 
 # 결론
 
-![](/assets/posts/2023-12-12-js-자식-요소의-변화-감지하기resizeobserver-mutationobserver/img0.png)
+![img](/assets/posts/2023-12-12-js-자식-요소의-변화-감지하기resizeobserver-mutationobserver/img0.png)
 
 아직 완벽하지는 않아서 로직 개션이 필요하지만
 성공적으로 자식요소의 높이 변화를 감지하여 바텀시트에 적용할 수 있게 되었다.

@@ -21,7 +21,7 @@ NeRF 이후 `3D Gaussian Splatting(3DGS)`이라는 방법이 새롭게 등장했
 
 하지만 3DGS 역시 어플리케이션 수준에서 사용하는 것에 방해가되는 큰 단점을 갖고 있는데, 바로 메모리 문제입니다.
 
-![](/assets/posts/2024-05-18-논문-공부-compact-3d-gaussian-representation-for-radiance-field/img0.png)
+![img](/assets/posts/2024-05-18-논문-공부-compact-3d-gaussian-representation-for-radiance-field/img0.png)
 <small>출처 : [Radiance Field Article - Shrinking 3DGS File Size](https://radiancefields.com/shrinking-3dgs-file-size)</small>
 
 Large Scene을 표현하는 3D 가우시안을 저장하기 위해서는 수백 메가바이트 ~ 수 기가바이트 단위의 용량이 필요하고, 렌더링 시에는 이 용량이 메모리에 적재되어야 합니다. 이는 일반 사용자 입장에서 매우 부담스러울 수 있습니다.
@@ -30,7 +30,7 @@ Large Scene을 표현하는 3D 가우시안을 저장하기 위해서는 수백 
 
 논문에서는 가우시안을 보다 컴팩트하게 표현하기 위해 두 가지 키 목표를 설정하였습니다.
 
-![](/assets/posts/2024-05-18-논문-공부-compact-3d-gaussian-representation-for-radiance-field/img1.png)
+![img](/assets/posts/2024-05-18-논문-공부-compact-3d-gaussian-representation-for-radiance-field/img1.png)
 
 
 ### 1. scene 표현을 위해 필요한 가우시안의 수 줄이기
@@ -66,7 +66,7 @@ Compact 3DGS에서는 학습가능한 codebook을 이용하여 scale, rotation �
 
 혹시 윗 내용을 보고 관심이 생기셨다면 시청해주시면 감사하겠습니다. (사진 또는 링크 클릭)
 
-[![](/assets/posts/2024-05-18-논문-공부-compact-3d-gaussian-representation-for-radiance-field/img2.png)
+[![img](/assets/posts/2024-05-18-논문-공부-compact-3d-gaussian-representation-for-radiance-field/img2.png)
 ](https://youtu.be/VLZju5oWIOM)
 [유튜브 영상](https://youtu.be/VLZju5oWIOM)
 

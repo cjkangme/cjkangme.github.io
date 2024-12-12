@@ -10,7 +10,7 @@ image: /assets/posts/2023-12-02-react에서-key-prop을-요구하는-이유/thum
 
 ---
 
-![](/assets/posts/2023-12-02-react에서-key-prop을-요구하는-이유/img0.png)
+![img](/assets/posts/2023-12-02-react에서-key-prop을-요구하는-이유/img0.png)
 
 리액트에서 `map` 고차 함수를 통해 여러개의 컴포넌트를 렌더링할 때 각 컴포넌트의 root에 `key` prop을 입력하지 않을 경우 다음과 같은 에러가 발생한다.
 
@@ -119,7 +119,7 @@ React가 두 VDOM을 비교할 때 다음과 같은 과정을 거친다.
 왜그럴까?
 공식문서에서 제공하는 [CodePen 예시](https://ko.legacy.reactjs.org/redirect-to-codepen/reconciliation/index-used-as-key)를 확인해보자
 
-![](/assets/posts/2023-12-02-react에서-key-prop을-요구하는-이유/img1.png)
+![img](/assets/posts/2023-12-02-react에서-key-prop을-요구하는-이유/img1.png)
 
 CodePen 예시와 같이 React에서 자식 리스트를 다룰 때, 자식리스트의 인덱스 순서가 변경되면 기존 VDOM과 비교하는 과정에서 잘못된(의도하지 않은) 컴포넌트를 재사용하거나 맵핑하게 될 수 있다.
 

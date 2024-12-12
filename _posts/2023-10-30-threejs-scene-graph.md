@@ -31,11 +31,11 @@ Scene Graph는 복잡한 3차원 객체(scene)를 그려내기 위해 계층 구
 
 ## Scene Graph 실습
 
-![](/assets/posts/2023-10-30-threejs-scene-graph/img0.png)
+![img](/assets/posts/2023-10-30-threejs-scene-graph/img0.png)
 
 자전하는 태양, 태양을 공전하며 자전하는 지구, 지구를 공전하며 자전하는 달
 
-![](/assets/posts/2023-10-30-threejs-scene-graph/img1.png)
+![img](/assets/posts/2023-10-30-threejs-scene-graph/img1.png)
 
 위 Scene을 구성하기 위해 다음과 같은 Scene Graph 구조를 사용할 수 있다.
 

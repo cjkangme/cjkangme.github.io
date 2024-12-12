@@ -12,7 +12,7 @@ image: /assets/posts/2023-08-18-google-io-extended-2023-pangyo-후기/thumbnail.
 
 (사진 추후 추가 예정)
 
-![](/assets/posts/2023-08-18-google-io-extended-2023-pangyo-후기/img0.png)
+![img](/assets/posts/2023-08-18-google-io-extended-2023-pangyo-후기/img0.png)
 
 
 # 서론

@@ -19,7 +19,7 @@ image: /assets/posts/2023-11-29-threejs-mesh를-instancedmesh로-변환하기/th
 이를 어떻게 인스턴싱 할 수 있을까?
 
 ## 인스턴싱이란
-![](/assets/posts/2023-11-29-threejs-mesh를-instancedmesh로-변환하기/img0.png)
+![img](/assets/posts/2023-11-29-threejs-mesh를-instancedmesh로-변환하기/img0.png)
 
 위와 같이 6개의 Mesh로 이루어진 Group이 있다고 가정하자.
 
@@ -27,7 +27,7 @@ image: /assets/posts/2023-11-29-threejs-mesh를-instancedmesh로-변환하기/th
 
 또한, 어떤 Mesh끼리는 동일한 Geometry, Material을 공유할 수도 있다. 위 그림에서 이를 형광펜 색으로 나타내었다.
 
-![](/assets/posts/2023-11-29-threejs-mesh를-instancedmesh로-변환하기/img1.png)
+![img](/assets/posts/2023-11-29-threejs-mesh를-instancedmesh로-변환하기/img1.png)
 
 결과적으로 이를 인스턴싱하기 위해서는 동일한 Geometry, Material을 쓰는 Mesh별로 묶어 각각 InstancedMesh를 생성해주어야 한다.
 

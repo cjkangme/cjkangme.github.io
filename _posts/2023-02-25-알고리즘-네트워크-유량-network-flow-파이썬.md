@@ -53,7 +53,7 @@ image: /assets/posts/2023-02-25-알고리즘-네트워크-유량-network-flow-�
 - 소스에서 싱크로 흐를 수 있는 최대 유량을 구하는 알고리즘이다.
 
 
-![](/assets/posts/2023-02-25-알고리즘-네트워크-유량-network-flow-파이썬/img0.png)
+![img](/assets/posts/2023-02-25-알고리즘-네트워크-유량-network-flow-파이썬/img0.png)
 
 
 다음과 같은 유량 그래프가 있다고하자
@@ -69,7 +69,7 @@ image: /assets/posts/2023-02-25-알고리즘-네트워크-유량-network-flow-�
 
 > - 참조 : [네트워크 유량(Network Flow) (수정: 2019-08-14) - 라이](https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=kks227&logNo=220804885235) 
 
-![](/assets/posts/2023-02-25-알고리즘-네트워크-유량-network-flow-파이썬/img1.png)
+![img](/assets/posts/2023-02-25-알고리즘-네트워크-유량-network-flow-파이썬/img1.png)
 
 - DFS로 1 -> 4 -> 3 -> 2의 경로를 찾아 내었다.
 
@@ -83,11 +83,11 @@ image: /assets/posts/2023-02-25-알고리즘-네트워크-유량-network-flow-�
 
 - 용량이 1이므로, 한 번 지나간 것으로 해당 간선의 잔여 용량은 0이 된다. (빨간 선 표시)
 
-![](/assets/posts/2023-02-25-알고리즘-네트워크-유량-network-flow-파이썬/img2.png)
+![img](/assets/posts/2023-02-25-알고리즘-네트워크-유량-network-flow-파이썬/img2.png)
 
 - 그리고 유량 대칭성에 의해 유량이 -1인 역방향 간선이 생성된다.
 
-![](/assets/posts/2023-02-25-알고리즘-네트워크-유량-network-flow-파이썬/img3.png)
+![img](/assets/posts/2023-02-25-알고리즘-네트워크-유량-network-flow-파이썬/img3.png)
 
 - 새로운 경로를 초록색으로 표시하였다.
 
@@ -100,7 +100,7 @@ image: /assets/posts/2023-02-25-알고리즘-네트워크-유량-network-flow-�
 
 - **3 -> 4 경로가 바로 유량 대칭성의 핵심으로, 원래라면 없는 간선(=용량 0)이지만 용량 대칭에 의해 생성된 음의 유량을 갖는 간선이다.**
 
-![](/assets/posts/2023-02-25-알고리즘-네트워크-유량-network-flow-파이썬/img4.png)
+![img](/assets/posts/2023-02-25-알고리즘-네트워크-유량-network-flow-파이썬/img4.png)
 
 - 4 -> 3 간선은 용량 1, 유량 1로 잔여 유량이 0이었지만, **유량 대칭성**에 의해 -1의 유량이 흘러 유량 0이 되었다. (빨간색 화살표 -> 검정색 화살표)
 
@@ -115,7 +115,7 @@ image: /assets/posts/2023-02-25-알고리즘-네트워크-유량-network-flow-�
 - `1 -> 4 -> 3 -> 2`
 - `1 -> 3 -> 4 -> 6 -> 2`
 
-![](/assets/posts/2023-02-25-알고리즘-네트워크-유량-network-flow-파이썬/img0.png)
+![img](/assets/posts/2023-02-25-알고리즘-네트워크-유량-network-flow-파이썬/img0.png)
 
 그런데 처음 그림을 보면 `1 -> 3 -> 4 -> 6 -> 2`는 불가능한 경로이다.
 

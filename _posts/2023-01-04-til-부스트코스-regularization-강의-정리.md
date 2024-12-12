@@ -52,7 +52,7 @@ image: /assets/posts/2023-01-04-til-부스트코스-regularization-강의-정리
 
 - 이미지 데이터를 cutmix하는 방법의 예는 다음과같다.
 
-![](/assets/posts/2023-01-04-til-부스트코스-regularization-강의-정리/img0.png)
+![img](/assets/posts/2023-01-04-til-부스트코스-regularization-강의-정리/img0.png)
 
 > [CutMix: Regularization Strategy to Train Strong Classifiers with Localizable Features - ICCV 2019  ·  Sangdoo Yun, Dongyoon Han, Seong Joon Oh, Sanghyuk Chun, Junsuk Choe, Youngjoon Yoo](https://paperswithcode.com/paper/cutmix-regularization-strategy-to-train)
 

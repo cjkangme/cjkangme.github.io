@@ -16,7 +16,7 @@ image: /assets/posts/2023-11-05-threejs-depth-bufferingz-buffering-개념/thumbn
 
 Three.js가 제공하는 다양한 Materials에 대해 배우기 전에 Depth Buffering이라는 개념을 알아두는 것이 좋다.
 
-![](/assets/posts/2023-11-05-threejs-depth-bufferingz-buffering-개념/img0.png)
+![img](/assets/posts/2023-11-05-threejs-depth-bufferingz-buffering-개념/img0.png)
 
 <small>출처: https://ko.wikipedia.org/wiki/Z_%EB%B2%84%ED%8D%BC%EB%A7%81</small>
 
@@ -30,7 +30,7 @@ Z값은 `[0, 1]`의 정규화된 범위를 가진다.
 Z값이 작을수록 카메라에 가깝다는 것을 의미한다. 
 가장 가까운 픽셀의 Z값은 0.0이고, 가장 먼 픽셀의 값은 1.0이다.
 
-![](/assets/posts/2023-11-05-threejs-depth-bufferingz-buffering-개념/img1.png)
+![img](/assets/posts/2023-11-05-threejs-depth-bufferingz-buffering-개념/img1.png)
 
 <small>출처: https://gamersnexus.net/guides/2355-deep-dive-how-vxao-frustum-tracing-and-flow-work</small>
 
@@ -66,7 +66,7 @@ Three.js 역시 Depth-buffering를 사용하여 물체를 렌더링한다.
 필요한 물체만 렌더링 할 수 있는 Depth-buffering과 다르게 모든 물체를 렌더링 해야하므로 많은 자원을 필요로 한다.
 
 #### 고리모양 문제
-![](/assets/posts/2023-11-05-threejs-depth-bufferingz-buffering-개념/img2.png)
+![img](/assets/posts/2023-11-05-threejs-depth-bufferingz-buffering-개념/img2.png)
 
 <small>출처 : https://ko.wikipedia.org/wiki/%ED%99%94%EA%B0%80_%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98</small>
 

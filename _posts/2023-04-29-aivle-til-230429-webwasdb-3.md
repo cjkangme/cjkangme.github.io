@@ -12,7 +12,7 @@ image: /assets/posts/2023-04-29-aivle-til-230429-webwasdb-3/thumbnail.png
 
 # 웹 호스팅
 
-![](/assets/posts/2023-04-29-aivle-til-230429-webwasdb-3/img0.png)
+![img](/assets/posts/2023-04-29-aivle-til-230429-webwasdb-3/img0.png)
 
 이번 과정을 통해 진행한 웹 호스팅의 모든 단계를 요약하자면 다음과 같다.
 

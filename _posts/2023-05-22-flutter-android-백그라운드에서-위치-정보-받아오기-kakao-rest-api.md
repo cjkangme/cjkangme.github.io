@@ -156,7 +156,7 @@ Fetch가 실행하는 함수는 `getLocation()` 사용자 정의 함수를 실�
 `getLocation()`은 geolocator 패키지가 제공하는 `getCurrentPosition()`함수를 이용해 위치 정보를 받아온다.
 - `LocationAccuracy.bestForNavigation`은 가장 높은 정확도의 위치 정보를 받아오겠다고 명시한 것이다.
 
-![](/assets/posts/2023-05-22-flutter-android-백그라운드에서-위치-정보-받아오기-kakao-rest-api/img0.png)
+![img](/assets/posts/2023-05-22-flutter-android-백그라운드에서-위치-정보-받아오기-kakao-rest-api/img0.png)
 
 함수의 반환값은 Position 객체로, 위도와 경도 데이터를 담고 있다.
 

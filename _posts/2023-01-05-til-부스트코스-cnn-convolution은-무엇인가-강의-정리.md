@@ -10,7 +10,7 @@ image: /assets/posts/2023-01-05-til-부스트코스-cnn-convolution은-무엇인
 
 ---
 
-![](/assets/posts/2023-01-05-til-부스트코스-cnn-convolution은-무엇인가-강의-정리/img0.png)
+![img](/assets/posts/2023-01-05-til-부스트코스-cnn-convolution은-무엇인가-강의-정리/img0.png)
 > [썸네일 메이커](https://ye-yo.github.io/thumbnail-maker/)
 
 # Convolution
@@ -39,8 +39,8 @@ image: /assets/posts/2023-01-05-til-부스트코스-cnn-convolution은-무엇인
 	※ tensor : 3d 이상의 공간을 배열의 집합으로 나타내는 표기법(자료구조)이다. 3차원 공간에서는 방향과 크기를 나타낸 벡터 3개로 구성된다.
 - 여기서 마지막의 3은 RGB를 의미한다.
     
-![](/assets/posts/2023-01-05-til-부스트코스-cnn-convolution은-무엇인가-강의-정리/img1.png)
-> [참고자료](http://aispiration.com/deep-learning/tensorflow-data-structure.html)
+![img](/assets/posts/2023-01-05-til-부스트코스-cnn-convolution은-무엇인가-강의-정리/img1.png)
+> [참고자료](https://aispiration.com/deep-learning/tensorflow-data-structure.html)
 
 - kernel의 깊이는 이미지와 동일해야 한다. kernel의 크기를 `5 x 5 x 3`이라 했을 경우 `28 x 28`의 feature map이 출력된다.
 - 이 때 kernel을 여러개 사용한다면 그만큼 feature map의 채널이 늘어난다.
@@ -70,7 +70,7 @@ image: /assets/posts/2023-01-05-til-부스트코스-cnn-convolution은-무엇인
     
 ### Pooling?
 
-![](/assets/posts/2023-01-05-til-부스트코스-cnn-convolution은-무엇인가-강의-정리/img2.png)
+![img](/assets/posts/2023-01-05-til-부스트코스-cnn-convolution은-무엇인가-강의-정리/img2.png)
 
 > [참고자료](https://paperswithcode.com/method/max-pooling)
 
@@ -90,7 +90,7 @@ image: /assets/posts/2023-01-05-til-부스트코스-cnn-convolution은-무엇인
 - 한 픽셀을 건너 뛰면서 데이터를 찍는 것을 `Strider = 2`라 한다.
 - 2D image에서는 width, height 두 방향으로 각각 stride를 적용한다.
 
-![](/assets/posts/2023-01-05-til-부스트코스-cnn-convolution은-무엇인가-강의-정리/img3.png)
+![img](/assets/posts/2023-01-05-til-부스트코스-cnn-convolution은-무엇인가-강의-정리/img3.png)
 
 > [참고자료](https://towardsdatascience.com/types-of-convolutions-in-deep-learning-717013397f4d)
 
@@ -102,7 +102,7 @@ image: /assets/posts/2023-01-05-til-부스트코스-cnn-convolution은-무엇인
 - `Zero padding`이라 하면 input 가장자리에 0 값을 추가하는 것을 말한다.
 - kernel에 맞게 적절한 padding을 사용하면 input의 spatial dimension과 output의 spatial dimension이 동일하게 된다.
 
-![](/assets/posts/2023-01-05-til-부스트코스-cnn-convolution은-무엇인가-강의-정리/img4.png)
+![img](/assets/posts/2023-01-05-til-부스트코스-cnn-convolution은-무엇인가-강의-정리/img4.png)
 
 > [참고자료](https://deepai.org/machine-learning-glossary-and-terms/padding)
 
@@ -111,7 +111,7 @@ image: /assets/posts/2023-01-05-til-부스트코스-cnn-convolution은-무엇인
 
 ## 직접 계산해보기
 
-![](/assets/posts/2023-01-05-til-부스트코스-cnn-convolution은-무엇인가-강의-정리/img5.png)
+![img](/assets/posts/2023-01-05-til-부스트코스-cnn-convolution은-무엇인가-강의-정리/img5.png)
 > [GoogLeNet 논문](https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/43022.pdf)
 
 ### 두번째 convolution

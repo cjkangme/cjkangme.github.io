@@ -36,7 +36,7 @@ PC 웹이든 모바일 웹이든 적절한 화면 전환 효과는 사용자가 
 
 # Framer-motion
 
-![](/assets/posts/2023-11-18-react에서-모바일-앱-같은-페이지-전환효과-만들기-1-framer-motion/img0.png)
+![img](/assets/posts/2023-11-18-react에서-모바일-앱-같은-페이지-전환효과-만들기-1-framer-motion/img0.png)
 
 [공식 홈페이지](https://www.framer.com/motion/)
 
@@ -117,7 +117,7 @@ export default Page;
 
 **`position: absolute` 속성을 꼭 지정해야 한다.**
 
-![](/assets/posts/2023-11-18-react에서-모바일-앱-같은-페이지-전환효과-만들기-1-framer-motion/img1.png)
+![img](/assets/posts/2023-11-18-react에서-모바일-앱-같은-페이지-전환효과-만들기-1-framer-motion/img1.png)
 
 위 그림처럼 새 페이지가 마운트되어 애니메이션이 재생되는 동안에는 두 페이지 모두가 렌더링 되고 있는 상태이다.
 
@@ -126,7 +126,7 @@ export default Page;
 때문에 다른 요소를 무시하고 정해진 위치에서 애니메이션이 재생될 수 있도록 `position`을 정해주어야 한다.
 
 ### 결과
-![](/assets/posts/2023-11-18-react에서-모바일-앱-같은-페이지-전환효과-만들기-1-framer-motion/img2.png)
+![img](/assets/posts/2023-11-18-react에서-모바일-앱-같은-페이지-전환효과-만들기-1-framer-motion/img2.png)
 
 ### 현재 문제점
 

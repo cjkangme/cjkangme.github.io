@@ -41,7 +41,7 @@ Contrastive Learning에 대해서는 이후 학습 방법을 설명할 때 보�
 
 ### Contrastive pre-training
 
-![](/assets/posts/2024-06-14-til-clip-learning-transferable-visual-models-from-natural-language-supervision/img0.png)
+![img](/assets/posts/2024-06-14-til-clip-learning-transferable-visual-models-from-natural-language-supervision/img0.png)
 
 ```python
 # 각 feature 벡터 추출
@@ -73,7 +73,7 @@ loss = (loss_i + loss_t) / 2
 
 ### Inference
 
-![](/assets/posts/2024-06-14-til-clip-learning-transferable-visual-models-from-natural-language-supervision/img1.png)
+![img](/assets/posts/2024-06-14-til-clip-learning-transferable-visual-models-from-natural-language-supervision/img1.png)
 
 이렇게 학습한 모델은 학습한 적이 없는 클래스에 대해 예측하는 zero-shot이 가능합니다.
 그 방법은 아래와 같습니다.
@@ -89,7 +89,7 @@ CLIP이 학습한 자연어가 대부분 문장 형태이기 때문에 프롬프
 
 # Result
 
-![](/assets/posts/2024-06-14-til-clip-learning-transferable-visual-models-from-natural-language-supervision/img2.png)
+![img](/assets/posts/2024-06-14-til-clip-learning-transferable-visual-models-from-natural-language-supervision/img2.png)
 
 이렇게 학습된 CLIP은 zero shot임에도 데이터셋으로 지도 학습을 진행한 SOTA 모델들과 비교 가능한 수준의 성능을 보였다고 합니다.
 학습한 데이터셋과 분포가 다른 테스트셋을 사용할 경우에도 지도 학습 기반 모델들은 성능이 큰 폭으로 감소하는 반면, CLIP은 매우 robust한 성능을 보여 zero shot 능력이 뛰어난 것을 확인할 수 있습니다.

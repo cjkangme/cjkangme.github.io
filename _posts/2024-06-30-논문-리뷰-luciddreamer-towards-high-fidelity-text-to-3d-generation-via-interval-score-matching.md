@@ -22,7 +22,7 @@ text-to-3D의 역사에 대해 짧게 짚고 넘어가보면, 인터넷에 있�
 SDS는 pretrained diffusion 모델을 현실의 분포를 잘 나타내는 ground truth로 간주하고, 3D 생성 모델(i.e. NeRF, 3DGS)이 생성하는 결과의 분포를 diffusion 모델이 갖고 있는 분포와 일치시키는 것을 목표로 합니다.
 diffusion 모델의 지식을 3D 생성 모델로 증류(distill)한다고 하여 SDS라는 표현을 사용한 것 같습니다.
 
-![](/assets/posts/2024-06-30-논문-리뷰-luciddreamer-towards-high-fidelity-text-to-3d-generation-via-interval-score-matching/img0.png)
+![img](/assets/posts/2024-06-30-논문-리뷰-luciddreamer-towards-high-fidelity-text-to-3d-generation-via-interval-score-matching/img0.png)
 > <small>Dreamfusion 예시</small>
 
 SDS는 추후 설명할 SDS loss를 스코어로 사용하여 3D 생성 모델을 업데이트 하는데, 생성 결과가 over-smoothing 되어 디테일한 표현이 부족하거나, 색상이 과장되게 표현되는 등의 문자가 발생했습니다.
@@ -31,7 +31,7 @@ SDS는 추후 설명할 SDS loss를 스코어로 사용하여 3D 생성 모델�
 # Revisiting the SDS
 
 ## SDS loss
-![](/assets/posts/2024-06-30-논문-리뷰-luciddreamer-towards-high-fidelity-text-to-3d-generation-via-interval-score-matching/img1.png)
+![img](/assets/posts/2024-06-30-논문-리뷰-luciddreamer-towards-high-fidelity-text-to-3d-generation-via-interval-score-matching/img1.png)
 SDS loss 수식은 다음과 같습니다. 이를 구하는 과정을 간단히 정리해보자면
 
 > 1. NeRF $$ g(\theta) $$로 특정 view의 이미지를 렌더링
@@ -46,7 +46,7 @@ SDS Loss에 대한 자세한 설명은 구글에 검색하시거나, [NFSD 논�
 
 ### SDS loss 수식 재해석
 
-![](/assets/posts/2024-06-30-논문-리뷰-luciddreamer-towards-high-fidelity-text-to-3d-generation-via-interval-score-matching/img2.png)
+![img](/assets/posts/2024-06-30-논문-리뷰-luciddreamer-towards-high-fidelity-text-to-3d-generation-via-interval-score-matching/img2.png)
 > <small>[*오타 참고](https://github.com/EnVision-Research/LucidDreamer/issues/29)</small>
 
 - noisy image : $$ x_t = \sqrt{\bar{\alpha}_t}x_0 + \sqrt{1-\bar{\alpha}_t}\epsilon $$
@@ -67,7 +67,7 @@ pseudo-GT의 품질이 낮아지는 원인에는 크게 두 가지가 있는데,
 
 첫번째는 **pseudo-GT를 생성하기 위해 이미지에 더해지는 노이즈가 완전히 랜덤이라는 점**입니다.
 
-![](/assets/posts/2024-06-30-논문-리뷰-luciddreamer-towards-high-fidelity-text-to-3d-generation-via-interval-score-matching/img3.png)
+![img](/assets/posts/2024-06-30-논문-리뷰-luciddreamer-towards-high-fidelity-text-to-3d-generation-via-interval-score-matching/img3.png)
 위 figure에서 첫번째 열에 있는 그림은 3D 생성 모델의 결과($$ x_0 $$), 2~5열에 있는 그림은 생성 결과에 서로 다른 랜덤 노이즈($$ \epsilon_1, \epsilon_2, ... $$)를 더한 결과($$ x_t) $$입니다.
 
 figure에서 보시다시피, 노이즈가 랜덤이기 때문에 $$ x_t $$의 결과가 매번 달라지는 것을 확인할 수 있습니다. 이러한 차이들이 매 스탭마다 누적되면 결국 마지막 열의 그림처럼 평균화되어 blurry한 결과로 학습이 이루어집니다.
@@ -80,7 +80,7 @@ figure에서 보시다시피, 노이즈가 랜덤이기 때문에 $$ x_t $$의 �
 
 위 식에서 보면 알 수 있듯이 timestep에 상관없이 pseudo-GT를 구하는 것에는 단 한번의 예측만을 수행하고 있습니다.
 
-![](/assets/posts/2024-06-30-논문-리뷰-luciddreamer-towards-high-fidelity-text-to-3d-generation-via-interval-score-matching/img4.png)
+![img](/assets/posts/2024-06-30-논문-리뷰-luciddreamer-towards-high-fidelity-text-to-3d-generation-via-interval-score-matching/img4.png)
 
 문제는 위 그림과 같이 순차적인 단계로 노이즈를 예측하도록 학습된 `DDPM` 모델 특성상, 이렇게 **단일 스탭으로 노이즈를 예측하면 높은 reconstruction error가 발생**합니다.
 
@@ -106,20 +106,20 @@ DDIM Inversion으로 noisy 이미지 $$ x_t $$를 만드는 방법에 대해 설
 
 - DDIM Inversion
   - $$ x_t = \sqrt{\bar{\alpha}_t}\hat{x}^{t-{\delta_T}}_0 + \sqrt{1-\bar{\alpha}_t}\epsilon_\phi(x_{t-\delta_T}, t-\delta_T, \emptyset) $$
-  - $$ s = t - \delta_T $$ 일 때 ![](/assets/posts/2024-06-30-논문-리뷰-luciddreamer-towards-high-fidelity-text-to-3d-generation-via-interval-score-matching/img5.png)
+  - $$ s = t - \delta_T $$ 일 때 ![img](/assets/posts/2024-06-30-논문-리뷰-luciddreamer-towards-high-fidelity-text-to-3d-generation-via-interval-score-matching/img5.png)
 
 DDIM inversion은 다음과 같이 순차적인 방식으로 $$ x_t $$를 만듭니다. 이 과정을 풀어서 설명하자면 다음과 같습니다.
 
 #### 1. 다음 타임스탭의 noisy 이미지 계산
 
-![](/assets/posts/2024-06-30-논문-리뷰-luciddreamer-towards-high-fidelity-text-to-3d-generation-via-interval-score-matching/img6.png)
+![img](/assets/posts/2024-06-30-논문-리뷰-luciddreamer-towards-high-fidelity-text-to-3d-generation-via-interval-score-matching/img6.png)
 
 기존에는 단순히 랜덤한 가우시안 노이즈를 생성해 더했지만
 DDIM inversion에서는 pretrained U-Net이 예측한 노이즈를 더합니다.
 
 #### 2. denoise
 
-![](/assets/posts/2024-06-30-논문-리뷰-luciddreamer-towards-high-fidelity-text-to-3d-generation-via-interval-score-matching/img7.png)
+![img](/assets/posts/2024-06-30-논문-리뷰-luciddreamer-towards-high-fidelity-text-to-3d-generation-via-interval-score-matching/img7.png)
 
 $$ \gamma $$를 사용하여 형태가 달라졌지만, 앞서 설명한 pseudo-GT를 구하는 식과 동일한 식입니다.
 
@@ -129,11 +129,11 @@ $$ \gamma $$를 사용하여 형태가 달라졌지만, 앞서 설명한 pseudo-
 
 #### 3. 다시 다음 타임스탭의 noisy 이미지 계산 (1~2를 $$ t $$까지 반복)
 
-![](/assets/posts/2024-06-30-논문-리뷰-luciddreamer-towards-high-fidelity-text-to-3d-generation-via-interval-score-matching/img8.png)
+![img](/assets/posts/2024-06-30-논문-리뷰-luciddreamer-towards-high-fidelity-text-to-3d-generation-via-interval-score-matching/img8.png)
 
 1~2를 순차적으로 반복하면서 $$ x_t $$에 도달할 때 까지 계산을 반복합니다.
 
-![](/assets/posts/2024-06-30-논문-리뷰-luciddreamer-towards-high-fidelity-text-to-3d-generation-via-interval-score-matching/img5.png)
+![img](/assets/posts/2024-06-30-논문-리뷰-luciddreamer-towards-high-fidelity-text-to-3d-generation-via-interval-score-matching/img5.png)
 
 Eq. 10은 위 과정을 정리하여 수식으로 나타낸 것입니다.
 
@@ -156,8 +156,8 @@ DDIM을 이용해 순차적으로 pseudo-GT($$ \tilde{x}^t_0 $$)을 구하는 �
 - DDIM Inversion에서 $$ x_t $$를 구하는 식
 $$ x_t = \sqrt{\bar{\alpha}_t}\hat{x}^{t-{\delta_T}}_0 + \sqrt{1-\bar{\alpha}_t}\epsilon_\phi(x_{t-\delta_T}, t-\delta_T, \emptyset) $$
 
-- ![](/assets/posts/2024-06-30-논문-리뷰-luciddreamer-towards-high-fidelity-text-to-3d-generation-via-interval-score-matching/img10.png)
-- ![](/assets/posts/2024-06-30-논문-리뷰-luciddreamer-towards-high-fidelity-text-to-3d-generation-via-interval-score-matching/img11.png)
+- ![img](/assets/posts/2024-06-30-논문-리뷰-luciddreamer-towards-high-fidelity-text-to-3d-generation-via-interval-score-matching/img10.png)
+- ![img](/assets/posts/2024-06-30-논문-리뷰-luciddreamer-towards-high-fidelity-text-to-3d-generation-via-interval-score-matching/img11.png)
 
 제가 직접 전개하지는 못했지만, 논문에 의하면 SDS에서 pseudo-GT를 구하는 식을 DDIM에 맞게 적용한 것이 DDIM Inversion에서 $$ x_t $$를 구하는 식이며, 이를 $$ x_t $$부터 $$ x_0 $$까지 순차적으로 적용한 것을 정리한 식이 Eq. 13입니다. 
 
@@ -171,9 +171,9 @@ $$ x_t = \sqrt{\bar{\alpha}_t}\hat{x}^{t-{\delta_T}}_0 + \sqrt{1-\bar{\alpha}_t}
 
 다시 앞서 DDIM Inversion에 사용된 수식과 Eq. 13을 들고오겠습니다.
 
-![](/assets/posts/2024-06-30-논문-리뷰-luciddreamer-towards-high-fidelity-text-to-3d-generation-via-interval-score-matching/img5.png)
+![img](/assets/posts/2024-06-30-논문-리뷰-luciddreamer-towards-high-fidelity-text-to-3d-generation-via-interval-score-matching/img5.png)
 
-![](/assets/posts/2024-06-30-논문-리뷰-luciddreamer-towards-high-fidelity-text-to-3d-generation-via-interval-score-matching/img11.png)
+![img](/assets/posts/2024-06-30-논문-리뷰-luciddreamer-towards-high-fidelity-text-to-3d-generation-via-interval-score-matching/img11.png)
 
 먼저 Eq. 10에서 $$ \hat{x}^s_0 $$를 구할 수 있는데, $$ x_t = \sqrt{\bar{\alpha}_t}\hat{x}^s_0 + \sqrt{1-\bar{\alpha}_t}\epsilon_\phi(x_s, s, \emptyset) $$ 이므로
 
@@ -191,20 +191,20 @@ $$ \frac{x_t}{\sqrt{\bar{\alpha}_t}} = \hat{x}^s_0 + \gamma(t)\epsilon_\phi(x_s,
 
 ### ISM Loss
 
-![](/assets/posts/2024-06-30-논문-리뷰-luciddreamer-towards-high-fidelity-text-to-3d-generation-via-interval-score-matching/img2.png)
+![img](/assets/posts/2024-06-30-논문-리뷰-luciddreamer-towards-high-fidelity-text-to-3d-generation-via-interval-score-matching/img2.png)
 
 앞서 Eq. 6으로 정의한 SDS loss에서 $$ \hat{x}^t_0 $$를 $$ \tilde{x}^t_0 $$로 교체하면 DDIM inversion, ISM을 적용한 loss term이 됩니다.
 
-![](/assets/posts/2024-06-30-논문-리뷰-luciddreamer-towards-high-fidelity-text-to-3d-generation-via-interval-score-matching/img15.png)
+![img](/assets/posts/2024-06-30-논문-리뷰-luciddreamer-towards-high-fidelity-text-to-3d-generation-via-interval-score-matching/img15.png)
 
 Eq.12에 $$ x_0 - \tilde{x}^t_0 = \gamma(t)[\epsilon_\phi(x_t, t, y) - \epsilon_\phi(x_s, s, \emptyset)] + \eta_t $$를 대입합니다.
 
-![](/assets/posts/2024-06-30-논문-리뷰-luciddreamer-towards-high-fidelity-text-to-3d-generation-via-interval-score-matching/img16.png)
+![img](/assets/posts/2024-06-30-논문-리뷰-luciddreamer-towards-high-fidelity-text-to-3d-generation-via-interval-score-matching/img16.png)
 
 이렇게 정리된 수식만으로는 여전히 멀티 스탭으로 pseudo-GT를 구하는 수식입니다.
 논문에서는 **$$ \eta_t $$는 3D에 대한 것보다는 $$ \delta_T $$에 밀접하게 관련이 있는 term이기 때문에 연산의 효율성을 위해 제거**해도 무방하다고 합니다.
 
-![](/assets/posts/2024-06-30-논문-리뷰-luciddreamer-towards-high-fidelity-text-to-3d-generation-via-interval-score-matching/img17.png)
+![img](/assets/posts/2024-06-30-논문-리뷰-luciddreamer-towards-high-fidelity-text-to-3d-generation-via-interval-score-matching/img17.png)
 
 $$ \eta_t $$를 제거하면 비로소 논문이 제안하는 ISM Loss term이 됩니다.
 이렇게 하면 **모든 timestep에 대해 노이즈를 예측할 필요 없이 $$ x_t, x_s $$ 딱 두 timestep에 대해서만 노이즈를 계산하는 two-step-prediction이 되어 연산 비용을 훨씬 절약**할 수 있습니다.
@@ -213,7 +213,7 @@ $$ \eta_t $$에 대한 자세한 실험 및 증명은 논문의 supplements에 �
 
 ## Pseudo Code
 
-![](/assets/posts/2024-06-30-논문-리뷰-luciddreamer-towards-high-fidelity-text-to-3d-generation-via-interval-score-matching/img18.png)
+![img](/assets/posts/2024-06-30-논문-리뷰-luciddreamer-towards-high-fidelity-text-to-3d-generation-via-interval-score-matching/img18.png)
 
 논문에서 ISM과정에 대해 슈도 코드를 제공합니다.
 
@@ -227,7 +227,7 @@ $$ \eta_t $$에 대한 자세한 실험 및 증명은 논문의 supplements에 �
 
 여기서 $$ \delta_T $$, $$ \delta_S $$가 하이퍼파라미터가 사용됩니다.
 
-![](/assets/posts/2024-06-30-논문-리뷰-luciddreamer-towards-high-fidelity-text-to-3d-generation-via-interval-score-matching/img19.png)
+![img](/assets/posts/2024-06-30-논문-리뷰-luciddreamer-towards-high-fidelity-text-to-3d-generation-via-interval-score-matching/img19.png)
 
 
 - $$ \delta_T $$ : 한번에 예측할 timestep 크기
@@ -241,7 +241,7 @@ $$ \eta_t $$에 대한 자세한 실험 및 증명은 논문의 supplements에 �
 
 ## Overall 
 
-![](/assets/posts/2024-06-30-논문-리뷰-luciddreamer-towards-high-fidelity-text-to-3d-generation-via-interval-score-matching/img20.png)
+![img](/assets/posts/2024-06-30-논문-리뷰-luciddreamer-towards-high-fidelity-text-to-3d-generation-via-interval-score-matching/img20.png)
 
 사용되는 loss가 바뀌었을 뿐, 전체 파이프라인의 구조는 변하지 않았기 때문에, 기존 SDS 기반 로직에 쉽게 적용할 수 있을 것이라 생각합니다.
 
@@ -265,11 +265,11 @@ text-to-3D는 아직 모델의 성능을 평가할 정량적 지표가 없어 �
 때문에 [LucidDreamer 깃허브 페이지](https://github.com/EnVision-Research/LucidDreamer)에서 제공하는 결과와 속도 정도만 첨부하겠습니다.
 
 ### 렌더링 결과
-![](/assets/posts/2024-06-30-논문-리뷰-luciddreamer-towards-high-fidelity-text-to-3d-generation-via-interval-score-matching/img21.png)
+![img](/assets/posts/2024-06-30-논문-리뷰-luciddreamer-towards-high-fidelity-text-to-3d-generation-via-interval-score-matching/img21.png)
 
 ### 학습 속도
 
-![](/assets/posts/2024-06-30-논문-리뷰-luciddreamer-towards-high-fidelity-text-to-3d-generation-via-interval-score-matching/img22.png)
+![img](/assets/posts/2024-06-30-논문-리뷰-luciddreamer-towards-high-fidelity-text-to-3d-generation-via-interval-score-matching/img22.png)
 
 속도 측면에서는 original DreamFusion과 큰 차이가 없습니다.
 

@@ -21,7 +21,7 @@ image: /assets/posts/2023-04-27-aivle-til-230427-webwasdb-1/thumbnail.png
 
 ## AWS EC2
 
-![](/assets/posts/2023-04-27-aivle-til-230427-webwasdb-1/img0.png)
+![img](/assets/posts/2023-04-27-aivle-til-230427-webwasdb-1/img0.png)
 
 Amazon Elastic Compute Cloud(AWS EC2)는 서버 컴퓨터로 사용하기 위한 컴퓨팅 환경을 제공받을 수 있는 서비스이다.
 
@@ -159,13 +159,13 @@ TMUX는 세션, 윈도우, 팬을 각각 지원한다.
 `tmux a -t <세션 이름>` : 지정한 세션에 접속한다. a는 attach의 단축어이다.
 `tmux kill-session -t <세션 이름>` : 지정한 세션을 종료한다.
 
-![](/assets/posts/2023-04-27-aivle-til-230427-webwasdb-1/img1.png)
+![img](/assets/posts/2023-04-27-aivle-til-230427-webwasdb-1/img1.png)
 
 동일한 세션에 연결되었다면 화면이 공유된다.
 
 ### 윈도우
 
-![](/assets/posts/2023-04-27-aivle-til-230427-webwasdb-1/img2.png)
+![img](/assets/posts/2023-04-27-aivle-til-230427-webwasdb-1/img2.png)
 
 한 세션 내에서 여러개의 윈도우를 생성할 수 있다.
 

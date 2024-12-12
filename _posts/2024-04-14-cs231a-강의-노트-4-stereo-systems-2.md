@@ -14,7 +14,7 @@ math: true
 
 **structure from motion(SfM)**은 multiple view 이미지로부터 씬(scene)의 3D 구조와 카메라 파라미터를 동시에 결정할 수 있는 방법이다.
 
-![](/assets/posts/2024-04-14-cs231a-강의-노트-4-stereo-systems-2/img0.png)
+![img](/assets/posts/2024-04-14-cs231a-강의-노트-4-stereo-systems-2/img0.png)
 
 - $$ M_i $$ : i번째 카메라의 intrinsic and extrinsic 파라미터
 - $$ X_j $$ : 씬에 있는 n개의 포인트 중 j번째 포인트
@@ -26,17 +26,17 @@ math: true
 
 이 경우 3D에서 2D로의 변환은 depth에 따른 scale 변환이 없는 affine transform이 된다.
 
-![](/assets/posts/2024-04-14-cs231a-강의-노트-4-stereo-systems-2/img1.png)
+![img](/assets/posts/2024-04-14-cs231a-강의-노트-4-stereo-systems-2/img1.png)
 
 perspective camera의 변환 행렬을 다음과 같이 나타낼 수 있는데, weak perspective의 경우 x, y, z축 방향 depth에 따른 scale 변환이 없으므로 $$ v=0 $$이 된다.
 
-![](/assets/posts/2024-04-14-cs231a-강의-노트-4-stereo-systems-2/img2.png)
+![img](/assets/posts/2024-04-14-cs231a-강의-노트-4-stereo-systems-2/img2.png)
 
 $$ v=0 $$일 경우 $$ M $$의 마지막 행이 $$ [0, 0, 0, 1] $$이므로, homogeneous 좌표에서 scale을 나타내는 마지막 행이 1이된다.
 
 즉, **weak perspective camera 모델에서 $$ M $$에 의한 변환은 선형적**이라는 것을 알 수 있다.
 
-![](/assets/posts/2024-04-14-cs231a-강의-노트-4-stereo-systems-2/img3.png)
+![img](/assets/posts/2024-04-14-cs231a-강의-노트-4-stereo-systems-2/img3.png)
 
 때문에 변환식을 위와 같이 선형 변환식(식 3.3)으로 나타낼 수 있다.
 
@@ -62,13 +62,13 @@ $$ X_j $$는 3차원 좌표이므로 3개의 변수를 갖는다.
 
 data centering step은 이미지의 중앙점이 원점`(0, 0)`이 되도록 하는 과정이다.
 
-![](/assets/posts/2024-04-14-cs231a-강의-노트-4-stereo-systems-2/img4.png)
+![img](/assets/posts/2024-04-14-cs231a-강의-노트-4-stereo-systems-2/img4.png)
 
 모든 관측점 좌표의 평균을 중앙점 $$ \bar{x}_i $$으로 하여, 중앙점을 기준으로 cetering된 새로운 좌표 $$ \hat{x}_{ij} $$를 구한다.
 
 $$ x_{ij} = A_iX_j + b_i $$이므로 centering 된 좌표를 통해 다음의 식을 유도할 수 있다.
 
-![](/assets/posts/2024-04-14-cs231a-강의-노트-4-stereo-systems-2/img5.png)
+![img](/assets/posts/2024-04-14-cs231a-강의-노트-4-stereo-systems-2/img5.png)
 
 centering 과정에서 모든 관측점에 대해 평균을 뺴주었기 때문에 bias를 제거할 수 있다.
 
@@ -80,7 +80,7 @@ centering 과정에서 모든 관측점에 대해 평균을 뺴주었기 때문�
 
 먼저 모든 m개 카메라, n개의 포인트를 합쳐 하나의 관측 행렬 $$ D $$를 정의해보자.
 
-![](/assets/posts/2024-04-14-cs231a-강의-노트-4-stereo-systems-2/img6.png)
+![img](/assets/posts/2024-04-14-cs231a-강의-노트-4-stereo-systems-2/img6.png)
 
 모든 관측치를 하나로 만들어 줬으므로, 모든 변환 행렬을 합친 `2m x 3` **motion matrix($$ M $$)**, 모든 관측점을 합친 `3 x n` **structure matrix($$ S $$)**의 곱으로 나타낼 수 있다.
 
@@ -91,7 +91,7 @@ $$ S $$는 3차원 포인트들로 구성된 행렬이기에 최대 rank가 3이
 
 즉, $$ D $$를 SVD를 통해 $$ D = U\Sigma V^T $$로 분해했을 때, $$ \Sigma $$는 주대각선에 3개의 0이 아닌 특이값을 갖는 대각 행렬이 된다.
 
-![](/assets/posts/2024-04-14-cs231a-강의-노트-4-stereo-systems-2/img7.png)
+![img](/assets/posts/2024-04-14-cs231a-강의-노트-4-stereo-systems-2/img7.png)
 
 이를 이용해 SVD를 식 3.8과 같이 단순화하여 나타낼 수 있다.
 
@@ -113,7 +113,7 @@ $$ D = MS $$를 factorization하는 방법에는 내재된 모호성(ambiguity)�
 
 바로 역행렬이 존재하는 임의의 `3 x 3` 행렬 $$ A $$를 식에 삽입할 수 있기 때문이다.
 
-![](/assets/posts/2024-04-14-cs231a-강의-노트-4-stereo-systems-2/img8.png)
+![img](/assets/posts/2024-04-14-cs231a-강의-노트-4-stereo-systems-2/img8.png)
 
 이 경우 $$ MA = U_3\Sigma_3 $$, $$ A^{-1}S = V^T_3 $$와 같이 동일한 $$ D $$에 대해 $$ M, S $$가 여러개 존재할 수 있기 때문에, $$ M, S $$로 재구성된 3D 모델이 현실과 일치하지 않을 수도 있다.
 
@@ -135,7 +135,7 @@ $$ D = MS $$를 factorization하는 방법에는 내재된 모호성(ambiguity)�
 
 perspective camera의 변환 행렬은 자유도 11인 투영변환 행렬이다.
 
-![](/assets/posts/2024-04-14-cs231a-강의-노트-4-stereo-systems-2/img9.png)
+![img](/assets/posts/2024-04-14-cs231a-강의-노트-4-stereo-systems-2/img9.png)
 
 앞서 weak perspective model에서는 $$ \hat{x}_{ij} = A_iX_j $$로 `3 x 3` 아핀 변환 행렬 $$ A $$를 사용했지만, perspective camera에서는 $$ A $$ 대신 `4 x 4`의 투영 변환 행렬 $$ H $$를 사용해 SfM 문제를 푼다.
 
@@ -144,7 +144,7 @@ perspective camera의 변환 행렬은 자유도 11인 투영변환 행렬이다
 
 ## 4.1 The algebraic approach
 
-![](/assets/posts/2024-04-14-cs231a-강의-노트-4-stereo-systems-2/img10.png)
+![img](/assets/posts/2024-04-14-cs231a-강의-노트-4-stereo-systems-2/img10.png)
 
 두 perspective 카메라에 대해 한 카메라를 canonical로 정의하면 문제를 조금 더 단순화 할 수 있다.
 
@@ -152,7 +152,7 @@ canonical 카메라는 카메라가 원점에 위치하며, view direction이 z�
 
 $$ M_1 $$이 canonical 카메라이고, 투영 변환 H가 적용된 것이라면 H의 역행렬을 이용해 아래 식 4.2와 같이 canonical로 만들 수 있다. 
 
-![](/assets/posts/2024-04-14-cs231a-강의-노트-4-stereo-systems-2/img11.png)
+![img](/assets/posts/2024-04-14-cs231a-강의-노트-4-stereo-systems-2/img11.png)
 
 이렇게 하면 기준이 되는 canonical 카메라를 기준으로 다른 카메라를 상대적인 관계를 통해 나타낼 수 있다.
 
@@ -160,7 +160,7 @@ $$ M_1 $$이 canonical 카메라이고, 투영 변환 H가 적용된 것이라�
 
 먼저 기존 카메라 행렬에 $$ H^{-1} $$을 적용하였으므로, 3D 구조에 H를 적용하여 원래 식과 일치하도록 만들어야 한다. (식 4.3)
 
-![](/assets/posts/2024-04-14-cs231a-강의-노트-4-stereo-systems-2/img12.png)
+![img](/assets/posts/2024-04-14-cs231a-강의-노트-4-stereo-systems-2/img12.png)
 
 식 4.3의 $$ \tilde{P} $$가 3D 구조에 $$ H $$를 적용한 것이다.
 그러면 $$ p, p' $$를 아래와 같이 구할 수 있다.
@@ -170,14 +170,14 @@ $$ p' = A\tilde{P} + b = Ap + b $$
 
 여기서 $$ p' $$와 $$ b $$를 cross product하는 것을 통해 아래의 식 4.5를 유도할 수 있다.
 
-![](/assets/posts/2024-04-14-cs231a-강의-노트-4-stereo-systems-2/img13.png)
+![img](/assets/posts/2024-04-14-cs231a-강의-노트-4-stereo-systems-2/img13.png)
 
 $$ Ap \times b $$는 $$ p' $$에 대해 수직이므로 dot product하면 0이 된다. 이를 이용해 아래의 식 4.6을 유도할 수 있다.
 
-![](/assets/posts/2024-04-14-cs231a-강의-노트-4-stereo-systems-2/img14.png)
+![img](/assets/posts/2024-04-14-cs231a-강의-노트-4-stereo-systems-2/img14.png)
 
 > 여기서 $$ [b]_\times $$는 앞서 fundamental matrix를 구할 때 사용했던 cross product 행렬이다.
-> ![](/assets/posts/2024-04-14-cs231a-강의-노트-4-stereo-systems-2/img15.png)
+> ![img](/assets/posts/2024-04-14-cs231a-강의-노트-4-stereo-systems-2/img15.png)
 
 앞서 fundamental matrix를 정의했듯이 $$ F = [b]_\times A $$가 되며 이는 두 점 $$ p, p' $$ 사이의 기하학적 관계를 정의한다.
 
@@ -186,7 +186,7 @@ $$ Ap \times b $$는 $$ p' $$에 대해 수직이므로 dot product하면 0이 �
 fundametal matrix의 또 하나의 특징은 epipole과의 내적값이 0이라는 것이다.
 여기서 $$ b $$를 주목할 수 있는데, $$ Fb $$를 계산하면 0임을 아래의 식 4.7을 통해 알 수 있다.
 
-![](/assets/posts/2024-04-14-cs231a-강의-노트-4-stereo-systems-2/img16.png)
+![img](/assets/posts/2024-04-14-cs231a-강의-노트-4-stereo-systems-2/img16.png)
 
 $$ b \times A $$의 연산 결과는 $$ b $$와 수직인 어떤 벡터이기 때문에 이를 다시 $$ b $$와 내적하면 0이 된다.
 
@@ -197,17 +197,17 @@ $$ F $$는 역행렬이 없는 특이 행렬(singular)이기 떄문에 $$ Fb = 0
 이렇게 $$ b $$를 알아내었다면 $$ A $$ 역시 구할 수 있다.
 앞서 fundamental matrix를 $$ F=[b]_\times A $$ 이라 정의했으므로, $$ A = -[b]_\times F $$일 때, 이 조건을 만족할 수 있다. 아래 식 4.8을 통해 이를 보여준다.
 
-![](/assets/posts/2024-04-14-cs231a-강의-노트-4-stereo-systems-2/img17.png)
+![img](/assets/posts/2024-04-14-cs231a-강의-노트-4-stereo-systems-2/img17.png)
 
 즉, $$ [A \:\: b] $$를 아래 식 4.9와 같이 바꿔 나타낼 수 있다.
 
-![](/assets/posts/2024-04-14-cs231a-강의-노트-4-stereo-systems-2/img18.png)
+![img](/assets/posts/2024-04-14-cs231a-강의-노트-4-stereo-systems-2/img18.png)
 
 또한 앞서 $$ b $$는 epipole을 나타낸다고 했으므로, 최종적으로 아래의 식 4.10을 얻을 수 있다.
 
 이를 통해 기준 카메라의 epipole이 다른 카메라에 투영된 점 $$ e $$를 알고 있을 때 $$ \tilde{M}_1, \tilde{M}_2 $$를 구할 수 있음을 나타낸다.
 
-![](/assets/posts/2024-04-14-cs231a-강의-노트-4-stereo-systems-2/img19.png)
+![img](/assets/posts/2024-04-14-cs231a-강의-노트-4-stereo-systems-2/img19.png)
 
 ## 4.2 Determining motion from the Essential matrix
 
@@ -222,22 +222,22 @@ essential matrix는 회전 $$ R $$과 3차원 이동 $$ t $$ 정보를 담고 �
 
 먼저 $$ E $$를 분해하는 것에 사용할 두 행렬을 아래와 같이 정의한다.
 
-![](/assets/posts/2024-04-14-cs231a-강의-노트-4-stereo-systems-2/img20.png)
+![img](/assets/posts/2024-04-14-cs231a-강의-노트-4-stereo-systems-2/img20.png)
 
 여기서 중요한 것은 부호를 고려하지 않았을 때(up to a sign) $$ Z = diag(1, 1, 0)W $$를 만족한다는 것이다.
 비슷하게 부호를 고려하지 않을 때 $$ ZW = ZW^T=diag(1, 1, 0) $$를 만족한다.
 
-![](/assets/posts/2024-04-14-cs231a-강의-노트-4-stereo-systems-2/img21.png)
+![img](/assets/posts/2024-04-14-cs231a-강의-노트-4-stereo-systems-2/img21.png)
 
 식 4.12에서 $$ [t]_\times $$를 eigenvalue decomposition하여 up to scale로 다음과 같이 나타낼 수 있다.
 
-![](/assets/posts/2024-04-14-cs231a-강의-노트-4-stereo-systems-2/img22.png)
+![img](/assets/posts/2024-04-14-cs231a-강의-노트-4-stereo-systems-2/img22.png)
 
 여기서 $$ U $$는 essential matrix를 SVD하였을 때의 왼쪽 직교 행렬이다. ($$ E = U\Sigma V^T $$)
 
 즉 $$ E $$를 아래의 식 4.15와 같이 나타낼 수 있다.
 
-![](/assets/posts/2024-04-14-cs231a-강의-노트-4-stereo-systems-2/img23.png)
+![img](/assets/posts/2024-04-14-cs231a-강의-노트-4-stereo-systems-2/img23.png)
 
 $$ E = U\Sigma V^T $$에서 $$ \Sigma $$는 두개의 non-zero sigular 값과 하나의 0값을 갖는 대각 행렬이라는 것을 생각하면, 식 4.15로 부터 아래의 식을 유도할 수 있다.
 
@@ -245,25 +245,25 @@ $$ E = [t]_{\times}R = Udiag(1,1,0)V^T $$
 
 이를 최종적으로 아래와 같이 factorization할 수 있다.
 
-![](/assets/posts/2024-04-14-cs231a-강의-노트-4-stereo-systems-2/img24.png)
+![img](/assets/posts/2024-04-14-cs231a-강의-노트-4-stereo-systems-2/img24.png)
 
 > 강의 노트의 나머지 내용은 잘 이해하지 못했습니다.. 결론만 추측해보겠습니다.
 
 앞서 보았듯이 $$ R $$은 두개의 값을 가질 수 있다.
 또한 $$ [t]_\times $$ 역시 여러 종류의 값을 가질 수 있는데, cross product의 성질을 이용해 이를 구할 수 있다.
 
-![](/assets/posts/2024-04-14-cs231a-강의-노트-4-stereo-systems-2/img25.png)
+![img](/assets/posts/2024-04-14-cs231a-강의-노트-4-stereo-systems-2/img25.png)
 
 $$ U $$는 유니터리 행렬이기 때문에 $$ t $$는 scale 없이 방향만을 고려하는 단위벡터이고, 이를 바탕으로 $$ \|[t]_\times\|_F = \sqrt{2(t_x^w + t_y^2 + t_z^2)} = \sqrt{2} $$ 라는 것을 알 수 있다.
 
 때문에 위 식들과, E가 up to scale임을 고려하면 $$ t $$를 아래 식과 같이 factorization 할 수 있다.
 
-![](/assets/posts/2024-04-14-cs231a-강의-노트-4-stereo-systems-2/img26.png)
+![img](/assets/posts/2024-04-14-cs231a-강의-노트-4-stereo-systems-2/img26.png)
 
 즉 $$ t $$ 역시 두 종류의 값을 갖는다.
 최종적으로 $$ t, R $$은 4가지의 경우를 갖게 된다.
 
-![](/assets/posts/2024-04-14-cs231a-강의-노트-4-stereo-systems-2/img27.png)
+![img](/assets/posts/2024-04-14-cs231a-강의-노트-4-stereo-systems-2/img27.png)
 
 올바른 $$ \hat{P} $$는 카메라 앞에 있어야 하므로 $$ z $$ 좌표값이 두 카메라 모두에서 양수여야 한다. 
 즉 위의 figure에서는 `(a)`가 올바른 $$ t, R $$ 쌍임을 알 수 있다.

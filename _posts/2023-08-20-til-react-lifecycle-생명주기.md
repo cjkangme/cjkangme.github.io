@@ -29,7 +29,7 @@ image: /assets/posts/2023-08-20-til-react-lifecycle-생명주기/thumbnail.png
 
 # 리액트 컴포넌트의 생명주기
 
-![](/assets/posts/2023-08-20-til-react-lifecycle-생명주기/img0.png)
+![img](/assets/posts/2023-08-20-til-react-lifecycle-생명주기/img0.png)
 
 출처 : [wojtekmaj/react-lifecycle-methods-diagram](https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/)
 
@@ -97,7 +97,7 @@ React 16에 추가된 생명주기로, props의 변경에 따라 state가 바뀌
 
 # useEffect
 
-![](/assets/posts/2023-08-20-til-react-lifecycle-생명주기/img1.png)
+![img](/assets/posts/2023-08-20-til-react-lifecycle-생명주기/img1.png)
 
 > 출처 : [wavez/react-hooks-lifecycle](https://wavez.github.io/react-hooks-lifecycle/)
 

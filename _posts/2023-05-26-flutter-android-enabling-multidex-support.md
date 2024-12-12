@@ -11,7 +11,7 @@ image: /assets/posts/2023-05-26-flutter-android-enabling-multidex-support/thumbn
 ---
 
 # 오류 발생
-![](/assets/posts/2023-05-26-flutter-android-enabling-multidex-support/img0.png)
+![img](/assets/posts/2023-05-26-flutter-android-enabling-multidex-support/img0.png)
 
 플러터로 Api 코드를 작성하다보니 다음과 같은 오류가 발생하였다.
 

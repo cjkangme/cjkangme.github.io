@@ -10,7 +10,7 @@ image: /assets/posts/2024-10-18-stable-diffusion-web-ui-api로-사용하기/thum
 math: true
 ---
 
-![](/assets/posts/2024-10-18-stable-diffusion-web-ui-api로-사용하기/img0.png) <small>우리가 흔히 보는 SD web UI의 모습</small>
+![img](/assets/posts/2024-10-18-stable-diffusion-web-ui-api로-사용하기/img0.png) <small>우리가 흔히 보는 SD web UI의 모습</small>
 
 [Stable Diffusion web UI](stable-diffusion-webui)(이하 webui)는 git이나 CLI에 조금만 친숙한 사람이면 복잡한 코드 없이 여러 기법이 적용된 Stable Diffusion 모델을 사용할 수 있는 라이브러리입니다.
 
@@ -31,7 +31,7 @@ bash webui.sh --api
 
 webui API는 FastAPI를 기반으로 동작하기 때문에 `127.0.0.1:7860/docs` 주소에서 FastAPI에서 기본으로 만들어준 명세를 참조할 수 있습니다. (포트 번호 7860은 기본값, 유저 설정에 따라 바뀔 수 있음)
 
-![](/assets/posts/2024-10-18-stable-diffusion-web-ui-api로-사용하기/img1.png)
+![img](/assets/posts/2024-10-18-stable-diffusion-web-ui-api로-사용하기/img1.png)
 
 기본적으로는 이렇게 docs를 참조해서 원하는 API를 찾아 사용하시면 됩니다.
 예를 들어 image-to-image 모델 사용하고 싶다면 `sdapi/v1/img2img`에 POST 요청을 보내어 이미지 응답을 받을 수 있습니다.
@@ -44,7 +44,7 @@ webui API는 FastAPI를 기반으로 동작하기 때문에 `127.0.0.1:7860/docs
 
 해당 익스텐션을 설치하고 GUI에서 원하는 설정을 적용한 뒤 실행하면, 어떤 payload를 사용해야하는지 JSON 형태로 출력해줍니다.
 
-![](/assets/posts/2024-10-18-stable-diffusion-web-ui-api로-사용하기/img2.png)![](/assets/posts/2024-10-18-stable-diffusion-web-ui-api로-사용하기/img3.png)
+![img](/assets/posts/2024-10-18-stable-diffusion-web-ui-api로-사용하기/img2.png)![img](/assets/posts/2024-10-18-stable-diffusion-web-ui-api로-사용하기/img3.png)
 
 Copy 버튼을 눌러 편하게 복사해서 사용하시면 됩니다.
 `base64image placeholder` 부분이 이미지 데이터가 들어갈 자리로, 이미지를 base64로 인코딩해서 넣으면 됩니다.
@@ -116,7 +116,7 @@ webui에 원하는 모델을 넣기 위해서는 별도의 설치과정 없이 �
 
 `.../stable-diffusion-webui/models`
 
-![](/assets/posts/2024-10-18-stable-diffusion-web-ui-api로-사용하기/img4.png)
+![img](/assets/posts/2024-10-18-stable-diffusion-web-ui-api로-사용하기/img4.png)
 
 SD 모델은 `Stable-diffusion` 디렉토리에, ControlNet 모델은 `ControlNet` 디렉토리에 넣는 등, 정해진 위치에 넣으시면 됩니다.
 
@@ -129,7 +129,7 @@ SD 모델은 `Stable-diffusion` 디렉토리에, ControlNet 모델은 `ControlNe
 ## Settings 변경
 마지막으로 설정을 변경하기 위해 `/sdapi/v1/options` API를 사용할 수 있습니다.
 
-![](/assets/posts/2024-10-18-stable-diffusion-web-ui-api로-사용하기/img5.png)
+![img](/assets/posts/2024-10-18-stable-diffusion-web-ui-api로-사용하기/img5.png)
 
 먼저 GET 요청으로 옵션 목록을 json으로 가져온 다음
 json에서 원하는 옵션을 변경하거나 추가하여 POST 요청으로 다시 전송하면 됩니다.
@@ -155,7 +155,7 @@ GET으로 가져온 json에는 익스텐션 관련 설정이 포함되어있지 
 이 경우 `config.json` 파일을 이용하시면 됩니다.
 webui를 한번이라도 실행했다면, 루트 폴더에 `config.json` 파일이 생성되어 있을 겁니다.
 
-![](/assets/posts/2024-10-18-stable-diffusion-web-ui-api로-사용하기/img6.png)
+![img](/assets/posts/2024-10-18-stable-diffusion-web-ui-api로-사용하기/img6.png)
 
 해당 파일에 webui의 설정값들이 나열되어 있으므로, 변경 해야 할 key를 찾아서 json에 추가하시면 됩니다.
 

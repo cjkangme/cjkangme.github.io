@@ -10,7 +10,7 @@ image: /assets/posts/2024-01-11-3d-kd-tree와-bvh/thumbnail.png
 
 ---
 
-![](/assets/posts/2024-01-11-3d-kd-tree와-bvh/img0.png)
+![img](/assets/posts/2024-01-11-3d-kd-tree와-bvh/img0.png)
 
 <small>출처: https://www.fwilliams.info/point-cloud-utils/sections/closest_point_on_mesh/</small>
 
@@ -27,7 +27,7 @@ image: /assets/posts/2024-01-11-3d-kd-tree와-bvh/thumbnail.png
 
 ## KD Tree
 
-![](/assets/posts/2024-01-11-3d-kd-tree와-bvh/img1.png)
+![img](/assets/posts/2024-01-11-3d-kd-tree와-bvh/img1.png)
 
 <small>출처: https://opendsa-server.cs.vt.edu/ODSA/Books/CS3/html/KDtree.html</small>
 
@@ -44,22 +44,22 @@ KD Tree는 K-Demension Tree의 약자로 K차원의 공간의 점을 구조화�
 
 #### 1. 첫번째 축(x축)에 대해 정렬하고 중앙값을 기준으로 배열을 쪼갠다
 
-![](/assets/posts/2024-01-11-3d-kd-tree와-bvh/img2.png)
+![img](/assets/posts/2024-01-11-3d-kd-tree와-bvh/img2.png)
 
 #### 2. 쪼개진 배열별로 두번째 축(y축)에 대해 정렬하고 동일하게 쪼갠다
 
-![](/assets/posts/2024-01-11-3d-kd-tree와-bvh/img3.png)
+![img](/assets/posts/2024-01-11-3d-kd-tree와-bvh/img3.png)
 
 #### 3. 다시 x->y->x->... 순으로 위 과정을 반복한다.
 
 이렇게하면 아래 그림과 같은 트리구조가 완성된다.
 
-![](/assets/posts/2024-01-11-3d-kd-tree와-bvh/img4.png)
+![img](/assets/posts/2024-01-11-3d-kd-tree와-bvh/img4.png)
 
 위 사진과는 조금 다른 모양의 트리가 되었는데, 트리를 무슨 기준으로 나누느냐에 따라 모양이 달라질 수 있다.
 KD Tree의 핵심은 x->y->z->x->... 와 같이 각 축 별로 번갈아가면서 정렬하며 배열을 나눈다는 것이다.
 
-![](/assets/posts/2024-01-11-3d-kd-tree와-bvh/img5.png)
+![img](/assets/posts/2024-01-11-3d-kd-tree와-bvh/img5.png)
 
 <small>출처: https://www.researchgate.net/figure/An-example-two-dimensional-k-d-tree-k-2-built-from-nodes-a-through-h-Dividing-planes_fig2_314298746</small>
 
@@ -70,13 +70,13 @@ KD Tree의 핵심은 x->y->z->x->... 와 같이 각 축 별로 번갈아가면�
 이제 예시로 `(80, 75)` 좌표가 주어졌을 때 어떻게 KD Tree를 이용해 가장 가까운 Point를 찾을 수 있는지 알아보자.
 
 #### 1. 새로운 점이 트리의 어디에 삽입 되어야 하는지 찾기
-![](/assets/posts/2024-01-11-3d-kd-tree와-bvh/img6.png)
+![img](/assets/posts/2024-01-11-3d-kd-tree와-bvh/img6.png)
 
 위와 같이 주어진 점과 부모 노드(중앙값)와의 비교를 통해 내려가면서 주어진 점이 어느 리프 노드에 위치하는지 찾는다.
 
 #### 2. 도달한 리프노드와의 거리를 반지름으로 원을 그려 침범하는 영역(브랜치)을 찾는다.
 
-![](/assets/posts/2024-01-11-3d-kd-tree와-bvh/img7.png)
+![img](/assets/posts/2024-01-11-3d-kd-tree와-bvh/img7.png)
 
 위 그림에서는 x < 69인 영역(브랜치)와의 비교가 추가로 필요하다.
 만약 F가 리프노드가 아니라면 y > 90인 브랜와도 비교가 필요할 것이다.
@@ -103,7 +103,7 @@ KD Tree의 핵심은 x->y->z->x->... 와 같이 각 축 별로 번갈아가면�
 BVH는 Boundingbox Volume Hierarchy의 약자로
 객체의 바운딩박스를 이용해 객체 Polygon을 트리 형태로 저장한 자료구조이다.
 
-![](/assets/posts/2024-01-11-3d-kd-tree와-bvh/img8.png)
+![img](/assets/posts/2024-01-11-3d-kd-tree와-bvh/img8.png)
 
 <small>출처: https://developer.nvidia.com/blog/thinking-parallel-part-ii-tree-traversal-gpu/</small>
 

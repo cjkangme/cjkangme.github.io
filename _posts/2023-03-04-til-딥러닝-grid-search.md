@@ -115,7 +115,7 @@ grid_result = grid.fit(x_train, y_train, validation_split=0.2, callbacks=[es])
 
 - 피팅시 validation_split과 callbacks 작동하는지가 의문이다.
 
-![](/assets/posts/2023-03-04-til-딥러닝-grid-search/img0.png)
+![img](/assets/posts/2023-03-04-til-딥러닝-grid-search/img0.png)
 
 - 학습 후 모델을 확인해보면 validation_split = 0, callbacks=None이 적용되어있다.
 - 이게 적용되는 것이 맞는지 계속 찾아보아야겠다.

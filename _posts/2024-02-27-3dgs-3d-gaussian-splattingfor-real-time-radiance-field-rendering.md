@@ -30,15 +30,15 @@ ImageNet부터 시작하여 정말 오랜 기간동안 양질의 데이터셋을
 ## NeRF (Neural Radiance Field)
 
 
-![](/assets/posts/2024-02-27-3dgs-3d-gaussian-splattingfor-real-time-radiance-field-rendering/img0.png)
+![img](/assets/posts/2024-02-27-3dgs-3d-gaussian-splattingfor-real-time-radiance-field-rendering/img0.png)
 
-![](/assets/posts/2024-02-27-3dgs-3d-gaussian-splattingfor-real-time-radiance-field-rendering/img1.png)
+![img](/assets/posts/2024-02-27-3dgs-3d-gaussian-splattingfor-real-time-radiance-field-rendering/img1.png)
 
 NeRF는 2020년 ECCV 2020에서 발표된 논문으로 여러 시점에서 오브젝트 또는 씬(Scene)을 찍은 이미지를 학습하여, 학습하지 않은 시점에서 봤을 때의 오브젝트/씬의 모습을 렌더링하는 모델이다.
 
 즉 구하기 어려운 3D 데이터 없이 이미지 만으로 3D와 같이 연속된 시점을 묘사할 수 있게되어 3D 컴퓨터 비전 분야에서 지금까지도 NeRF를 기반으로 많은 연구가 이루어지고 있다.
 
-![](/assets/posts/2024-02-27-3dgs-3d-gaussian-splattingfor-real-time-radiance-field-rendering/img2.png)
+![img](/assets/posts/2024-02-27-3dgs-3d-gaussian-splattingfor-real-time-radiance-field-rendering/img2.png)
 
 NeRF에 대해 아주아주 간략히 설명하면 **Radience Field를 신경망으로 정의한 것**을 뜻한다.
 
@@ -48,7 +48,7 @@ NeRF에 대해 아주아주 간략히 설명하면 **Radience Field를 신경망
 
 ## NeRF의 한계
 
-![](/assets/posts/2024-02-27-3dgs-3d-gaussian-splattingfor-real-time-radiance-field-rendering/img3.png)
+![img](/assets/posts/2024-02-27-3dgs-3d-gaussian-splattingfor-real-time-radiance-field-rendering/img3.png)
 
 NeRF의 가장 큰 단점은 바로 성능이다.
 그 이유는 크게 두가지로 꼽을 수 있다.
@@ -64,7 +64,7 @@ NeRF의 가장 큰 단점은 바로 성능이다.
 
 ## Overview
 
-![](/assets/posts/2024-02-27-3dgs-3d-gaussian-splattingfor-real-time-radiance-field-rendering/img4.png)
+![img](/assets/posts/2024-02-27-3dgs-3d-gaussian-splattingfor-real-time-radiance-field-rendering/img4.png)
 
 3DGS가 특정 시점에서의 2D 이미지를 렌더링 하는 방법은 다음과 같다.
 
@@ -81,14 +81,14 @@ NeRF의 가장 큰 단점은 바로 성능이다.
 
 ### Differentible 3D Gaussian
 
-![](/assets/posts/2024-02-27-3dgs-3d-gaussian-splattingfor-real-time-radiance-field-rendering/img5.png)
+![img](/assets/posts/2024-02-27-3dgs-3d-gaussian-splattingfor-real-time-radiance-field-rendering/img5.png)
 
-![](/assets/posts/2024-02-27-3dgs-3d-gaussian-splattingfor-real-time-radiance-field-rendering/img6.png)
+![img](/assets/posts/2024-02-27-3dgs-3d-gaussian-splattingfor-real-time-radiance-field-rendering/img6.png)
 <small>https://www.researchgate.net/figure/Visualization-of-a-3D-Gaussian-model-a-Uncertainty-ellipsoid-for_fig5_231212225</small>
 
 3D Gaussian은 중심점(x, y, z)을 평균으로 하고, 비등방성 공분산(anisotropic covariance) 분포로 정의 된다.
 
-![](/assets/posts/2024-02-27-3dgs-3d-gaussian-splattingfor-real-time-radiance-field-rendering/img7.png)
+![img](/assets/posts/2024-02-27-3dgs-3d-gaussian-splattingfor-real-time-radiance-field-rendering/img7.png)
 
 공분산 행렬은 크기(scale), 회전값(retation)을 기반으로 정의되며, 
 3차원 이므로 공분산은 (3x3)의 공분산 행렬이다.
@@ -99,11 +99,11 @@ NeRF의 가장 큰 단점은 바로 성능이다.
   
 3DGS의 목표는 Geometry의 세세한 부분까지 묘사할 수 있도록 Gaussian의 수, 위치, 크기, 회전, 색상값, 투명도를 조절(가중치 업데이트)하는 것을 통해 정밀한 Scene을 묘사하는 Gaussian들을 화면에 흩뿌리는 것(Splatting )이다.
 
-![](/assets/posts/2024-02-27-3dgs-3d-gaussian-splattingfor-real-time-radiance-field-rendering/img8.png)
+![img](/assets/posts/2024-02-27-3dgs-3d-gaussian-splattingfor-real-time-radiance-field-rendering/img8.png)
 
 ### Adaptive density control
 
-![](/assets/posts/2024-02-27-3dgs-3d-gaussian-splattingfor-real-time-radiance-field-rendering/img9.png)
+![img](/assets/posts/2024-02-27-3dgs-3d-gaussian-splattingfor-real-time-radiance-field-rendering/img9.png)
 
 Adaptive density control은 씬을 정밀하게 표현할 만큼 Gaussian을 생성하고, 엉뚱하거나 불필요한 Gaussian을 제거하도록 조절하는 과정이다.
 
@@ -119,13 +119,13 @@ Adaptive density control은 씬을 정밀하게 표현할 만큼 Gaussian을 생
 
 ### Differentiable Tile Rasterizer
 
-![](/assets/posts/2024-02-27-3dgs-3d-gaussian-splattingfor-real-time-radiance-field-rendering/img10.png)
+![img](/assets/posts/2024-02-27-3dgs-3d-gaussian-splattingfor-real-time-radiance-field-rendering/img10.png)
 
 논문의 Appendix에 슈도 코드가 제공된다.
 
 1. View Space 안에 들어오는 Gaussian 만을 컬링
 2. World Space를 화면 좌표로 변환 (3D -> 2D)
-    - ![](/assets/posts/2024-02-27-3dgs-3d-gaussian-splattingfor-real-time-radiance-field-rendering/img11.png)
+    - ![img](/assets/posts/2024-02-27-3dgs-3d-gaussian-splattingfor-real-time-radiance-field-rendering/img11.png)
     - 좌표계가 변해도 미분이 가능해야하기 때문에 Viewing Transformation Matrix(W)와 Jacobian Matrix(J)를 사용해 선형 변환을 근사한 형태로 공분산 행렬을 2x2 행렬로 변환한다.
 3. 병렬 처리를 위해 화면을 16x16개의 tile로 나눈 뒤, 각 타일별로 Gaussian을 컬링
 4. 하나의 Gaussian이 여러 타일과 겹칠 경우 인스턴스 화
@@ -138,7 +138,7 @@ Adaptive density control은 씬을 정밀하게 표현할 만큼 Gaussian을 생
     - loss backward 과정에서 div/0 에러가 발생하지 않도록 1/255보다 작은 값은 업데이트 하지 않음
     - rasterization 이전에 알파 값(투명도)을 미리 계산하여 한 픽셀의 알파 값이 일정 수치에 도달하면 해당 스레드 중지
 
-![](/assets/posts/2024-02-27-3dgs-3d-gaussian-splattingfor-real-time-radiance-field-rendering/img12.png)
+![img](/assets/posts/2024-02-27-3dgs-3d-gaussian-splattingfor-real-time-radiance-field-rendering/img12.png)
 
 이런 방법을 통해 loss 계산이 가능하면서도 NeRF와 달리 MLP연산 없이 병렬 처리하여 씬을 렌더링할 수 있게 되었다.
 
@@ -146,11 +146,11 @@ Adaptive density control은 씬을 정밀하게 표현할 만큼 Gaussian을 생
 
 ### Loss Function
 
-![](/assets/posts/2024-02-27-3dgs-3d-gaussian-splattingfor-real-time-radiance-field-rendering/img13.png)
+![img](/assets/posts/2024-02-27-3dgs-3d-gaussian-splattingfor-real-time-radiance-field-rendering/img13.png)
 
 Loss Function은 L1 Loss(MAE)와 D-SSIM Loss에 가중치를 두어 사용한다.
 
-![](/assets/posts/2024-02-27-3dgs-3d-gaussian-splattingfor-real-time-radiance-field-rendering/img14.png)
+![img](/assets/posts/2024-02-27-3dgs-3d-gaussian-splattingfor-real-time-radiance-field-rendering/img14.png)
 
 D-SSIM은 SSIM을 기반으로 한 손실 함수로, 두 이미지의 밝기(픽셀 값 크기), 대비(인접 픽셀간 차이), 구조(픽셀값 분포기반 correlation)를 이용해 두 이미지의 유사도를 계산하는 것을 기반으로 한 손실 함수이다.
 
@@ -158,7 +158,7 @@ D-SSIM은 SSIM을 기반으로 한 손실 함수로, 두 이미지의 밝기(픽
 
 ## Limitation
 
-![](/assets/posts/2024-02-27-3dgs-3d-gaussian-splattingfor-real-time-radiance-field-rendering/img15.png)
+![img](/assets/posts/2024-02-27-3dgs-3d-gaussian-splattingfor-real-time-radiance-field-rendering/img15.png)
 
 - 기존 NeRF 모델에서도 발생하는 문제로, 여러 시점을 찍은 사진에서, 충분히 많이 찍히지 않는 부분에 대해 아티팩트가 발생한다는 문제가 있다.
 

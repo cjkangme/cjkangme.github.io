@@ -10,7 +10,7 @@ image: /assets/posts/2023-05-04-aivle-aice-associate-시험-후기/thumbnail.png
 
 ---
 
-![](/assets/posts/2023-05-04-aivle-aice-associate-시험-후기/img0.png)
+![img](/assets/posts/2023-05-04-aivle-aice-associate-시험-후기/img0.png)
 
 > [AICE 공식 소개 페이지](https://aice.study/info/aice)
 
@@ -50,7 +50,7 @@ image: /assets/posts/2023-05-04-aivle-aice-associate-시험-후기/thumbnail.png
 
 # 결과
 
-![](/assets/posts/2023-05-04-aivle-aice-associate-시험-후기/img1.png)
+![img](/assets/posts/2023-05-04-aivle-aice-associate-시험-후기/img1.png)
 
 - 약 2주정도 후 결과가 나왔는데 무난하게 합격하였다.
 - 머신러닝 경험이 있다면 (특히 에이블러라면!!!) 쉽게 합격할 수 있기 때문에 너무 걱정하지 않아도 될 것 같다.
